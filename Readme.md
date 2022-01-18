@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Влас Горбачёв](https://up.htmlacademy.ru/htmlcss/33/user/1958629).
-* Наставник: [Андрей Ефимов](https://htmlacademy.ru/profile/efiand).
+* Наставник: [Андрей Ефимов](https://up.htmlacademy.ru/htmlcss/33/user/367335).
 
 ---
 
