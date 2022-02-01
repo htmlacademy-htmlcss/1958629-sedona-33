@@ -3,16 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Седона-каталог</title>
+  <title>Седона - каталог</title>
 </head>
 
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <a class="navigation-link" href="../index.html">
+      <a class="navigation-link-home" href="../index.html">
         <img class="navigation-logo" src="" alt="Логотип Седоны.">
       </a>
-      
+
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-link" href="../index.html">
@@ -52,7 +52,7 @@
 
         <li class="navigation-item">
           <a class="navigation-link" href="#!">
-              Хочу сюда!
+            Хочу сюда!
           </a>
         </li>
       </ul>
@@ -117,21 +117,21 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filtre-ltem">
               <label class="control">
-                <input class="control-input" type="radio" name="type-housing[]" value="hotel" checked>
+                <input class="control-input" type="radio" name="type-housing" value="hotel" checked>
                 Гостиница
               </label>
             </li>
 
             <li class="catalog-filtre-ltem">
               <label class="control">
-                <input class="control-input" type="radio" name="type-housing[]" value="motel">
+                <input class="control-input" type="radio" name="type-housing" value="motel">
                 Мотель
               </label>
             </li>
 
             <li class="catalog-filtre-ltem">
               <label class="control">
-                <input class="control-input" type="radio" name="type-housing[]" value="apartamens">
+                <input class="control-input" type="radio" name="type-housing" value="apartamens">
                 Апартаменты
               </label>
             </li>
@@ -147,6 +147,10 @@
       </section>
 
       <section class=card-block>
+        <h2 class="visually-hidden">
+          Результаты поиска.
+        </h2>
+
         <div class="search-hotel">
           <p class="number-hotels">
             Найдено гостиниц: 38
@@ -190,7 +194,7 @@
         <ul class="hotel-cards-list">
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#!">
-              <img class="hotel-card-img" src="" alt="Гостиница Amara Resort & Spa в скалах.">
+              <img class="hotel-card-img" src="" alt="Гостиница Amara Resort &amp; Spa в скалах.">
               <h3 class="hotel-card-title">
                 Amara Resort &amp; Spa
               </h3>
@@ -263,6 +267,7 @@
               </p>
             </div>
           </li>
+
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#!">
               <img class="hotel-card-img" src="" alt="Гостиница Villas at Poco Diablo в скалах.">
@@ -303,7 +308,7 @@
 
           <li class="hotel-card-item">
             <a class="hotel-card-link" href="#!">
-              <img class="hotel-card-img" src="" alt="Серпантин ведущий к гостинице GreenTree Inn.">
+              <img class="hotel-card-img" src="" alt="Серпантин, ведущий к гостинице GreenTree Inn.">
               <h3 class="hotel-card-title">
                 GreenTree Inn
               </h3>
@@ -399,10 +404,10 @@
       </section>
     </form>
 
-    <div class="">
-      <p class="header">
+    <section class="">
+      <h2 class="heading">
         Подпишитесь на рассылку
-      </p>
+      </h2>
       <p class="description">
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
@@ -416,7 +421,7 @@
           Подписаться
         </button>
       </form>
-    </div>
+    </section>
 
   </main>
 
@@ -454,5 +459,6 @@
       <img class="footer-site-link-logo" src="" alt="Логотип HTML Academy.">
     </a>
   </footer>
-
 </body>
+
+</html>
