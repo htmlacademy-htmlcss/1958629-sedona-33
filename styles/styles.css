@@ -1,6 +1,21 @@
+body {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.welcome {
+  min-height: 485px;
+  background-image: url("../images/bg-welcome.jpg");
+  background-repeat: no-repeat;
+}
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-    font-weight: 400;
-  src: url("/fonts/ptsans-400.woff2");
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2");
 }
