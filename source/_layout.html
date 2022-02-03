@@ -3,14 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Седона - главная</title>
+  <title>Седона - {% block title %}{% endblock%}</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="navigation">
       <a class="">
-        <img class="navigation-logo" src="/images/logo.svg" width="139" height="70" alt="Логотип Седоны.">
+        <img class="navigation-logo" src="{{ root }}images/logo.svg" width="139" height="70" alt="Логотип Седоны.">
       </a>
 
       <ul class="navigation-list">
@@ -90,7 +91,7 @@
           Седона — не аттракцион для туристов, там течёт своя жизнь
         </p>
 
-        <img src="/images/sedona-street.jpg" width="800" height="384" alt="Улицы Седоны.">
+        <img src="{{ root }}images/sedona-street.jpg" width="800" height="384" alt="Улицы Седоны.">
 
         <ul class="list-plus">
           <li class="item-benefits">
@@ -138,7 +139,7 @@
           Да, по нему можно пройти! Если вы осмелитесь, разумеется
         </p>
 
-        <img src="/images/devil- bridge.jpg" width="800" height="384" alt="Мост дьявола.">
+        <img src="{{ root }}images/devil-bridge.jpg" width="800" height="384" alt="Мост дьявола.">
       </li>
 
       <li class="item-benefits-bridge">
@@ -251,7 +252,7 @@
     </a>
 
     <a class="footer-site-link" href="https://htmlacademy.ru/">
-      <img class="footer-site-link-logo" src="/images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy.">
+      <img class="footer-site-link-logo" src="{{ root }}images/logo_htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy.">
     </a>
   </footer>
 </body>
