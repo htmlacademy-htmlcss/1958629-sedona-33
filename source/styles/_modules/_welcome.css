@@ -1,0 +1,5 @@
+.welcome {
+  min-height: 485px;
+  background-image: url("../images/bg-welcome.jpg");
+  background-repeat: no-repeat;
+}
