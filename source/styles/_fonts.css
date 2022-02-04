@@ -13,3 +13,79 @@
   src: url("../fonts/ptsans-700.woff2");
   font-display: swap;
 }
+
+body {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.navigation-link {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+
+}
+.navigation-link-uppercase{
+  text-align: center;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+
+}
+
+.heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.description {
+  text-align: center;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.benefits-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.benefits-description {
+  text-align: center;
+}
+
+.benefits-description {
+  text-align: center;
+}
+
+/* Дальше стилизация каталога */
+/* ? */
+.choice-housing-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+
+}
+/* ? */
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}

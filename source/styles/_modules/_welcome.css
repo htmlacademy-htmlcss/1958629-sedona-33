@@ -21,9 +21,8 @@
 /* Ниже стилизация каталога */
 
 .choice-housing {
-  min-width: 1200px;
-  min-height: 408px;
 background-image: url("../../images/bg-blurry-catalog.jpg");
+background-size: 1200px 408px;
 background-repeat: no-repeat;
 }
 
