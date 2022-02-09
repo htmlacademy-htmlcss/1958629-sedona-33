@@ -4,9 +4,10 @@
   background-color: #83B3D3;
   width: 400px;
   height: 384px;
+  color:#FFFFFF;
 }
 
-.translucent-card{
+.translucent-card {
 background-color: rgba(131,179,211,0.12);
 width: 400px;
 height: 384px;

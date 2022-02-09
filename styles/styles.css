@@ -6,6 +6,7 @@ body {
   background-color: #83b3d3;
   width: 400px;
   height: 384px;
+  color: #ffffff;
 }
 
 .translucent-card {
@@ -38,7 +39,6 @@ body {
 }
 
 .welcome {
-  min-width: 1200px;
   min-height: 485px;
   background-image: url("../images/bg-welcome.jpg");
   background-repeat: no-repeat;
@@ -59,8 +59,9 @@ body {
 /* Ниже стилизация каталога */
 .choice-housing {
   background-image: url("../../images/bg-blurry-catalog.jpg");
-  background-size: 1200px 408px;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: #83b3d3;
 }
 
 @font-face {
@@ -86,36 +87,48 @@ body {
   background-color: #ffffff;
   color: #000000;
 }
-
+/* Стилизация шапки и подвала */
 .navigation-link {
   text-align: center;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  color: inherit;
 }
 
-.navigation-link-uppercase {
+.uppercase {
   text-align: center;
   font-weight: 700;
   line-height: 20px;
+  color: #ffffff;
+  background-color: #756257;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 16px;
 }
 
+.newsletter-bg {
+  color: #ffffff;
+  background-color: #83b3d3;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Дальше стилизация главной */
 .heading {
-  text-align: center;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .description {
-  text-align: center;
   font-size: 22px;
   line-height: 36px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .benefits-header {
@@ -133,7 +146,20 @@ body {
 .benefits-description {
   text-align: center;
 }
+
+.hotel-search {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756257;
+}
 /* Дальше стилизация каталога */
+.choice-housing {
+  color: #ffffff;
+}
 /* ? */
 .choice-housing-title {
   font-weight: 700;

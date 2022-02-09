@@ -1,5 +1,4 @@
 .welcome {
-  min-width: 1200px;
   min-height: 485px;
   background-image: url("../images/bg-welcome.jpg");
   background-repeat: no-repeat;
@@ -12,7 +11,7 @@
   text-align: center;
 }
 
-.description{
+.description {
   max-width: 720px;
   max-height: 36px;
   text-align: center
@@ -22,7 +21,8 @@
 
 .choice-housing {
 background-image: url("../../images/bg-blurry-catalog.jpg");
-background-size: 1200px 408px;
+background-size: cover;
 background-repeat: no-repeat;
+background-color:#83B3D3;
 }
 
