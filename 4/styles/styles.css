@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+}
+
+.blue-block {
+  background-color: #83b3d3;
+  width: 400px;
+  height: 384px;
+  color: #ffffff;
+}
+
+.translucent-card {
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  height: 384px;
+}
+
+.white-card {
+  background-color: #ffffff;
+  width: 400px;
+  height: 384px;
+}
+
+.translucent-card-4 {
+  background-color: rgba(131, 179, 211, 0.2);
+  width: 400px;
+  height: 384px;
+}
+
+.newsletter-bg {
+  background-image: url("../../images/bg-blurry-mountains.jpg");
+  background-size: cover;
+  width: 1200px;
+  height: 411px;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.welcome {
+  min-height: 485px;
+  background-image: url("../../images/bg-welcome.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.heading {
+  max-width: 720px;
+  max-height: 72;
+  text-align: center;
+}
+
+.description {
+  max-width: 720px;
+  max-height: 36px;
+  text-align: center;
+}
+/* Ниже стилизация каталога */
+.choice-housing {
+  background-image: url("../../images/bg-blurry-catalog.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #83b3d3;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2");
+  font-display: swap;
+}
+/* Стилизация шапки и подвала */
+.newsletter-bg {
+  color: #ffffff;
+  background-color: #83b3d3;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Дальше стилизация главной */
+.heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 36px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.benefits-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.benefits-description {
+  text-align: center;
+}
+
+.benefits-description {
+  text-align: center;
+}
+
+.hotel-search {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #756257;
+}
+/* Дальше стилизация каталога */
+.choice-housing {
+  color: #ffffff;
+}
+/* ? */
+.choice-housing-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+/* ? */
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+

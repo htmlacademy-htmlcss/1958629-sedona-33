@@ -1,0 +1,28 @@
+.welcome {
+  min-height: 485px;
+  background-image: url("../../images/bg-welcome.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.heading {
+  max-width: 720px;
+  max-height: 72;
+  text-align: center;
+}
+
+.description {
+  max-width: 720px;
+  max-height: 36px;
+  text-align: center
+}
+
+/* Ниже стилизация каталога */
+
+.choice-housing {
+background-image: url("../../images/bg-blurry-catalog.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-color:#83B3D3;
+}
+
