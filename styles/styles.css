@@ -29,6 +29,7 @@ body {
 
 .newsletter-bg {
   background-image: url("../../images/bg-blurry-mountains.jpg");
+  background-size: cover;
   width: 1200px;
   height: 411px;
 }
@@ -79,35 +80,7 @@ body {
   src: url("../fonts/ptsans-700.woff2");
   font-display: swap;
 }
-
-body {
-  font-family: "PT Sans";
-  font-size: 18px;
-  line-height: 21px;
-  background-color: #ffffff;
-  color: #000000;
-}
 /* Стилизация шапки и подвала */
-.navigation-link {
-  text-align: center;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  color: inherit;
-}
-
-.uppercase {
-  text-align: center;
-  font-weight: 700;
-  line-height: 20px;
-  color: #ffffff;
-  background-color: #756257;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 16px;
-}
-
 .newsletter-bg {
   color: #ffffff;
   background-color: #83b3d3;

@@ -1,5 +1,6 @@
 .newsletter-bg  {
   background-image: url("../../images/bg-blurry-mountains.jpg");
+  background-size: cover;
   width: 1200px;
   height: 411px;
 }

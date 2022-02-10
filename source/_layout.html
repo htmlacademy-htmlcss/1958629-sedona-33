@@ -9,118 +9,125 @@
 </head>
 
 <body>
-  <header class="page-header">
-    <nav class="navigation">
-      <a class="" {{ rootHref }}>
-        <img class="navigation-logo" src="{{ root }}images/logo.svg" width="139" height="70" alt="Логотип Седоны.">
+  <div class="page-wrapper">
+    <header class="page-header">
+      <nav class="navigation">
+        <div class="navigation-wrapper">
+          <a class="navigation-logo" {{ rootHref }}>
+            <img class="" src="{{ root }}images/logo.svg" width="139" height="70" alt="Логотип Седоны.">
+          </a>
+
+          <ul class="navigation-list navigation-pages">
+            <li class="navigation-item">
+              <a class="navigation-link active" {{ rootHref }}>
+                Главная
+              </a>
+            </li>
+
+            <li class="navigation-item">
+              <a class="navigation-link" href="#!">
+                О Седоне
+              </a>
+            </li>
+
+            <li class="navigation-item">
+              <a class="navigation-link" {{ catalogHref }}>
+                Гостиницы
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-icon navigation-search" href="#!">
+              <span class="visually-hidden">
+                Поиск.
+              </span>
+            </a>
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-icon navigation-favorites" href="#!">
+              <span  class="visually-hidden">
+                Избранное.
+              </span>
+              <span class="navigation-favirites-count">
+                12
+              </span>
+            </a>
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-link navigation-button " href="#!">
+              Хочу сюда!
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      {# Сюда будет добавлена уникальная часть страницы при сборке #}
+      {% block main %}Страница в разработке.{% endblock %}
+
+      <section class="newsletter {{ newsletterClass }}">
+        <h2 class="heading">
+          Подпишитесь на рассылку
+        </h2>
+
+        <p class="description">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email">
+          </label>
+
+          <button class="newsletter-button" type="submit">
+            Подписаться
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">
+              Твиттер.
+            </span>
+          </a>
+        </li>
+
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">
+              Фейсбук.
+            </span>
+          </a>
+        </li>
+
+        <li class="footer-social-item">
+          <a class="footer-social-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <span class="visually-hidden">
+              Ютуб.
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="footer-phone-contacts" href="tel:+78128121212">
+        +7 (812) 812-12-12
       </a>
 
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" {{ rootHref }}>
-            Главная
-          </a>
-        </li>
-
-        <li class="navigation-item">
-          <a class="navigation-link" href="#!">
-            О Седоне
-          </a>
-        </li>
-
-        <li class="navigation-item">
-          <a class="navigation-link" {{ catalogHref }}>
-            Гостиницы
-          </a>
-        </li>
-      </ul>
-
-      <ul class="navigation-list navigation-user">
-        <li class="navigation-item">
-          <a class="navigation-link" href="#!">
-            <span class="visually-hidden">
-              Поиск.
-            </span>
-          </a>
-        </li>
-
-        <li class="navigation-item">
-          <a class="navigation-link" href="#!">
-            <span class="visually-hidden">
-              Избранное.
-            </span>
-          </a>
-        </li>
-
-        <li class="navigation-item">
-          <a class="navigation-link uppercase" href="#!">
-            Хочу сюда!
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    {# Сюда будет добавлена уникальная часть страницы при сборке #}
-    {% block main %}Страница в разработке.{% endblock %}
-
-    <section class="newsletter {{ newsletterClass }}">
-      <h2 class="heading">
-        Подпишитесь на рассылку
-      </h2>
-
-      <p class="description">
-        Только полезная информация и никакого спама, честное бойскаутское!
-      </p>
-
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email">
-        </label>
-
-        <button class="newsletter-button" type="submit">
-          Подписаться
-        </button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="page-footer">
-    <ul class="footer-social-list">
-      <li class="footer-social-item">
-        <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
-          <span class="visually-hidden">
-            Твиттер.
-          </span>
-        </a>
-      </li>
-
-      <li class="footer-social-item">
-        <a class="footer-social-link" href="https://www.facebook.com/htmlacademy">
-          <span class="visually-hidden">
-            Фейсбук.
-          </span>
-        </a>
-      </li>
-
-      <li class="footer-social-item">
-        <a class="footer-social-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
-          <span class="visually-hidden">
-            Ютуб.
-          </span>
-        </a>
-      </li>
-    </ul>
-
-    <a class="footer-phone-contacts" href="tel:+78128121212">
-      +7 (812) 812-12-12
-    </a>
-
-    <a class="footer-site-link" href="https://htmlacademy.ru/">
-      <img class="footer-site-link-logo" src="{{ root }}images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy.">
-    </a>
-  </footer>
+      <a class="footer-site-link" href="https://htmlacademy.ru/">
+        <img class="footer-site-link-logo" src="{{ root }}images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy.">
+      </a>
+    </footer>
+  </div>
 </body>
 
 </html>
