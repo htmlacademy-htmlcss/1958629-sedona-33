@@ -38,29 +38,58 @@ a {
   margin: 0 auto;
 }
 
-.blue-block {
+.grid {
+  display: grid;
+  grid-column: span 3;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.blue-card {
   background-color: #83b3d3;
   width: 400px;
-  height: 384px;
   color: #ffffff;
 }
 
 .translucent-card {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  height: 384px;
 }
 
 .white-card {
   background-color: #ffffff;
   width: 400px;
-  height: 384px;
 }
 
 .translucent-card-4 {
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
-  height: 384px;
+}
+
+.benefits-img {
+  grid-column: span 2;
+}
+
+.benefits-card-accent {
+  padding: 97px 90px 87px;
+}
+
+.benefits-card {
+  padding: 98px 75px 108px;
+}
+
+.benefits-description {
+  margin-top: 30px;
+}
+
+.benefits-card-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 89px 75px 79px;
+}
+
+.benefits-icon {
+  margin-bottom: 23px;
 }
 
 .page-header {
@@ -105,7 +134,7 @@ a {
 }
 
 .navigation-link.active {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #756257;
 }
 
 .navigation-button {
@@ -128,12 +157,12 @@ a {
 }
 
 .navigation-search {
-  background-image: url("../../images/icon-glass.svg");
+  background-image: url("../images/icon-glass.svg");
 }
 
 .navigation-favorites {
   position: relative;
-  background-image: url("../../images/icon-favorite.svg");
+  background-image: url("../images/icon-favorite.svg");
 }
 
 .navigation-favirites-count {
@@ -152,6 +181,27 @@ a {
   align-items: center;
   justify-content: center;
   transform: translate(-50%, -50%);
+}
+
+.icon-home {
+  background-image: url(../images/icon-home.svg);
+  display: block;
+  width: 84px;
+  height: 84px;
+}
+
+.icon-burger {
+  background-image: url(../images/icon-burger.svg);
+  display: block;
+  width: 84px;
+  height: 84px;
+}
+
+.icon-gift {
+  background-image: url(../images/icon-gift.svg);
+  display: block;
+  width: 84px;
+  height: 84px;
 }
 
 .newsletter-bg {
@@ -226,15 +276,13 @@ a {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 63px 240px 31px;
 }
 
 .description {
   font-size: 22px;
-  line-height: 36px;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 26px;
+  margin: 0 240px 80px;
 }
 
 .benefits-header {
@@ -276,8 +324,6 @@ a {
   font-size: 60px;
   line-height: 78px;
 }
-
-/* ? */
 
 .breadcrumbs-link {
   font-size: 16px;

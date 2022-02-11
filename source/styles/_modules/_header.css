@@ -40,7 +40,7 @@
 }
 
 .navigation-link.active {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #756257;
 }
 
 .navigation-button {
@@ -64,12 +64,12 @@
 
 
 .navigation-search {
-  background-image: url("../../images/icon-glass.svg");
+  background-image: url("../images/icon-glass.svg");
 }
 
 .navigation-favorites {
   position: relative;
-  background-image: url("../../images/icon-favorite.svg");
+  background-image: url("../images/icon-favorite.svg");
 }
 
 .navigation-favirites-count {

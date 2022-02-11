@@ -1,0 +1,51 @@
+.blue-card {
+  background-color: #83B3D3;
+  width: 400px;
+  color:#FFFFFF;
+}
+
+.translucent-card {
+background-color: rgba(131,179,211,0.12);
+width: 400px;
+
+}
+
+.white-card {
+background-color: #FFFFFF;
+width: 400px;
+}
+
+.translucent-card-4 {
+background-color: rgba(131,179,211,0.2);
+width: 400px;
+}
+
+
+.benefits-img {
+  grid-column: span 2;
+}
+
+.benefits-card-accent {
+  padding: 97px 90px 87px;
+}
+
+.benefits-card {
+  padding: 98px 75px 108px;
+}
+
+.benefits-description {
+  margin-top: 30px;
+}
+
+.benefits-card-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 89px 75px 79px;
+}
+
+.benefits-icon {
+  margin-bottom: 23px;
+}
+
+
