@@ -1,8 +1,20 @@
 :root {
-  --color-neutral-lite: #7db54f;
-  --color-white: #ffffff;
-  --color-grey-light: #f2f2f2;
   --color-black: #000000;
+  --color-dark: #333333;
+  --color-grey: #e5e5e5;
+  --color-light: #f2f2f2;
+  --color-white: #ffffff;
+  --color-light-brown: #756257;
+  --color-dark-brown: #615048;
+  --color-light-green: #7db54f;
+  --color-dark-green: #6c9e42;
+  --color-light-blue: #83b3d3;
+  --color-dark-blue: #68a2ca;
+  --color-light-cold-20: hsla(204 48% 67% / 0.2);
+  --color-light-cold-12: hsla(204 48% 67% / 0.12);
+  --color-error: #ff5757;
+  --color-warning: #fd922e;
+  --color-success: #7db550;
 }
 
 /* Обращение ко всем элементам */
@@ -10,8 +22,10 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
 }
 
@@ -21,14 +35,11 @@ body {
   line-height: 21px;
   background-color: var(--color-grey-light);
   color: var(--color-black);
+  margin: 0;
 }
 
-li {
+.body li {
   list-style-type: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 .page-wrapper {
@@ -44,21 +55,61 @@ a {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 63px 240px 31px;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0 240px 80px;
+}
+
+.hotel-search {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-dark-brown);
+}
+
+.benefits-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.benefits-description {
+  text-align: center;
+}
+
+.benefits-description {
+  text-align: center;
+}
+
 .blue-card {
-  background-color: #83b3d3;
-  color: #ffffff;
+  background-color: var(--color-light-blue);
+  color: var(--color-white);
 }
 
 .translucent-card {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: var(--color-light-cold-12);
+}
+
+.translucent-card:nth-child(2n) {
+  background-color: var(--color-light-cold-20);
 }
 
 .white-card {
-  background-color: #ffffff;
-}
-
-.translucent-card-4 {
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: var(--color-white);
 }
 
 .benefits-img {
@@ -105,10 +156,11 @@ a {
 }
 
 .page-header {
-  padding: 0 70px;
+  padding: 0 72px;
 }
 
 .navigation {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -116,15 +168,19 @@ a {
 .navigation-wrapper {
   display: flex;
   align-items: center;
+  padding-left: 169px;
 }
 
 .navigation-logo {
-  margin-right: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .navigation-list {
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
 .navigation-pages {
@@ -143,17 +199,18 @@ a {
   font-size: 20px;
   line-height: 26px;
   color: inherit;
+  text-decoration: none;
 }
 
 .navigation-link.active {
-  border-bottom: 1px solid #756257;
+  border-bottom: 1px solid var(--color-light-brown);
 }
 
 .navigation-button {
   font-size: 16px;
   line-height: 20px;
   color: var(--color-white);
-  background-color: #756257;
+  background-color: var(--color-light-brown);
   text-transform: uppercase;
   padding: 9px 15px 8px;
   min-width: 130px;
@@ -202,6 +259,13 @@ a {
   height: 411px;
 }
 
+.newsletter-bg {
+  color: var(--color-white);
+  background-color: var(--color-light-blue);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
@@ -232,7 +296,7 @@ a {
   background-image: url("../images/bg-blurry-catalog.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #83b3d3;
+  background-color: var(--color-light-blue);
 }
 
 @font-face {
@@ -249,81 +313,5 @@ a {
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2");
   font-display: swap;
-}
-
-/* Стилизация шапки и подвала */
-
-.newsletter-bg {
-  color: #ffffff;
-  background-color: #83b3d3;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Дальше стилизация главной */
-
-.heading {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  margin: 63px 240px 31px;
-}
-
-.description {
-  font-size: 22px;
-  line-height: 26px;
-  margin: 0 240px 80px;
-}
-
-.benefits-header {
-  text-align: center;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-}
-
-.benefits-description {
-  text-align: center;
-}
-
-.benefits-description {
-  text-align: center;
-}
-
-.hotel-search {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #756257;
-}
-
-/* Дальше стилизация каталога */
-
-.choice-housing {
-  color: #ffffff;
-}
-
-/* ? */
-
-.choice-housing-title {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 78px;
-}
-
-.breadcrumbs-link {
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.catalog-filter-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
 }
 
