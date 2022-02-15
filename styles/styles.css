@@ -46,23 +46,19 @@ a {
 
 .blue-card {
   background-color: #83b3d3;
-  width: 400px;
   color: #ffffff;
 }
 
 .translucent-card {
   background-color: rgba(131, 179, 211, 0.12);
-  width: 400px;
 }
 
 .white-card {
   background-color: #ffffff;
-  width: 400px;
 }
 
 .translucent-card-4 {
   background-color: rgba(131, 179, 211, 0.2);
-  width: 400px;
 }
 
 .benefits-img {
@@ -88,8 +84,24 @@ a {
   padding: 89px 75px 79px;
 }
 
-.benefits-icon {
+.benefits-card-icon::before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 84px;
   margin-bottom: 23px;
+}
+
+.icon-home::before {
+  background-image: url(../images/icon-home.svg);
+}
+
+.icon-burger::before {
+  background-image: url(../images/icon-burger.svg);
+}
+
+.icon-gift::before {
+  background-image: url(../images/icon-gift.svg);
 }
 
 .page-header {
@@ -181,27 +193,6 @@ a {
   align-items: center;
   justify-content: center;
   transform: translate(-50%, -50%);
-}
-
-.icon-home {
-  background-image: url(../images/icon-home.svg);
-  display: block;
-  width: 84px;
-  height: 84px;
-}
-
-.icon-burger {
-  background-image: url(../images/icon-burger.svg);
-  display: block;
-  width: 84px;
-  height: 84px;
-}
-
-.icon-gift {
-  background-image: url(../images/icon-gift.svg);
-  display: block;
-  width: 84px;
-  height: 84px;
 }
 
 .newsletter-bg {

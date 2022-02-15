@@ -1,23 +1,18 @@
 .blue-card {
   background-color: #83B3D3;
-  width: 400px;
   color:#FFFFFF;
 }
 
 .translucent-card {
-background-color: rgba(131,179,211,0.12);
-width: 400px;
-
+  background-color: rgba(131,179,211,0.12);
 }
 
 .white-card {
-background-color: #FFFFFF;
-width: 400px;
+  background-color: #FFFFFF;
 }
 
 .translucent-card-4 {
-background-color: rgba(131,179,211,0.2);
-width: 400px;
+  background-color: rgba(131,179,211,0.2);
 }
 
 
@@ -44,8 +39,23 @@ width: 400px;
   padding: 89px 75px 79px;
 }
 
-.benefits-icon {
+.benefits-card-icon::before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 84px;
   margin-bottom: 23px;
 }
 
+.icon-home::before {
+  background-image: url(../images/icon-home.svg);
+}
+
+.icon-burger::before {
+  background-image: url(../images/icon-burger.svg);
+}
+
+.icon-gift::before {
+  background-image: url(../images/icon-gift.svg);
+}
 
