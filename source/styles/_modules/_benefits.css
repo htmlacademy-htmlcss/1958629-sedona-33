@@ -1,4 +1,11 @@
+.benefits-list,
+.benefits-list-plus {
+  margin: 0;
+  padding: 0;
+}
+
 .benefits-header {
+  margin: 0;
   text-align: center;
   font-weight: 700;
   font-size: 24px;
@@ -7,10 +14,7 @@
 }
 
 .benefits-description {
-  text-align: center;
-}
-
-.benefits-description {
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -63,14 +67,14 @@
 }
 
 .icon-home::before {
-  background-image: url(../images/icon-home.svg);
+  background-image: url("../images/icon-home.svg");
 }
 
 .icon-burger::before {
-  background-image: url(../images/icon-burger.svg);
+  background-image: url("../images/icon-burger.svg");
 }
 
 .icon-gift::before {
-  background-image: url(../images/icon-gift.svg);
+  background-image: url("../images/icon-gift.svg");
 }
 

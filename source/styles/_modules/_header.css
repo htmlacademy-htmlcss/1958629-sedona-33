@@ -22,22 +22,18 @@
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
 }
 
 .navigation-pages {
   gap: 34px;
-  height: 100%;
-}
-
-.navigation-pages .navigation-link {
-  display: block;
-  padding: 20px 0;
 }
 
 .navigation-link {
-  text-align: center;
+  display: block;
+  padding: 20px 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -50,14 +46,8 @@
 }
 
 .navigation-button {
-  font-size: 16px;
-  line-height: 20px;
-  color: var(--color-white);
-  background-color: var(--color-light-brown);
-  text-transform: uppercase;
-  padding: 9px 15px 8px;
-  min-width: 130px;
-  border-radius: 4px;
+  min-width: 160px;
+  margin-left: 20px;
 }
 
 .navigation-icon {
@@ -78,22 +68,19 @@
   background-image: url("../images/icon-favorite.svg");
 }
 
-.navigation-favirites-count {
+.navigation-favorites-count {
   position: absolute;
-  top: calc(50% - 8px) ;
-  left: calc(50% + 13px);
+  top: calc(50% - 8px);
+  right: calc(50% - 13px);
   font-size: 10px;
-  line-height: 13px;
+  line-height: 14px;
   letter-spacing: -0.1em;
-  width: 20px;
-  height: 20px;
-  background-color: var(--color-neutral-lite);
+  min-width: 20px;
+  background-color: var(--color-light-green);
   border-radius: 10px;
   color: var(--color-white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform: translate(-50%, -50%);
-
+  display: block;
+  transform: translate(50%, -50%);
+  padding: 3px 5px;
 }
 
