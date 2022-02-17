@@ -23,6 +23,6 @@
 background-image: url("../images/bg-blurry-catalog.jpg");
 background-size: cover;
 background-repeat: no-repeat;
-background-color:#83B3D3;
+background-color: var(--color-light-blue);
 }
 

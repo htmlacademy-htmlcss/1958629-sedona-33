@@ -5,4 +5,9 @@
   height: 411px;
 }
 
-
+.newsletter-bg {
+  color:var(--color-white);
+  background-color: var(--color-light-blue);
+  margin-left: auto;
+  margin-right: auto;
+}
