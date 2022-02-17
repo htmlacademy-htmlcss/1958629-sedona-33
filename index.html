@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body class="body">
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="navigation">
@@ -45,13 +45,13 @@
               <span class="visually-hidden">
                 Избранное.
               </span>
-              <span class="navigation-favirites-count">
+              <span class="navigation-favorites-count">
                 12
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-button " href="#!">
+            <a class="navigation-button button" href="#!">
               Хочу сюда!
             </a>
           </li>
@@ -71,9 +71,9 @@
       <p class="description">
         Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
       </p>
-      <ol class="benefits-list">
-        <li>
-          <div class="blue-block">
+      <ol class="benefits-list grid">
+        <li class="grid">
+          <div class="blue-card benefits-card-accent">
             <h3 class="benefits-header">
               Настоящий городок
             </h3>
@@ -84,36 +84,49 @@
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
           </div>
-          <img src="images/sedona-street.jpg" width="800" height="384" alt="Улицы Седоны.">
-          <ul class="benefits-list-plus">
-            <li class="benefits-item translucent-card">
+          <img class="benefits-img" src="images/sedona-street.jpg" width="800" height="384" alt="Улицы Седоны.">
+          <ul class="benefits-list-plus grid">
+            <li class="benefits-item translucent-card benefits-card-icon icon-home">
               <h3 class="benefits-header icon-header icon-header-housing">
                 Жильё
               </h3>
               <p class="benefits-description">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                Рекомендуем пожить
+                <br>
+                в настоящем мотеле,
+                <br>
+                всё как в кино!
               </p>
             </li>
-            <li class="benefits-item white-card">
+            <li class="benefits-item white-card benefits-card-icon icon-burger">
               <h3 class="benefits-header icon-header icon-header-eat">
                 Еда
               </h3>
               <p class="benefits-description">
-                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                Всегда заказывайте
+                <br>
+                топовый фирменный бургер,
+                <br>
+                вы не разочаруетесь!
               </p>
             </li>
-            <li class="benefits-item translucent-card">
+            <li class="benefits-item translucent-card benefits-card-icon icon-gift">
               <h3 class="benefits-header icon-header icon-header-souvenir">
                 Сувениры
               </h3>
               <p class="benefits-description">
-                Не только китайского, но и настоящего местного производства!
+                Не только китайского,
+                <br>
+                но и настоящего местного
+                <br>
+                производства!
               </p>
             </li>
           </ul>
         </li>
-        <li class="benefits-item">
-          <div class="blue-block">
+        <li class="benefits-item grid">
+          <img class="benefits-img" src="images/devil-bridge.jpg" width="800" height="384" alt="Мост дьявола.">
+          <div class="blue-card benefits-card-accent">
             <h3 class="benefits-header">
               Там есть мост дьявола
             </h3>
@@ -124,9 +137,8 @@
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
           </div>
-          <img src="images/devil-bridge.jpg" width="800" height="384" alt="Мост дьявола.">
         </li>
-        <li class="benefits-item translucent-card">
+        <li class="benefits-item translucent-card benefits-card">
           <h3 class="benefits-header">
             Небольшаяя площадь
           </h3>
@@ -137,9 +149,11 @@
             Все достопримечательности находятся очень близко
           </p>
         </li>
-        <li class="benefits-item translucent-card-4">
+        <li class="benefits-item translucent-card benefits-card">
           <h3 class="benefits-header">
-            Красивая дорога
+            Красивая
+            <br>
+            дорога
           </h3>
           <p class="benefits-description">
             — №4 —
@@ -148,9 +162,11 @@
             Ехать в Седону из Лас-Вегаса совсем не скучно!
           </p>
         </li>
-        <li class="benefits-item translucent-card">
+        <li class="benefits-item translucent-card benefits-card">
           <h3 class="benefits-header">
-            Мало туристов
+            Мало
+            <br>
+            туристов
           </h3>
           <p class="benefits-description">
             — №5 —
@@ -165,7 +181,9 @@
           Заинтересовались?
         </p>
         <p class="description">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,
+          <br>
+          и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <a class="hotel-search" href="#!">
           Поиск гостиниц в Седоне

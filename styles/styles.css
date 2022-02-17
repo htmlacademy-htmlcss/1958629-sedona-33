@@ -1,30 +1,261 @@
+:root {
+  --color-black: #000000;
+  --color-dark: #333333;
+  --color-grey: #e5e5e5;
+  --color-light: #f2f2f2;
+  --color-white: #ffffff;
+  --color-light-brown: #756257;
+  --color-dark-brown: #615048;
+  --color-light-green: #7db54f;
+  --color-dark-green: #6c9e42;
+  --color-light-blue: #83b3d3;
+  --color-dark-blue: #68a2ca;
+  --color-light-cold-20: hsla(204 48% 67% / 0.2);
+  --color-light-cold-12: hsla(204 48% 67% / 0.12);
+  --color-error: #ff5757;
+  --color-warning: #fd922e;
+  --color-success: #7db550;
+}
+
+/* Обращение ко всем элементам */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 21px;
+  background-color: var(--color-grey-light);
+  color: var(--color-black);
   margin: 0;
 }
 
-.blue-block {
-  background-color: #83b3d3;
-  width: 400px;
-  height: 384px;
-  color: #ffffff;
+.body li {
+  list-style-type: none;
+}
+
+.page-wrapper {
+  width: 1200px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-white);
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-column: span 3;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.button {
+  display: block;
+  padding: 9px 15px 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-light-brown);
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 63px 240px 31px;
+}
+
+.description {
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0 240px 80px;
+}
+
+.hotel-search {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-dark-brown);
+}
+
+.benefits-list,
+.benefits-list-plus {
+  margin: 0;
+  padding: 0;
+}
+
+.benefits-header {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.benefits-description {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.blue-card {
+  background-color: var(--color-light-blue);
+  color: var(--color-white);
 }
 
 .translucent-card {
-  background-color: rgba(131, 179, 211, 0.12);
-  width: 400px;
-  height: 384px;
+  background-color: var(--color-light-cold-12);
+}
+
+.translucent-card:nth-child(2n) {
+  background-color: var(--color-light-cold-20);
 }
 
 .white-card {
-  background-color: #ffffff;
-  width: 400px;
-  height: 384px;
+  background-color: var(--color-white);
 }
 
-.translucent-card-4 {
-  background-color: rgba(131, 179, 211, 0.2);
-  width: 400px;
-  height: 384px;
+.benefits-img {
+  grid-column: span 2;
+}
+
+.benefits-card-accent {
+  padding: 97px 90px 87px;
+}
+
+.benefits-card {
+  padding: 98px 75px 108px;
+}
+
+.benefits-description {
+  margin-top: 30px;
+}
+
+.benefits-card-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 89px 75px 79px;
+}
+
+.benefits-card-icon::before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 84px;
+  margin-bottom: 23px;
+}
+
+.icon-home::before {
+  background-image: url("../images/icon-home.svg");
+}
+
+.icon-burger::before {
+  background-image: url("../images/icon-burger.svg");
+}
+
+.icon-gift::before {
+  background-image: url("../images/icon-gift.svg");
+}
+
+.page-header {
+  padding: 0 72px;
+}
+
+.navigation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 169px;
+}
+
+.navigation-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+}
+
+.navigation-pages {
+  gap: 34px;
+}
+
+.navigation-link {
+  display: block;
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation-link.active {
+  border-bottom: 1px solid var(--color-light-brown);
+}
+
+.navigation-button {
+  min-width: 160px;
+  margin-left: 20px;
+}
+
+.navigation-icon {
+  display: block;
+  width: 42px;
+  height: 66px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-search {
+  background-image: url("../images/icon-glass.svg");
+}
+
+.navigation-favorites {
+  position: relative;
+  background-image: url("../images/icon-favorite.svg");
+}
+
+.navigation-favorites-count {
+  position: absolute;
+  top: calc(50% - 8px);
+  right: calc(50% - 13px);
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: -0.1em;
+  min-width: 20px;
+  background-color: var(--color-light-green);
+  border-radius: 10px;
+  color: var(--color-white);
+  display: block;
+  transform: translate(50%, -50%);
+  padding: 3px 5px;
 }
 
 .newsletter-bg {
@@ -34,6 +265,13 @@ body {
   height: 411px;
 }
 
+.newsletter-bg {
+  color: var(--color-white);
+  background-color: var(--color-light-blue);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
@@ -41,7 +279,7 @@ body {
 
 .welcome {
   min-height: 485px;
-  background-image: url("../../images/bg-welcome.jpg");
+  background-image: url("../images/bg-welcome.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -57,12 +295,14 @@ body {
   max-height: 36px;
   text-align: center;
 }
+
 /* Ниже стилизация каталога */
+
 .choice-housing {
-  background-image: url("../../images/bg-blurry-catalog.jpg");
+  background-image: url("../images/bg-blurry-catalog.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #83b3d3;
+  background-color: var(--color-light-blue);
 }
 
 @font-face {
@@ -79,75 +319,5 @@ body {
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2");
   font-display: swap;
-}
-/* Стилизация шапки и подвала */
-.newsletter-bg {
-  color: #ffffff;
-  background-color: #83b3d3;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* Дальше стилизация главной */
-.heading {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.description {
-  font-size: 22px;
-  line-height: 36px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.benefits-header {
-  text-align: center;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-}
-
-.benefits-description {
-  text-align: center;
-}
-
-.benefits-description {
-  text-align: center;
-}
-
-.hotel-search {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #756257;
-}
-/* Дальше стилизация каталога */
-.choice-housing {
-  color: #ffffff;
-}
-/* ? */
-.choice-housing-title {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 78px;
-}
-/* ? */
-.breadcrumbs-link {
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.catalog-filter-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
 }
 

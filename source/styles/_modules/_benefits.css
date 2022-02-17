@@ -1,0 +1,80 @@
+.benefits-list,
+.benefits-list-plus {
+  margin: 0;
+  padding: 0;
+}
+
+.benefits-header {
+  margin: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.benefits-description {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.blue-card {
+  background-color: var(--color-light-blue);
+  color: var(--color-white);
+}
+
+.translucent-card {
+  background-color: var(--color-light-cold-12);
+}
+
+.translucent-card:nth-child(2n) {
+  background-color: var(--color-light-cold-20);
+}
+
+.white-card {
+  background-color: var(--color-white);
+}
+
+.benefits-img {
+  grid-column: span 2;
+}
+
+.benefits-card-accent {
+  padding: 97px 90px 87px;
+}
+
+.benefits-card {
+  padding: 98px 75px 108px;
+}
+
+.benefits-description {
+  margin-top: 30px;
+}
+
+.benefits-card-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 89px 75px 79px;
+}
+
+.benefits-card-icon::before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 84px;
+  margin-bottom: 23px;
+}
+
+.icon-home::before {
+  background-image: url("../images/icon-home.svg");
+}
+
+.icon-burger::before {
+  background-image: url("../images/icon-burger.svg");
+}
+
+.icon-gift::before {
+  background-image: url("../images/icon-gift.svg");
+}
+
