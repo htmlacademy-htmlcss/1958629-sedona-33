@@ -67,6 +67,7 @@ body {
   border: none;
   color: var(--color-white);
   background-color: var(--color-light-brown);
+  cursor: pointer;
 }
 
 @font-face {
@@ -86,20 +87,17 @@ body {
 }
 
 .h1 {
-  font-style: normal;
   font-weight: bold;
   font-size: 60px;
   line-height: 78px;
 }
 
 .h2 {
-  font-style: normal;
   font-weight: bold;
   font-size: 40px;
 }
 
 .h3 {
-  font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 30px;
@@ -107,24 +105,25 @@ body {
 }
 
 .h4 {
-  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
 }
 
 .text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 26px;
 }
 
 .text-bold {
-  font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
+}
+
+.caption {
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .benefits-list,
@@ -220,6 +219,8 @@ body {
 
 .footer-social-list {
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-social-link {
@@ -231,16 +232,16 @@ body {
   margin-right: 29px;
 }
 
-.tvitter {
-  background-image: url("../../images/icon-twitter.svg");
+.twitter {
+  background-image: url("../images/icon-twitter.svg");
 }
 
 .facebook {
-  background-image: url("../../images/icon-facebook.svg");
+  background-image: url("../images/icon-facebook.svg");
 }
 
 .youtube {
-  background-image: url("../../images/icon-youtube.svg");
+  background-image: url("../images/icon-youtube.svg");
 }
 
 .page-header {
@@ -329,26 +330,69 @@ body {
   padding: 3px 5px;
 }
 
-.newsletter-form {
-
-  min-width: 850px;
-  margin: 46px 200px 94px 200px;
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 94px 0 93px;
 }
 
-.field {
-  width: 600px;
-  height: 60px;
+.newsletter-bg {
+  background-image: url("../images/bg-blurry-mountains.jpg");
+  background-size: cover;
+  color: var(--color-white);
+  height: 411px;
+}
+
+.newsletter-header {
+  margin: 0 0 29px;
+}
+
+.newsletter-description {
+  margin: 0 0 46px;
+  text-align: center;
+}
+
+.newsletter-form {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+}
+
+.newsletter-label {
+  flex-grow: 1;
+}
+
+.newsletter-field {
+  width: 100%;
+  border: none;
   border-radius: 10px 0 0 10px;
-  padding: 17px 491px 17px 22px;
+  padding: 17px 22px;
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 26px;
+  background-color: var(--color-light);
+}
+
+.newsletter-field::-moz-placeholder {
+  font-size: 18px;
+  color: var(--color-black);
+  opacity: 0.6;
+}
+
+.newsletter-field::placeholder {
+  font-size: 18px;
+  color: var(--color-black);
+  opacity: 0.6;
 }
 
 .newsletter-button {
   display: inline;
   width: 200px;
-  height: 61px;
-
   border-radius: 0 10px 10px 0;
   background-color: var(--color-light-blue);
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .search-block {
@@ -363,7 +407,6 @@ body {
 }
 
 .search-block-description {
-  font-size: 22px;
   margin: 0 0 42px;
   text-align: center;
 }
@@ -373,21 +416,6 @@ body {
   line-height: 36px;
   min-width: 575px;
   border-radius: 10px;
-}
-
-.newsletter-bg {
-  background-image: url("../../images/bg-blurry-mountains.jpg");
-  background-size: cover;
-  width: 1200px;
-  height: 411px;
-}
-
-.newsletter-bg {
-  box-sizing: border-box;
-  color: var(--color-white);
-  background-color: var(--color-light-blue);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .visually-hidden {

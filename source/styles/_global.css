@@ -66,5 +66,6 @@ body {
   border: none;
   color: var(--color-white);
   background-color: var(--color-light-brown);
+  cursor: pointer;
 }
 

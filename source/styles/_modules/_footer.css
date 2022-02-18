@@ -15,6 +15,8 @@
 
 .footer-social-list {
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-social-link {
@@ -24,18 +26,16 @@
   background: no-repeat;
   background-position: center;
   margin-right: 29px;
-
-
 }
 
-.tvitter {
-  background-image: url("../../images/icon-twitter.svg");
+.twitter {
+  background-image: url("../images/icon-twitter.svg");
 }
 
 .facebook {
-  background-image: url("../../images/icon-facebook.svg");
+  background-image: url("../images/icon-facebook.svg");
 }
 
 .youtube {
-  background-image: url("../../images/icon-youtube.svg");
+  background-image: url("../images/icon-youtube.svg");
 }
