@@ -1,0 +1,21 @@
+.newsletter-form {
+
+  min-width: 850px;
+  margin: 46px 200px 94px 200px;
+}
+
+.field {
+  width: 600px;
+  height: 60px;
+  border-radius: 10px 0 0 10px;
+  padding: 17px 491px 17px 22px;
+}
+
+.newsletter-button {
+  display: inline;
+  width: 200px;
+  height: 61px;
+
+  border-radius: 0 10px 10px 0;
+  background-color: var(--color-light-blue);
+}

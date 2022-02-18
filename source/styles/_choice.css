@@ -1,4 +1,8 @@
 .choice-housing {
+  background-image: url("../images/bg-blurry-catalog.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--color-light-blue);
   color: var(--color-white);
 }
 

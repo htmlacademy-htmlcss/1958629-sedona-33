@@ -6,6 +6,7 @@
 }
 
 .newsletter-bg {
+  box-sizing: border-box;
   color:var(--color-white);
   background-color: var(--color-light-blue);
   margin-left: auto;

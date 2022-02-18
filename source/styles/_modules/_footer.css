@@ -1,0 +1,41 @@
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  padding: 40px 72px 30px;
+}
+
+.footer-phone-contacts {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.footer-social-list {
+  display: flex;
+}
+
+.footer-social-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: no-repeat;
+  background-position: center;
+  margin-right: 29px;
+
+
+}
+
+.tvitter {
+  background-image: url("../../images/icon-twitter.svg");
+}
+
+.facebook {
+  background-image: url("../../images/icon-facebook.svg");
+}
+
+.youtube {
+  background-image: url("../../images/icon-youtube.svg");
+}
