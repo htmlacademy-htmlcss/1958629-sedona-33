@@ -1,0 +1,58 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 94px 0 93px;
+}
+
+.newsletter-bg  {
+  background-image: url("../images/bg-blurry-mountains.jpg");
+  background-size: cover;
+  color:  var(--color-white);
+  height: 411px;
+}
+
+.newsletter-header {
+  margin: 0 0 29px ;
+}
+
+.newsletter-description {
+  margin: 0 0 46px;
+  text-align: center;
+}
+
+.newsletter-form {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+}
+
+.newsletter-label {
+  flex-grow: 1;
+}
+
+.newsletter-field {
+  width: 100%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  padding: 17px 22px;
+  font-family: "PT Sans";
+  font-size: 18px;
+  line-height: 26px;
+  background-color: var(--color-light);
+}
+
+.newsletter-field::placeholder {
+  font-size: 18px;
+  color: var(--color-black);
+  opacity: 0.6;
+}
+
+.newsletter-button {
+  display: inline;
+  width: 200px;
+  border-radius: 0 10px 10px 0;
+  background-color: var(--color-light-blue);
+  font-size: 20px;
+  line-height: 26px;
+}

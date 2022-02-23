@@ -1,0 +1,26 @@
+.welcome {
+  background-image: url("../images/bg-welcome.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  margin-bottom: 80px;
+  padding-top: 485px;
+}
+
+.welcome-heading {
+  max-width: 720px;
+  max-height: 72px;
+  text-align: center;
+  margin: 63px auto 31px;
+}
+
+.welcome-description {
+  max-width: 720px;
+  max-height: 36px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+
+
