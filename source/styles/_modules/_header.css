@@ -46,6 +46,7 @@
 }
 
 .navigation-button {
+  display: block;
   min-width: 160px;
   margin-left: 20px;
 }

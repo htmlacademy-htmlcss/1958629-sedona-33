@@ -1,0 +1,22 @@
+.search-block {
+  padding: 91px 72px 93px;
+}
+
+.search-block-header {
+  margin: 0 0 43px;
+  text-align: center;
+}
+
+.search-block-description {
+  margin: 0 0 42px;
+  text-align: center;
+}
+
+.search-block-button {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 36px;
+  width: 575px;
+  border-radius: 10px;
+}

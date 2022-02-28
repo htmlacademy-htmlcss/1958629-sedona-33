@@ -1,28 +1,24 @@
 .welcome {
-  min-height: 485px;
   background-image: url("../images/bg-welcome.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 0;
+  margin-bottom: 80px;
+  padding: 485px 72px 0;
 }
 
-.heading {
+.welcome-heading {
   max-width: 720px;
-  max-height: 72;
   text-align: center;
+  margin: 63px auto 31px;
 }
 
-.description {
+.welcome-description {
   max-width: 720px;
-  max-height: 36px;
-  text-align: center
+  text-align: center;
+  margin: 0 auto;
 }
 
-/* Ниже стилизация каталога */
 
-.choice-housing {
-background-image: url("../images/bg-blurry-catalog.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-background-color: var(--color-light-blue);
-}
+
+
 
