@@ -37,35 +37,3 @@ body {
   margin: 0;
 }
 
-.page-wrapper {
-  width: 1200px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  background-color: var(--color-white);
-  margin: 0 auto;
-}
-
-.page-wrapper li {
-  list-style-type: none;
-}
-
-.grid {
-  display: grid;
-  grid-column: span 3;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.button {
-  padding: 9px 15px 8px;
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  color: var(--color-white);
-  background-color: var(--color-light-brown);
-  cursor: pointer;
-}
-

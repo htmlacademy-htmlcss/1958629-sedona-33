@@ -38,94 +38,6 @@ body {
   margin: 0;
 }
 
-.page-wrapper {
-  width: 1200px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  background-color: var(--color-white);
-  margin: 0 auto;
-}
-
-.page-wrapper li {
-  list-style-type: none;
-}
-
-.grid {
-  display: grid;
-  grid-column: span 3;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.button {
-  padding: 9px 15px 8px;
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  border: none;
-  color: var(--color-white);
-  background-color: var(--color-light-brown);
-  cursor: pointer;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2");
-  font-display: swap;
-}
-
-.h1 {
-  font-weight: bold;
-  font-size: 60px;
-  line-height: 78px;
-}
-
-.h2 {
-  font-weight: bold;
-  font-size: 40px;
-}
-
-.h3 {
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
-.h4 {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.text {
-  font-size: 22px;
-  line-height: 26px;
-}
-
-.text-bold {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 26px;
-}
-
-.caption {
-  font-size: 16px;
-  line-height: 21px;
-}
-
 .benefits-list,
 .benefits-list-plus {
   margin: 0;
@@ -200,6 +112,78 @@ body {
 
 .icon-gift::before {
   background-image: url("../images/icon-gift.svg");
+}
+
+.h1 {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.h3 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.h4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.text-bold {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.caption {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.page-wrapper {
+  width: 1200px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-white);
+  margin: 0 auto;
+}
+
+.page-wrapper li {
+  list-style-type: none;
+}
+
+.grid {
+  display: grid;
+  grid-column: span 3;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.button {
+  padding: 9px 15px 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  color: var(--color-white);
+  background-color: var(--color-light-brown);
+  cursor: pointer;
 }
 
 .page-footer {
@@ -334,7 +318,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 94px 0 93px;
+  padding: 94px 72px 93px;
 }
 
 .newsletter-bg {
@@ -387,7 +371,6 @@ body {
 }
 
 .newsletter-button {
-  display: inline;
   width: 200px;
   border-radius: 0 10px 10px 0;
   background-color: var(--color-light-blue);
@@ -396,14 +379,12 @@ body {
 }
 
 .search-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 91px 0 93px;
+  padding: 91px 72px 93px;
 }
 
 .search-block-header {
   margin: 0 0 43px;
+  text-align: center;
 }
 
 .search-block-description {
@@ -412,9 +393,11 @@ body {
 }
 
 .search-block-button {
+  display: block;
+  margin: 0 auto;
   font-size: 20px;
   line-height: 36px;
-  min-width: 575px;
+  width: 575px;
   border-radius: 10px;
 }
 
@@ -428,20 +411,34 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 0;
   margin-bottom: 80px;
-  padding-top: 485px;
+  padding: 485px 72px 0;
 }
 
 .welcome-heading {
   max-width: 720px;
-  max-height: 72px;
   text-align: center;
   margin: 63px auto 31px;
 }
 
 .welcome-description {
   max-width: 720px;
-  max-height: 36px;
   text-align: center;
   margin: 0 auto;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2");
+  font-display: swap;
 }
 
