@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  font-family: "PT Sans";
+  font-family: "PT sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: var(--color-grey-light);

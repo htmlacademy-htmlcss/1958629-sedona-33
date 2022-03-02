@@ -5,15 +5,15 @@
   padding: 94px 72px 93px;
 }
 
-.newsletter-bg  {
+.newsletter-bg {
   background-image: url("../images/bg-blurry-mountains.jpg");
   background-size: cover;
-  color:  var(--color-white);
+  color: var(--color-white);
   height: 411px;
 }
 
 .newsletter-header {
-  margin: 0 0 29px ;
+  margin: 0 0 29px;
 }
 
 .newsletter-description {
@@ -36,7 +36,7 @@
   border: none;
   border-radius: 10px 0 0 10px;
   padding: 17px 22px;
-  font-family: "PT Sans";
+  font-family: "PT sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
   background-color: var(--color-light);
