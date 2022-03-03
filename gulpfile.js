@@ -7,7 +7,9 @@ const render = require('posthtml-render');
 const chalk = require('chalk');
 const fetch = require('node-fetch');
 const { HtmlValidate } = require('html-validate');
+const gulpIf = require('gulp-if');
 
+let firstRun = true;
 const validateHtml = new HtmlValidate();
 const SeverityLevel = {
 	error: 2,
@@ -23,6 +25,7 @@ const Severity = {
     title: 'ERROR'
   }
 };
+const W3C_TIMEOUT = 1000;
 const isDev = process.env.NODE_ENV === 'development';
 const getPage = (tree) => tree.options.from.replace(/^.*source(\\+|\/+)(.*)\.html$/, '$2');
 
@@ -37,16 +40,22 @@ const buildHTML = () => src(['source/**/*.html', '!source/**/_*.html'])
       }));
     })(),
     (() => async (tree) => {
+      let output = '';
       const html = render(tree);
       const page = `${getPage(tree)}.html`;
-      let output = '';
+      const controller = new AbortController();
+      setTimeout(() => {
+        controller.abort();
+      }, W3C_TIMEOUT);
 
       try {
         // Онлайн-валидатор HTML
+
         const validRes = await fetch('https://validator.nu/?out=json', {
           body: html,
           headers: { 'Content-Type': 'text/html' },
-          method: 'POST'
+          method: 'POST',
+          signal: controller.signal
         });
         const { messages = [] } = await validRes.json();
         messages.forEach(({ extract, firstColumn, lastLine, message, type }) => {
@@ -58,6 +67,7 @@ const buildHTML = () => src(['source/**/*.html', '!source/**/_*.html'])
         });
       } catch (err) {
         // Оффлайн-валидатор HTML
+
         const report = validateHtml.validateString(html, {
           extends: [
             'html-validate:recommended',
@@ -157,6 +167,7 @@ const optimizeImages = () => src('source/**/*.{svg,png,jpg}')
     imagemin.mozjpeg({ quality: 75, progressive: true }),
     imagemin.optipng()
   ]))
+  .pipe(gulpIf(firstRun, dest('source')))
   .pipe(dest('.'));
 
 const reload = (done) => {
@@ -165,6 +176,8 @@ const reload = (done) => {
 };
 
 const startServer = () => {
+  firstRun = false;
+
   server.init({
     cors: true,
     server: '.',

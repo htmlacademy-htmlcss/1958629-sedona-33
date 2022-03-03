@@ -67,10 +67,14 @@
           </h1>
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="../index.html">
+              <a class="breadcrumbs-link home-breadcrumbs" href="../index.html">
                 <span class="visually-hidden">
                   Главная.
                 </span>
+              </a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link arrow-breadcrumbs" href="!#">
               </a>
             </li>
             <li class="breadcrumbs-item">
@@ -79,62 +83,68 @@
               </a>
             </li>
           </ol>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">
-              Инфраструктура:
-            </legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filtre-ltem">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="options[]" value="swimming" checked="">
-                  Бассейн
-                </label>
-              </li>
-              <li class="catalog-filtre-ltem">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="options[]" value="parking" checked="">
-                  Парковка
-                </label>
-              </li>
-              <li class="catalog-filtre-ltem">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="options[]" value="Wi-Fi">
-                  Wi-Fi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">
-              Тип жилья:
-            </legend>
-            <ul class="catalog-filter-list">
-              <li class="catalog-filtre-ltem">
-                <label class="control">
-                  <input class="control-input" type="radio" name="type-housing" value="hotel" checked="">
-                  Гостиница
-                </label>
-              </li>
-              <li class="catalog-filtre-ltem">
-                <label class="control">
-                  <input class="control-input" type="radio" name="type-housing" value="motel">
-                  Мотель
-                </label>
-              </li>
-              <li class="catalog-filtre-ltem">
-                <label class="control">
-                  <input class="control-input" type="radio" name="type-housing" value="apartamens">
-                  Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="button" type="reset">
-            Применить
-          </button>
-          <button class="button-reset" type="reset">
-            Сбросить
-          </button>
+          <div class="section-catalog">
+            <div class="section-filter">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">
+                  Инфраструктура:
+                </legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filtre-ltem">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="options[]" value="swimming" checked="">
+                      Бассейн
+                    </label>
+                  </li>
+                  <li class="catalog-filtre-ltem">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="options[]" value="parking" checked="">
+                      Парковка
+                    </label>
+                  </li>
+                  <li class="catalog-filtre-ltem">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="options[]" value="Wi-Fi">
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">
+                  Тип жилья:
+                </legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filtre-ltem">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="type-housing" value="hotel" checked="">
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="catalog-filtre-ltem">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="type-housing" value="motel">
+                      Мотель
+                    </label>
+                  </li>
+                  <li class="catalog-filtre-ltem">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="type-housing" value="apartamens">
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="section-button">
+              <button class="button reset-button" type="reset">
+                Применить
+              </button>
+              <button class="button-reset" type="reset">
+                Сбросить
+              </button>
+            </div>
+          </div>
         </section>
         <section class="card-block">
           <h2 class="visually-hidden">

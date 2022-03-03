@@ -19,4 +19,5 @@
   line-height: 36px;
   width: 575px;
   border-radius: 10px;
+  background-color: var(--color-light-brown);
 }

@@ -1,0 +1,14 @@
+.search-hotel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 52px 73px;
+}
+
+.number-hotels {
+  margin: 0;
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

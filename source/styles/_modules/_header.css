@@ -49,6 +49,7 @@
   display: block;
   min-width: 160px;
   margin-left: 20px;
+  background-color: var(--color-light-brown);
 }
 
 .navigation-icon {
