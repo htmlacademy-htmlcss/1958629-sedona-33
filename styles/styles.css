@@ -12,6 +12,7 @@
   --color-dark-blue: #68A2CA;
   --color-light-cold-20: rgba(131, 179, 211, 0.2);
   --color-light-cold-12: rgba(131, 179, 211, 0.12);
+  --color-grey-10: rgba(230, 230, 230, 1);
   --color-error: #FF5757;
   --color-warning: #FD922E;
   --color-success: #7DB550;
@@ -132,6 +133,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  align-items:center;
   min-width: 150px;
   margin: 0;
   padding: 0 1014px 51px 73px;
@@ -146,21 +148,21 @@ body {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
-  background: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
 .home-breadcrumbs {
-  width: 12px;
-  height: 12px;
+  width: 22px;
+  height: 21px;
   background-image: url("../../images/icon-home-mini.svg");
 }
 
 .arrow-breadcrumbs {
-  width: 10px;
-  height: 10px;
-  transform: rotate(270deg);
-  background-image: url("../../images/icon-arrow.svg");
+  width: 5px;
+  height: 8px;
+
+  background-image: url("../../images/qwe.svg");
 }
 
 .catalog-filter-title {
@@ -215,7 +217,7 @@ body {
   justify-content: flex-end;
 }
 
-.reset-button {
+.submit-button {
   border: none;
   background-color: transparent;
   width: 160px;
@@ -237,6 +239,49 @@ body {
   line-height: 39px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.select-control {
+  padding: 12px 127px 13px 19px;
+  border-radius: 4px;
+  border-color: var(--color-grey-10);
+  cursor: pointer
+}
+
+.button-card-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.button-card {
+  width: 16px;
+  height: 14px;
+  border: 2px solid;
+  padding: 17px 16px;
+  border-radius: 4px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-card-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.tile-mode {
+  background-image: url("../../images/icon-mode-1.svg");
+  border-color: var(--color-black);
+}
+
+.slideshow-mode {
+  background-image: url("../../images/icon-mode-2.svg");
+  border-color: var(--color-grey-10);
+}
+
+.card-mode {
+  background-image: url("../../images/icon-mode-3.svg");
+  border-color: var(--color-grey-10);
 }
 
 .h1 {
