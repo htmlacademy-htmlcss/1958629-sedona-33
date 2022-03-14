@@ -16,10 +16,11 @@
 
 .breadcrumbs {
   display: flex;
-  align-items:center;
+  flex-wrap: wrap;
+  align-items: center;
   min-width: 150px;
   margin: 0;
-  padding: 0 1014px 51px 73px;
+  padding: 0 73px 51px;
 }
 
 .breadcrumbs-item:not(:last-child) {
@@ -44,14 +45,14 @@
 .arrow-breadcrumbs {
   width: 5px;
   height: 8px;
-
   background-image: url("../images/gray-arrow.svg");
 }
 
 .catalog-filter-title {
-  font-weight: 700;
+  margin-bottom: 30px;
   font-size: 20px;
   line-height: 26px;
+  font-weight: 700;
 }
 
 .section-catalog {
@@ -62,7 +63,6 @@
 
 .section-filter {
   display: flex;
-
 }
 
 .catalog-filter-list {
@@ -78,10 +78,6 @@
 
 .catalog-filter-group:not(:last-child) {
   margin-right: 67px;
-}
-
-.catalog-filter-title {
-  margin-bottom: 30px;
 }
 
 .catalog-filtre-ltem:not(:last-child) {
@@ -100,13 +96,20 @@
   justify-content: flex-end;
 }
 
-.submit-button {
+.button-submit {
   border: none;
   background-color: transparent;
   width: 160px;
   height: 48px;
-  margin-bottom: 20px;
   background-color: var(--color-light-blue);
+
 }
 
-
+.button-reset {
+  font-size: 18px;
+  padding: 20px 20px 0;
+  color: var(--color-white);
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
