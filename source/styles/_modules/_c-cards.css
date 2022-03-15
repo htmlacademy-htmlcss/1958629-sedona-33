@@ -38,8 +38,6 @@
 
 .product-card-button {
   align-self: center;
-
-  /* padding: 10px 11px; */
 }
 
 .product-card-favorites {
@@ -50,26 +48,11 @@
   width: 133px;
 }
 
-/* .product-card-price-block {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 26px;
-} */
-
 .product-card-price {
   line-height: 23px;
   padding: 0;
   margin: 0;
 }
-
-/* .product-card-button-block {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 26px;
-  margin-bottom: 16px;
-} */
 
 .product-card-more {
   background-color: var(--color-light-brown);
