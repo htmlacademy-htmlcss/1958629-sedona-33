@@ -223,7 +223,7 @@ body {
 .product-card-grid {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 133px 141px;
+  grid-template-columns: 130px 150px;
   grid-template-rows: 23px 37px;
   gap: 16px 26px;
   margin-bottom: 16px;
@@ -231,7 +231,16 @@ body {
 
 .product-card-button {
   align-self: center;
+
   /* padding: 10px 11px; */
+}
+
+.product-card-favorites {
+  width: 149px;
+}
+
+.product-card-more {
+  width: 133px;
 }
 
 /* .product-card-price-block {
@@ -297,7 +306,7 @@ body {
   text-transform: uppercase;
   color: var(--color-dark);
   margin: 0;
-  padding: 10px 32px;
+  padding: 10px 34px;
   border-radius: 4px;
   background-color: var(--color-light);
 }
