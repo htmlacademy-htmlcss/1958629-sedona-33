@@ -1,5 +1,5 @@
 .hotel-cards-list {
-  margin: 0;
+  margin: 0 0 34px 0;
   padding: 0 73px 30px;
   gap: 10px 18px;
 }
@@ -12,6 +12,7 @@
 
 .hotel-card-link {
   margin-bottom: 16px;
+  text-decoration: none;
 }
 
 .hotel-card-img {

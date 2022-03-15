@@ -186,6 +186,7 @@
           </p>
         </div>
 
+        
         <div class="product-card-button-block">
           <a class="button product-card-button product-card-more" href="#!">
             Подробнее
@@ -339,64 +340,68 @@
       </li>
     </ul>
 
-    <button class="pagination-show-more" type="button">
-      Загрузить еще
-    </button>
+    <p class="pagination-show">
+      <button class="button text-bold pagination-show-more" type="button">
+        Загрузить еще
+      </button>
+    </p>
 
-    <ul class="pagination-list">
-      <li class=pagination-item>
-        <a class="pagination-link pagination-current">
-          1
-        </a>
-      </li>
+    <div class="pagination-block">
+      <ul class="pagination-list">
+        <li class="text-bold pagination-item">
+          <a class="pagination-link pagination-current">
+            1
+          </a>
+        </li>
 
-      <li class=pagination-item>
-        <a class="pagination-link" href="#!">
-          2
-        </a>
-      </li>
+        <li class="text-bold pagination-item">
+          <a class="pagination-link" href="#!">
+            2
+          </a>
+        </li>
 
-      <li class=pagination-item>
-        <a class="pagination-link" href="#!">
-          3
-        </a>
-      </li>
+        <li class="text-bold pagination-item">
+          <a class="pagination-link" href="#!">
+            3
+          </a>
+        </li>
 
-      <li class=pagination-item>
-        <a class="pagination-link" href="#!">
-          4
-        </a>
-      </li>
+        <li class="text-bold pagination-item">
+          <a class="pagination-link" href="#!">
+            4
+          </a>
+        </li>
 
-      <li class=pagination-item>
-        <a class="pagination-link pagination-choice" href="#!">
-          ...
-        </a>
-      </li>
+        <li class="text-bold pagination-item">
+          <a class="pagination-link pagination-choice" href="#!">
+            ...
+          </a>
+        </li>
 
-      <li class=pagination-item>
-        <a class="pagination-link" href="#!">
-          10
-        </a>
-      </li>
-    </ul>
+        <li class="text-bold pagination-item">
+          <a class="pagination-link" href="#!">
+            10
+          </a>
+        </li>
+      </ul>
 
-    <label class="hotel-page">
-      Гостиниц на странице:
-      <select class="select-control number" name="hotel-number">
-        <option>
-          4
-        </option>
+      <label class="hotel-page">
+        Гостиниц на странице:
+        <select class="select-control number" name="hotel-number">
+          <option>
+            4
+          </option>
 
-        <option>
-          9
-        </option>
+          <option>
+            9
+          </option>
 
-        <option>
-          14
-        </option>
-      </select>
-    </label>
+          <option>
+            14
+          </option>
+        </select>
+      </label>
+    </div>
   </section>
 </form>
 {% endblock %}
