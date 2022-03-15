@@ -103,6 +103,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  box-sizing: border-box;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
@@ -219,23 +220,40 @@ body {
   margin: 0;
 }
 
-.product-card-price-block {
+.product-card-grid {
+  box-sizing: border-box;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 133px 141px;
+  grid-template-rows: 23px 37px;
+  gap: 16px 26px;
+  margin-bottom: 16px;
 }
+
+.product-card-button {
+  align-self: center;
+  /* padding: 10px 11px; */
+}
+
+/* .product-card-price-block {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 26px;
+} */
 
 .product-card-price {
   line-height: 23px;
   padding: 0;
-  margin: 0 0 16px;
+  margin: 0;
 }
 
-.product-card-button-block {
+/* .product-card-button-block {
   box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 26px;
   margin-bottom: 16px;
-}
+} */
 
 .product-card-more {
   background-color: var(--color-light-brown);
@@ -256,7 +274,7 @@ body {
 }
 
 .star-rating {
-  background-image: url(../../images/icon-star.svg);
+  background-image: url(../images/icon-star.svg);
   width: 18px;
   height: 17px;
 }
@@ -279,7 +297,7 @@ body {
   text-transform: uppercase;
   color: var(--color-dark);
   margin: 0;
-  padding: 10px 40px;
+  padding: 10px 32px;
   border-radius: 4px;
   background-color: var(--color-light);
 }
@@ -404,7 +422,6 @@ body {
   display: block;
   margin: 47px auto;
   padding: 17px 237px;
-  border-radius: 4px;
   background-color: var(--color-light-blue);
 }
 
@@ -418,22 +435,49 @@ body {
 .pagination-block {
   display: flex;
   justify-content: space-between;
-  margin: 30px 73px 73px;
+  align-items: center;
+  padding: 30px 73px 73px;
 }
 
 .pagination-list {
   display: flex;
   margin: 0;
+  padding: 0;
 }
 
 .pagination-item {
+  text-align: center;
   min-width: 55px;
-  padding: 14.5px 27.5px ;
+  border-radius: 4px;
   background-color: var(--color-light-blue);
 }
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  padding: 14.5px;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.pagination-current {
+  color: var(--color-black);
+  background-color: var(--color-light);
+}
+
+.hotel-page-text {
+  margin-right: 51px;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.select-control-number {
+  padding: 13px 133px 12px 17px;
+  text-decoration: none;
 }
 
 .search-hotel {
@@ -452,10 +496,13 @@ body {
 }
 
 .select-control {
-  padding: 12px 127px 13px 19px;
   border-radius: 4px;
   border-color: var(--color-grey-10);
   cursor: pointer;
+}
+
+.select-control-choice {
+  padding: 12px 127px 13px 19px;
 }
 
 .button-card-list {

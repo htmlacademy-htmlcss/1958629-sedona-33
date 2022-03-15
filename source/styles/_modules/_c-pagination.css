@@ -2,7 +2,6 @@
   display: block;
   margin: 47px auto;
   padding: 17px 237px;
-  border-radius: 4px;
   background-color: var(--color-light-blue);
 }
 
@@ -16,20 +15,47 @@
 .pagination-block {
   display: flex;
   justify-content: space-between;
-  margin: 30px 73px 73px;
+  align-items: center;
+  padding: 30px 73px 73px;
 }
 
 .pagination-list {
   display: flex;
   margin: 0;
+  padding: 0;
 }
 
 .pagination-item {
+  text-align: center;
   min-width: 55px;
-  padding: 14.5px 27.5px ;
+  border-radius: 4px;
   background-color: var(--color-light-blue);
 }
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  padding: 14.5px;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.pagination-current {
+  color: var(--color-black);
+  background-color: var(--color-light);
+}
+
+.hotel-page-text {
+  margin-right: 51px;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.select-control-number {
+  padding: 13px 133px 12px 17px;
+  text-decoration: none;
 }

@@ -154,7 +154,7 @@
             <p class="number-hotels">
               Найдено гостиниц: 38
             </p>
-            <select class="select-control" aria-label="Сортировка." name="price-range">
+            <select class="select-control select-control-choice" aria-label="Сортировка." name="price-range">
               <option value="cheap">
                 Сначала дешёвые
               </option>
@@ -194,15 +194,13 @@
                   Amara Resort &amp; Spa
                 </h3>
               </a>
-              <div class="product-card-price-block">
+              <div class="product-card-grid">
                 <p class="product-card-price">
                   Гостиница
                 </p>
                 <p class="product-card-price">
                   От 4000 ₽
                 </p>
-              </div>
-              <div class="product-card-button-block">
                 <a class="button product-card-button product-card-more" href="#!">
                   Подробнее
                 </a>
@@ -228,21 +226,19 @@
                   Desert Quail Inn
                 </h3>
               </a>
-              <div class="product-card-price-block">
+              <div class="product-card-grid">
                 <p class="product-card-price">
                   Гостиница
                 </p>
                 <p class="product-card-price">
                   От 3000 ₽
                 </p>
-              </div>
-              <div class="product-card-button-block">
                 <a class="button product-card-button product-card-more" href="#!">
                   Подробнее
                 </a>
-                <a class="button product-card-button product-card-favorites" href="#!">
+                <button class="button product-card-button product-card-favorites" type="submit">
                   В избранное
-                </a>
+                </button>
               </div>
               <div class="product-card-star-block">
                 <p class="star-rating star-rating-3">
@@ -262,21 +258,19 @@
                   Villas at Poco Diablo
                 </h3>
               </a>
-              <div class="product-card-price-block">
+              <div class="product-card-grid">
                 <p class="product-card-price">
                   Гостиница
                 </p>
                 <p class="product-card-price">
                   От 2000 ₽
                 </p>
-              </div>
-              <div class="product-card-button-block">
                 <a class="button product-card-button product-card-more" href="#!">
                   Подробнее
                 </a>
-                <a class="button product-card-button product-card-favorites product-card-favorites-added" href="#!">
+                <button class="button product-card-button product-card-favorites product-card-favorites-added" type="submit">
                   В избранном
-                </a>
+                </button>
               </div>
               <div class="product-card-star-block">
                 <p class="star-rating star-rating-2">
@@ -296,21 +290,19 @@
                   GreenTree Inn
                 </h3>
               </a>
-              <div class="product-card-price-block">
+              <div class="product-card-grid">
                 <p class="product-card-price">
                   Гостиница
                 </p>
                 <p class="product-card-price">
                   От 3000 ₽
                 </p>
-              </div>
-              <div class="product-card-button-block">
                 <a class="button product-card-button product-card-more" href="#!">
                   Подробнее
                 </a>
-                <a class="button product-card-button product-card-favorites" href="#!">
+                <button class="button product-card-button product-card-favorites" type="submit">
                   В избранное
-                </a>
+                </button>
               </div>
               <div class="product-card-star-block">
                 <p class="star-rating star-rating-2">
@@ -331,40 +323,42 @@
           </p>
           <div class="pagination-block">
             <ul class="pagination-list">
-              <li class="text-bold pagination-item">
-                <a class="pagination-link pagination-current">
+              <li class="text-bold pagination-item pagination-current">
+                <a class="text-bold pagination-link pagination-current" href="#!">
                   1
                 </a>
               </li>
               <li class="text-bold pagination-item">
-                <a class="pagination-link" href="#!">
+                <a class="text-bold pagination-link" href="#!">
                   2
                 </a>
               </li>
               <li class="text-bold pagination-item">
-                <a class="pagination-link" href="#!">
+                <a class="text-bold pagination-link" href="#!">
                   3
                 </a>
               </li>
               <li class="text-bold pagination-item">
-                <a class="pagination-link" href="#!">
+                <a class="text-bold pagination-link" href="#!">
                   4
                 </a>
               </li>
               <li class="text-bold pagination-item">
-                <a class="pagination-link pagination-choice" href="#!">
+                <a class="text-bold pagination-link pagination-choice" href="#!">
                   ...
                 </a>
               </li>
               <li class="text-bold pagination-item">
-                <a class="pagination-link" href="#!">
+                <a class="text-bold pagination-link" href="#!">
                   10
                 </a>
               </li>
             </ul>
             <label class="hotel-page">
-              Гостиниц на странице:
-              <select class="select-control number" name="hotel-number">
+              <span class="hotel-page-text">
+                Гостиниц на странице:
+              </span>
+              <select class="select-control select-control-number" name="hotel-number">
                 <option>
                   4
                 </option>
