@@ -19,7 +19,7 @@
 
           <ul class="navigation-list navigation-pages">
             <li class="navigation-item">
-              <a class="navigation-link active" {{ rootHref }}>
+              <a class="navigation-link {{ "active" if page == "index" }}" {{ rootHref }}>
                 Главная
               </a>
             </li>
@@ -31,7 +31,7 @@
             </li>
 
             <li class="navigation-item">
-              <a class="navigation-link" {{ catalogHref }}>
+              <a class="navigation-link {{ "active" if page == "pages/catalog"}}" {{ catalogHref }}>
                 Гостиницы
               </a>
             </li>
