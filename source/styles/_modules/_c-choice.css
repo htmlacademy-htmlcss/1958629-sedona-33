@@ -90,6 +90,13 @@
   margin-right: 19px;
 }
 
+.range-label {
+  transform: translateY(-2px);
+  opacity: .3;
+  text-transform: lowercase;
+  line-height: 23px;
+}
+
 .price-range-group {
   padding: 0;
   margin: 0;
@@ -102,7 +109,8 @@
 
 .price-range-inputs {
   display: flex;
-  margin-bottom: 32px;
+  height: 48px;
+  margin-bottom: 43px;
   border: 2px solid;
   border-radius: 4px;
 }
@@ -114,7 +122,6 @@
 .catalog-filter-label-current {
   border-right: 2px solid;
 }
-
 
 .range-input {
   width: 90px;
@@ -171,10 +178,11 @@
 }
 
 .button-submit {
-  border: none;
-  background-color: transparent;
   width: 160px;
   height: 48px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: transparent;
   background-color: var(--color-light-blue);
 
 }
