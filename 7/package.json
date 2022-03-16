@@ -1,0 +1,31 @@
+{
+  "name": "study-tempate",
+  "private": true,
+  "scripts": {
+    "start": "cross-env NODE_ENV=development gulp",
+    "test": "cross-env NODE_ENV=development gulp test"
+  },
+  "browserslist": [
+    "last 1 version",
+    "not dead",
+    "not IE 11"
+  ],
+  "devDependencies": {
+    "autoprefixer": "10.4.2",
+    "browser-sync": "2.27.7",
+    "chalk": "4.1.2",
+    "cross-env": "7.0.3",
+    "gulp": "4.0.2",
+    "gulp-html-beautify": "1.0.1",
+    "gulp-if": "3.0.0",
+    "gulp-imagemin": "7.1.0",
+    "gulp-postcss": "9.0.1",
+    "gulp-posthtml": "3.0.5",
+    "html-validate": "6.5.0",
+    "node-fetch": "2.6.7",
+    "nunjucks": "3.2.3",
+    "postcss-easy-import": "3.0.0",
+    "postcss-reporter": "7.0.5",
+    "stylelint": "13.13.1"
+  }
+}
