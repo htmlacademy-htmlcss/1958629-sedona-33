@@ -12,7 +12,9 @@
   --color-light-blue: #83B3D3;
   --color-dark-blue: #68A2CA;
   --color-light-cold-20: rgba(131, 179, 211, 0.2);
+  --color-light-cold-30: rgba(255, 255, 255, 0.3);
   --color-light-cold-12: rgba(131, 179, 211, 0.12);
+  --color-dark-brown-30: rgba(117, 98, 87, 0.3);
   --color-grey-10: rgba(230, 230, 230, 1);
   --color-error: #FF5757;
   --color-warning: #FD922E;

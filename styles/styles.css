@@ -12,7 +12,9 @@
   --color-light-blue: #83B3D3;
   --color-dark-blue: #68A2CA;
   --color-light-cold-20: rgba(131, 179, 211, 0.2);
+  --color-light-cold-30: rgba(255, 255, 255, 0.3);
   --color-light-cold-12: rgba(131, 179, 211, 0.12);
+  --color-dark-brown-30: rgba(117, 98, 87, 0.3);
   --color-grey-10: rgba(230, 230, 230, 1);
   --color-error: #FF5757;
   --color-warning: #FD922E;
@@ -470,7 +472,7 @@ body {
 .button-submit {
   width: 160px;
   height: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   border: none;
   background-color: var(--color-light-blue);
 }
@@ -692,7 +694,15 @@ body {
   text-decoration: none;
 }
 
-.navigation-link.navigation-link-active {
+.navigation-link:hover {
+  color: var( --color-dark-brown);
+}
+
+.navigation-link:active {
+  color: var(--color-dark-brown-30);
+}
+
+.navigation-link.navigation-link-current {
   border-bottom: 1px solid var(--color-light-brown);
 }
 
@@ -701,6 +711,14 @@ body {
   min-width: 160px;
   margin-left: 20px;
   background-color: var(--color-light-brown);
+}
+
+.navigation-button:hover {
+  background-color: var( --color-dark-brown);
+}
+
+.navigation-button:active {
+  color: var(--color-light-cold-30);
 }
 
 .navigation-icon {
