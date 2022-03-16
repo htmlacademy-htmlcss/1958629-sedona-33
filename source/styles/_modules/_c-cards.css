@@ -40,14 +40,6 @@
   align-self: center;
 }
 
-.product-card-favorites {
-  width: 149px;
-}
-
-.product-card-more {
-  width: 133px;
-}
-
 .product-card-price {
   line-height: 23px;
   padding: 0;
@@ -55,11 +47,13 @@
 }
 
 .product-card-more {
+  width: 133px;
   background-color: var(--color-light-brown);
 }
 
 .product-card-favorites {
- background-color: var(--color-light-blue);
+  width: 149px;
+  background-color: var(--color-light-blue);
 }
 
 .product-card-favorites-added {
@@ -73,7 +67,7 @@
 }
 
 .star-rating {
-  background-image: url(../images/icon-star.svg);
+  background-image: url("../images/icon-star.svg");
   width: 18px;
   height: 17px;
 }

@@ -91,8 +91,7 @@
 }
 
 .range-label {
-  transform: translateY(-2px);
-  opacity: .3;
+  opacity: 0.3;
   text-transform: lowercase;
   line-height: 23px;
 }
@@ -143,7 +142,7 @@
   margin-top: auto;
   width: 287px;
   height: 4px;
-  background-color: var( --color-light-brown);
+  background-color: var(--color-light-brown);
 }
 
 .range-bar {
@@ -182,9 +181,7 @@
   height: 48px;
   margin-bottom: 20px;
   border: none;
-  background-color: transparent;
   background-color: var(--color-light-blue);
-
 }
 
 .button-reset {
