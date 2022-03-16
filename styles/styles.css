@@ -386,6 +386,80 @@ body {
   margin-right: 19px;
 }
 
+.price-range-group {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.price-range-title {
+  margin-bottom: 34px;
+}
+
+.price-range-inputs {
+  display: flex;
+  margin-bottom: 32px;
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+.catalog-filter-label {
+  padding: 12px 16px 10px;
+}
+
+.catalog-filter-label-current {
+  border-right: 2px solid;
+}
+
+.range-input {
+  width: 90px;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--color-white);
+  background-color: transparent;
+  border: none;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+.range-scale {
+  position: relative;
+  margin-top: auto;
+  width: 287px;
+  height: 4px;
+  background-color: var( --color-light-brown);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: var(--color-white);
+}
+
+.range-toggle {
+  position: absolute;
+  bottom: -8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: var(--color-white);
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-min {
+  left: 0;
+}
+
+.toggle-max {
+  left: 207px;
+}
+
 .section-button {
   display: flex;
   flex-direction: column;
@@ -618,7 +692,7 @@ body {
   text-decoration: none;
 }
 
-.navigation-link.active {
+.navigation-link.navigation-link-active {
   border-bottom: 1px solid var(--color-light-brown);
 }
 
@@ -666,14 +740,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 94px 72px 93px;
+
 }
 
 .newsletter-bg {
+  height: 411px;
+  padding: 94px 72px 93px;
   background-image: url("../images/bg-blurry-mountains.jpg");
   background-size: cover;
   color: var(--color-white);
-  height: 411px;
+}
+
+.newsletter-bg-none {
+  margin: 0;
+  padding: 0 200px 140px;
 }
 
 .newsletter-header {

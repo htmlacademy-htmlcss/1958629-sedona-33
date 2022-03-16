@@ -16,7 +16,7 @@
           </a>
           <ul class="navigation-list navigation-pages">
             <li class="navigation-item">
-              <a class="navigation-link" href="../index.html">
+              <a class="navigation-link " href="../index.html">
                 Главная
               </a>
             </li>
@@ -26,7 +26,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link active">
+              <a class="navigation-link ">
                 Гостиницы
               </a>
             </li>
@@ -73,9 +73,7 @@
                 </span>
               </a>
             </li>
-            <li class="breadcrumbs-item">
-              <span class="breadcrumbs-link arrow-breadcrumbs" href="!#">
-              </span>
+            <li class="breadcrumbs-item arrow-breadcrumbs">
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">
@@ -136,6 +134,29 @@
                 </ul>
               </fieldset>
             </div>
+            <fieldset class="price-range-group">
+              <legend class="price-range-title text-bold">
+                Стоимость, ₽:
+              </legend>
+              <div class="price-range-inputs">
+                <label class="catalog-filter-label catalog-filter-label-current">
+                  <input class="range-input" type="number" value="0" name="min-price">
+                  от
+                </label>
+                <label class="catalog-filter-label">
+                  <input class="range-input" type="number" value="9000" name="max-price">
+                  до
+                </label>
+              </div>
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 227px;">
+                  <button type="button" class="range-toggle toggle-min">
+                  </button>
+                  <button type="button" class="range-toggle toggle-max">
+                  </button>
+                </div>
+              </div>
+            </fieldset>
             <div class="section-button">
               <button class="button button-submit" type="submit">
                 Применить
@@ -373,7 +394,7 @@
           </div>
         </section>
       </form>
-      <section class="newsletter ">
+      <section class="newsletter newsletter-bg-none">
         <h3 class="h3 newsletter-header">
           Подпишитесь на рассылку
         </h3>

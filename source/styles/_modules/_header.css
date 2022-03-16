@@ -41,7 +41,7 @@
   text-decoration: none;
 }
 
-.navigation-link.active {
+.navigation-link.navigation-link-active {
   border-bottom: 1px solid var(--color-light-brown);
 }
 
