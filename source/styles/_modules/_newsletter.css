@@ -12,15 +12,14 @@
   outline: 3px solid var(--color-light-blue);
 }
 
-.newsletter-bg {
-  height: 411px;
+.newsletter-alter {
   padding: 94px 72px 93px;
   background-image: url("../images/bg-blurry-mountains.jpg");
   background-size: cover;
   color: var(--color-white);
 }
 
-.newsletter-bg-none {
+.newsletter-alter-none {
   margin: 0;
   padding: 0 200px 140px;
 }

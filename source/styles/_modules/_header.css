@@ -42,7 +42,7 @@
 }
 
 .navigation-link:hover {
-  color: var( --color-dark-brown);
+  color: var(--color-dark-brown);
 }
 
 .navigation-link:active {
@@ -65,7 +65,7 @@
 }
 
 .navigation-button:hover {
-  background-color: var( --color-dark-brown);
+  background-color: var(--color-dark-brown);
 }
 
 .navigation-button:active {

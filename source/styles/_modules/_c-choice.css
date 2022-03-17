@@ -130,17 +130,16 @@
 
 .price-range-inputs {
   display: flex;
-  height: 48px;
-  margin-bottom: 45px;
+  margin-bottom: 38px;
   border: 2px solid;
   border-radius: 4px;
 }
 
 .catalog-filter-label {
-  padding: 12px 16px 10px;
+  padding: 8px 15px 8px;
 }
 
-.catalog-filter-label-current {
+.catalog-filter-label-inputs {
   border-right: 2px solid;
 }
 

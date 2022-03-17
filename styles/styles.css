@@ -193,7 +193,7 @@ body {
 }
 
 .hotel-cards-list {
-  margin: 0 0 34px 0;
+  margin: 0 0 34px;
   padding: 0 73px 30px;
   gap: 10px 18px;
 }
@@ -223,7 +223,7 @@ body {
 .product-card-grid {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 133px 1fr;
   grid-template-rows: 23px 37px 37px;
   gap: 16px 26px;
 }
@@ -239,7 +239,6 @@ body {
 }
 
 .product-card-favorites {
-  padding: 9px 12px 8px;
   background-color: var(--color-light-blue);
 }
 
@@ -275,7 +274,7 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   color: var(--color-dark);
-  margin: 0 0 0 -11px;
+  margin: 0 0 0 -18px;
   padding: 10px 28px;
   border-radius: 4px;
   background-color: var(--color-light);
@@ -414,17 +413,16 @@ body {
 
 .price-range-inputs {
   display: flex;
-  height: 48px;
-  margin-bottom: 45px;
+  margin-bottom: 38px;
   border: 2px solid;
   border-radius: 4px;
 }
 
 .catalog-filter-label {
-  padding: 12px 16px 10px;
+  padding: 8px 15px 8px;
 }
 
-.catalog-filter-label-current {
+.catalog-filter-label-inputs {
   border-right: 2px solid;
 }
 
@@ -502,14 +500,14 @@ body {
 
 .pagination-show-more {
   display: block;
+  width: 610px;
   margin: 47px auto;
-  padding: 17px 237px;
+  padding: 17px 40px;
   background-color: var(--color-light-blue);
 }
 
-.pagination-show {
-  padding: 0;
-  margin: 0 73px;
+.pagination-show-more-wrapper {
+  margin: 0 72px;
   border-top: 1px solid var(--color-grey-two);
   border-bottom: 1px solid var(--color-grey-two);
 }
@@ -523,15 +521,13 @@ body {
 
 .pagination-list {
   display: flex;
-  margin: 0;
+  flex-wrap: wrap;
+  margin: -8px 0 0;
   padding: 0;
 }
 
 .pagination-item {
-  text-align: center;
-  min-width: 55px;
-  border-radius: 4px;
-  background-color: var(--color-light-blue);
+  margin: 8px 0 0;
 }
 
 .pagination-item:not(:last-child) {
@@ -540,10 +536,13 @@ body {
 
 .pagination-link {
   display: block;
-  box-sizing: border-box;
-  padding: 14.5px;
+  padding: 15px;
+  min-width: 55px;
+  border-radius: 4px;
+  text-align: center;
   text-decoration: none;
   color: var(--color-white);
+  background-color: var(--color-light-blue);
 }
 
 .pagination-current {
@@ -737,7 +736,7 @@ body {
 }
 
 .navigation-link:hover {
-  color: var( --color-dark-brown);
+  color: var(--color-dark-brown);
 }
 
 .navigation-link:active {
@@ -760,7 +759,7 @@ body {
 }
 
 .navigation-button:hover {
-  background-color: var( --color-dark-brown);
+  background-color: var(--color-dark-brown);
 }
 
 .navigation-button:active {
@@ -820,15 +819,14 @@ body {
   outline: 3px solid var(--color-light-blue);
 }
 
-.newsletter-bg {
-  height: 411px;
+.newsletter-alter {
   padding: 94px 72px 93px;
   background-image: url("../images/bg-blurry-mountains.jpg");
   background-size: cover;
   color: var(--color-white);
 }
 
-.newsletter-bg-none {
+.newsletter-alter-none {
   margin: 0;
   padding: 0 200px 140px;
 }
