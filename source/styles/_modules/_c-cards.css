@@ -30,14 +30,10 @@
 .product-card-grid {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: 130px 150px;
+  grid-template-columns: 130px 1fr;
   grid-template-rows: 23px 37px;
   gap: 16px 26px;
   margin-bottom: 16px;
-}
-
-.product-card-button {
-  align-self: center;
 }
 
 .product-card-price {
@@ -47,12 +43,11 @@
 }
 
 .product-card-more {
-  width: 133px;
   background-color: var(--color-light-brown);
 }
 
 .product-card-favorites {
-  width: 149px;
+  padding: 9px 12px 8px;
   background-color: var(--color-light-blue);
 }
 

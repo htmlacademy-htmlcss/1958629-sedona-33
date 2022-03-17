@@ -49,6 +49,10 @@
   color: var(--color-dark-brown-30);
 }
 
+.navigation-link:focus-visible {
+  outline: 3px solid var(--color-light-blue);
+}
+
 .navigation-link.navigation-link-current {
   border-bottom: 1px solid var(--color-light-brown);
 }
@@ -66,6 +70,12 @@
 
 .navigation-button:active {
   color: var(--color-light-cold-30);
+}
+
+.navigation-button:focus-visible {
+  outline: none;
+  outline: 3px solid var(--color-light-blue);
+
 }
 
 .navigation-icon {

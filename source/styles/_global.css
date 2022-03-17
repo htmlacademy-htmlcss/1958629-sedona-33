@@ -1,20 +1,23 @@
 :root {
-  --color-black: #000;
-  --color-dark: #333;
+  --color-black: #000000;
+  --color-dark: #333333;
   --color-grey: #E5E5E5;
   --color-grey-two: #E6E6E6;
   --color-light: #F2F2F2;
-  --color-white: #FFF;
+  --color-white: #FFFFFF;
   --color-light-brown: #756257;
   --color-dark-brown: #615048;
   --color-light-green: #7DB54F;
   --color-dark-green: #6C9E42;
   --color-light-blue: #83B3D3;
   --color-dark-blue: #68A2CA;
+  --color-white-10: rgba(255, 255, 255, 1);
+  --color-dark-blue-10: rgba(104, 162, 202, 1);
   --color-light-cold-20: rgba(131, 179, 211, 0.2);
   --color-light-cold-30: rgba(255, 255, 255, 0.3);
   --color-light-cold-12: rgba(131, 179, 211, 0.12);
   --color-dark-brown-30: rgba(117, 98, 87, 0.3);
+  --color-light-brown-10: rgba(117, 98, 87, 1);
   --color-grey-10: rgba(230, 230, 230, 1);
   --color-error: #FF5757;
   --color-warning: #FD922E;
@@ -33,7 +36,7 @@ html {
 }
 
 body {
-  font-family: "PT sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background-color: var(--color-grey-light);

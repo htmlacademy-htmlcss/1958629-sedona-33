@@ -20,12 +20,13 @@
   align-items: center;
   min-width: 150px;
   margin: 0;
-  padding: 0 73px 51px;
+  padding: 0 73px 41px;
 }
 
 .breadcrumbs-item:not(:last-child) {
   margin-right: 11px;
 }
+
 
 .breadcrumbs-link {
   display: block;
@@ -36,7 +37,19 @@
   background-position: center;
 }
 
-.home-breadcrumbs {
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus-visible {
+  outline: 3px solid var(--color-light-blue);
+}
+
+.breadcrumbs-home {
   width: 22px;
   height: 21px;
   background-image: url("../images/icon-home-mini.svg");
@@ -55,14 +68,10 @@
   font-weight: 700;
 }
 
-.section-catalog {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 73px 75px;
-}
-
 .section-filter {
   display: flex;
+  flex-wrap: wrap;
+  padding: 0 23px 65px;
 }
 
 .catalog-filter-list {
@@ -71,13 +80,10 @@
 }
 
 .catalog-filter-group {
+  width: 180px;
   padding: 0;
-  margin: 0;
+  margin: 10px 0 10px 50px;
   border: 0;
-}
-
-.catalog-filter-group:not(:last-child) {
-  margin-right: 67px;
 }
 
 .catalog-filtre-ltem:not(:last-child) {
@@ -87,7 +93,8 @@
 .control-input {
   width: 20px;
   height: 20px;
-  margin-right: 19px;
+  margin: 0 19px 0 0;
+  font: inherit;
 }
 
 .range-label {
@@ -98,7 +105,7 @@
 
 .price-range-group {
   padding: 0;
-  margin: 0;
+  margin: 10px 86px 10px 100px;
   border: none;
 }
 
@@ -109,7 +116,7 @@
 .price-range-inputs {
   display: flex;
   height: 48px;
-  margin-bottom: 43px;
+  margin-bottom: 45px;
   border: 2px solid;
   border-radius: 4px;
 }
@@ -124,7 +131,7 @@
 
 .range-input {
   width: 90px;
-  font-size: 18px;
+  font: inherit;
   line-height: 23px;
   color: var(--color-white);
   background-color: transparent;
@@ -174,12 +181,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin: 10px 50px 10px 0;
 }
 
 .button-submit {
   width: 160px;
-  height: 48px;
-  margin-bottom: 15px;
+  padding: 14px 0 14px 0;
+  margin-bottom: 10px;
   border: none;
   background-color: var(--color-light-blue);
 }

@@ -4,6 +4,14 @@
   align-items: center;
 }
 
+.newsletter-field:hover {
+  background-color: var(--color-grey-10);
+}
+
+.newsletter-field:focus {
+  outline: 3px solid var(--color-light-blue);
+}
+
 .newsletter-bg {
   height: 411px;
   padding: 94px 72px 93px;
@@ -38,19 +46,22 @@
 
 .newsletter-field {
   width: 100%;
-  border: none;
+  border: 3px solid transparent;
   border-radius: 10px 0 0 10px;
-  padding: 17px 22px;
-  font-family: "PT sans", sans-serif;
-  font-size: 18px;
+  padding: 14px 22px;
+  font: inherit;
   line-height: 26px;
   background-color: var(--color-light);
 }
 
 .newsletter-field::placeholder {
-  font-size: 18px;
-  color: var(--color-black);
+  line-height: 26px;
+  font: inherit;
   opacity: 0.6;
+}
+
+.newsletter-field:invalid {
+  border: 3px solid red;
 }
 
 .newsletter-button {
@@ -60,3 +71,16 @@
   font-size: 20px;
   line-height: 26px;
 }
+
+.newsletter-button:hover {
+  background-color: var(--color-dark-blue-10);
+}
+
+.newsletter-button:active {
+  color: var(--color-light-cold-30);
+}
+
+.newsletter-button:focus-visible {
+  outline: 3px solid var(--color-light-brown-10);
+}
+
