@@ -347,7 +347,7 @@ body {
 .arrow-breadcrumbs {
   width: 5px;
   height: 8px;
-  background-image: url("../images/gray-arrow.svg");
+  background-image: url("../images/icon-gray-arrow.svg");
 }
 
 .catalog-filter-title {
@@ -478,15 +478,14 @@ body {
   width: 160px;
   padding: 14px 0 14px 0;
   margin-bottom: 10px;
-  border: none;
   background-color: var(--color-light-blue);
 }
 
 .button-reset {
   font-size: 18px;
   padding: 20px 20px 0;
-  color: var(--color-white);
-  background-color: inherit;
+  color: inherit;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 }
