@@ -15,7 +15,7 @@
 
 .select-control {
   border-radius: 4px;
-  border-color: var(--color-grey-10);
+  border-color: var(--color-grey-two);
   cursor: pointer;
 }
 
@@ -51,10 +51,10 @@
 
 .slideshow-mode {
   background-image: url("../images/icon-mode-2.svg");
-  border-color: var(--color-grey-10);
+  border-color: var(--color-grey-two);
 }
 
 .card-mode {
   background-image: url("../images/icon-mode-3.svg");
-  border-color: var(--color-grey-10);
+  border-color: var(--color-grey-two);
 }

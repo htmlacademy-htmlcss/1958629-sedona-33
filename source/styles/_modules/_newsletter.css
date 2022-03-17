@@ -5,7 +5,7 @@
 }
 
 .newsletter-field:hover {
-  background-color: var(--color-grey-10);
+  background-color: var(--color-grey-two);
 }
 
 .newsletter-field:focus {
@@ -73,7 +73,7 @@
 }
 
 .newsletter-button:hover {
-  background-color: var(--color-dark-blue-10);
+  background-color: var(--color-dark-blue-1);
 }
 
 .newsletter-button:active {
@@ -81,6 +81,6 @@
 }
 
 .newsletter-button:focus-visible {
-  outline: 3px solid var(--color-light-brown-10);
+  outline: 3px solid var(--color-light-brown-1);
 }
 

@@ -27,14 +27,29 @@
   margin-right: 11px;
 }
 
-
 .breadcrumbs-link {
   display: block;
   font-size: 16px;
   line-height: 21px;
+  padding: 0 5px;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  background-color: currentColor;
+  content: "";
+  height: 8px;
+  mask-image: url("../images/icon-gray-arrow.svg");
+  position: absolute;
+  right: -9px;
+  top: 7px;
+  width: 5px;
 }
 
 .breadcrumbs-link:hover {
@@ -55,11 +70,11 @@
   background-image: url("../images/icon-home-mini.svg");
 }
 
-.arrow-breadcrumbs {
+/* .arrow-breadcrumbs {
   width: 5px;
   height: 8px;
   background-image: url("../images/icon-gray-arrow.svg");
-}
+} */
 
 .catalog-filter-title {
   margin-bottom: 30px;

@@ -15,7 +15,7 @@
 }
 
 .footer-phone-contacts:hover {
-  color: var( --color-light-brown-10);
+  color: var( --color-light-brown-1);
 }
 
 .footer-phone-contacts:active {
@@ -51,7 +51,7 @@
 }
 
 .footer-social-link:focus-visible {
-  outline: 3px solid var(--color-dark-blue-10);
+  outline: 3px solid var(--color-dark-blue-1);
   border-radius: 4px;
 }
 
