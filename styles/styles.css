@@ -778,8 +778,8 @@ body {
   left: 247px;
   width: 20px;
   height: 20px;
-  -webkit-mask-image: url("../../images/icon-arrow.svg");
-          mask-image: url("../../images/icon-arrow.svg");
+  -webkit-mask-image: url("../images/icon-arrow.svg");
+          mask-image: url("../images/icon-arrow.svg");
   opacity: 0.3;
 }
 
