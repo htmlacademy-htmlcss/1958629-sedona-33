@@ -11,7 +11,7 @@
 .navigation-wrapper {
   display: flex;
   align-items: center;
-  padding-left: 169px;
+  padding-left: 145px;
 }
 
 .navigation-logo {
@@ -112,7 +112,7 @@
   background-color: currentColor;
   position: absolute;
   top: 24px;
-  left: 8px;
+  left: 13px;
   mask-image: url("../images/icon-glass.svg");
 }
 

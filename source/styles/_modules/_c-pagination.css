@@ -9,6 +9,18 @@
   background-color: var(--color-light-blue);
 }
 
+.pagination-show-more:hover {
+  background-color: var(--color-dark-blue);
+}
+
+.pagination-show-more:active {
+  color: var(--color-light-cold-30);
+}
+
+.pagination-show-more:focus-visible {
+  outline: 3px solid var(--color-light-brown);
+}
+
 .pagination-show-more-wrapper {
   margin: 0 72px;
   border-top: 1px solid var(--color-grey-two);
@@ -54,9 +66,38 @@
   background-color: var(--color-light-blue);
 }
 
+.pagination-link:not(.pagination-current):hover {
+  background-color: var(--color-dark-blue);
+}
+
+.pagination-link:not(.pagination-current):active {
+  color: var(--color-light-cold-30);
+}
+
+.pagination-link:not(.pagination-current):focus-visible {
+  outline: 3px solid var(--color-light-brown);
+}
+
 .pagination-current {
   color: var(--color-black);
   background-color: var(--color-light);
+}
+
+.hotel-page {
+  position: relative;
+  color: var(--white-color);
+}
+
+.hotel-page::before {
+  content: "";
+  background-color: currentColor;
+  position: absolute;
+  top: 12px;
+  left: 359px;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../images/icon-arrow.svg");
+  opacity: 0.3;
 }
 
 .hotel-page-text {

@@ -3,11 +3,11 @@
   align-items: center;
   justify-content: space-between;
   width: auto;
-  padding: 40px 72px 30px;
+  padding: 26px 72px 30px;
 }
 
 .footer-phone-contacts {
-  padding: 15px;
+  padding: 15px 33px 15px 15px;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
@@ -66,8 +66,8 @@
   content: "";
   position: absolute;
   background-color: currentColor;
-  top: 6px;
-  left: 4px;
+  top: 7px;
+  left: 6px;
   margin: 10px;
   width: 20px;
   height: 20px;
@@ -75,12 +75,16 @@
   mask-repeat: no-repeat;
 }
 
+.facebook {
+  transform: translate(-9px, 1px);
+}
+
 .facebook::before {
   content: "";
   position: absolute;
   background-color: currentColor;
-  top: 5px;
-  left: 8px;
+  top: -3px;
+  left: -1px;
   margin: 10px;
   width: 20px;
   height: 20px;
@@ -88,18 +92,40 @@
   mask-repeat: no-repeat;
 }
 
+.youtube {
+  transform: translate(-24px, 1px);
+}
+
 .youtube::before {
   content: "";
   position: absolute;
   background-color: currentColor;
-  top: 5px;
-  left: 4px;
+  top: -2px;
+  left: -5px;
   margin: 10px;
   width: 20px;
   height: 20px;
   mask-image: url("../images/icon-youtube.svg");
   mask-repeat: no-repeat;
 }
+
+.footer-site-link {
+
+  position: relative;
+  width: 120px;
+  height: 40px;
+  color: red;
+}
+
+.footer-site-link::after {
+  content: "";
+  position: absolute;
+  background-color: currentColor;
+  width: 115px;
+  height: 34px;
+  mask-image: url("{{ root }}images/logo-htmlacademy.svg");
+}
+
 
 /* .footer-site-link-logo {
   color: red;
