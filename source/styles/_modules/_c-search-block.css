@@ -44,7 +44,7 @@
   margin-right: 8px;
 }
 
-.tile-mode {
+.button-card-active {
   background-image: url("../images/icon-mode-1.svg");
   border-color: var(--color-black);
 }

@@ -52,6 +52,7 @@
 }
 
 .star-rating {
+  margin: 0;
   width: 18px;
   height: 17px;
   align-self: center;

@@ -3,6 +3,9 @@
   width: 610px;
   margin: 47px auto;
   padding: 17px 40px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
   background-color: var(--color-light-blue);
 }
 
@@ -28,6 +31,9 @@
 
 .pagination-item {
   margin: 8px 0 0;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .pagination-item:not(:last-child) {
@@ -39,6 +45,9 @@
   padding: 15px;
   min-width: 55px;
   border-radius: 4px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
   text-align: center;
   text-decoration: none;
   color: var(--color-white);

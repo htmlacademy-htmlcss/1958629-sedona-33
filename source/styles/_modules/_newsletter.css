@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 0 200px 140px;
 }
 
 .newsletter-field:hover {
@@ -13,15 +15,10 @@
 }
 
 .newsletter-alter {
-  padding: 94px 72px 93px;
+  padding: 92px 72px 94px;
   background-image: url("../images/bg-blurry-mountains.jpg");
   background-size: cover;
   color: var(--color-white);
-}
-
-.newsletter-alter-none {
-  margin: 0;
-  padding: 0 200px 140px;
 }
 
 .newsletter-header {
@@ -80,6 +77,6 @@
 }
 
 .newsletter-button:focus-visible {
-  outline: 3px solid var(--color-light-brown-1);
+  outline: 3px solid var(--color-light-brown);
 }
 

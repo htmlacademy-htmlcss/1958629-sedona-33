@@ -15,7 +15,7 @@
 }
 
 .footer-phone-contacts:hover {
-  color: var( --color-light-brown-1);
+  color: var(--color-light-brown);
 }
 
 .footer-phone-contacts:active {

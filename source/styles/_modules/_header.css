@@ -53,7 +53,7 @@
   outline: 3px solid var(--color-light-blue);
 }
 
-.navigation-link.navigation-link-current {
+.navigation-link-current {
   border-bottom: 1px solid var(--color-light-brown);
 }
 

@@ -114,6 +114,9 @@
 
 .price-range-title {
   margin-bottom: 34px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .range {
@@ -274,6 +277,7 @@
   width: 160px;
   padding: 14px 0 14px 0;
   margin-bottom: 10px;
+  border: none;
   background-color: var(--color-light-blue);
 }
 
