@@ -101,7 +101,7 @@
   mask-repeat: no-repeat;
 }
 
-.footer-site-link-logo {
+/* .footer-site-link-logo {
   color: red;
 }
 
@@ -125,4 +125,4 @@
 .footer-site-link-logo:focus-visible {
   outline: 3px solid var(--color-light-blue);
   border-radius: 10px;
-}
+} */

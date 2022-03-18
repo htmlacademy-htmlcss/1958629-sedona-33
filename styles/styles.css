@@ -378,11 +378,79 @@ body {
   margin-bottom: 13px;
 }
 
-.control-input {
+.checker {
+  display: flex;
+  line-height: 23px;
+  cursor: pointer;
+}
+
+.checker + .checker {
+  margin-top: 13px;
+}
+
+.checker-input {
+  position: relative;
   width: 20px;
   height: 20px;
-  margin: 0 19px 0 0;
-  font: inherit;
+  margin: 1px 20px 0 0;
+  color: inherit;
+  border-radius: 4px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.checker-input::before,
+.checker-input::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: inherit;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.checker-input::before {
+	background-color: currentColor;
+}
+
+.checker-input::after {
+  content: "";
+  left: 5px;
+  top: 5px;
+	background-color: #3f5e72;
+  -webkit-mask-image: url("../images/icon-daw.svg");
+          mask-image: url("../images/icon-daw.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+	opacity: 0;
+}
+
+.checker-input:focus-visible,
+.checker-input:hover::before {
+	opacity: 0.6;
+}
+
+.checker-input:disabled::before {
+	opacity: 0.3;
+}
+
+.checker-input:checked::after {
+	opacity: 1;
+}
+
+.checker-input[type="radio"] {
+	border-radius: 50%;
+}
+
+.checker-input[type="radio"]::after {
+  content: "";
+  left: 0;
+  top: 0;
+  -webkit-mask-image: url("../images/icon-circle.svg");
+          mask-image: url("../images/icon-circle.svg");
 }
 
 .price-range-group {
@@ -814,18 +882,18 @@ body {
           mask-repeat: no-repeat;
 }
 
-.footer-site-link-logo {
+/* .footer-site-link-logo {
   color: red;
 }
 
 .footer-site-link-logo::after {
   background-color: currentColor;
   content: "";
-  -webkit-mask-image: url("../images/logo-htmlacademy.svg");
-          mask-image: url("../images/logo-htmlacademy.svg");
+  mask-image: url("../images/logo-htmlacademy.svg");
   pointer-events: none;
   position: absolute;
 }
+
 
 .footer-site-link-logo:hover {
   color: var(--color-light-brown);
@@ -838,7 +906,7 @@ body {
 .footer-site-link-logo:focus-visible {
   outline: 3px solid var(--color-light-blue);
   border-radius: 10px;
-}
+} */
 
 .page-header {
   padding: 0 72px;
