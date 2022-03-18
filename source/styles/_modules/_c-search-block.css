@@ -13,6 +13,11 @@
   text-transform: uppercase;
 }
 
+.result-sort{
+  position: relative;
+  color: var(--white-color);
+}
+
 .select-control {
   border-radius: 4px;
   border-color: var(--color-grey-two);
@@ -21,6 +26,18 @@
 
 .select-control-choice {
   padding: 12px 127px 13px 19px;
+}
+
+.result-sort::before {
+  content: "";
+  background-color: currentColor;
+  position: absolute;
+  top: 12px;
+  left: 247px;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../../images/icon-arrow.svg");
+  opacity: 0.3;
 }
 
 .button-card-list {

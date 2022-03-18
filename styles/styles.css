@@ -9,6 +9,7 @@
   --color-dark-brown: #615048;
   --color-light-green: #7db54f;
   --color-dark-green: #6c9e42;
+  --pale-gray-blue: #3F5E72;
   --color-light-blue: #83b3d3;
   --color-dark-blue: #68a2ca;
   --color-black-25: rgba(0, 0, 0, 0.25);
@@ -418,9 +419,9 @@ body {
 
 .checker-input::after {
   content: "";
-  left: 5px;
+  left: 4px;
   top: 5px;
-	background-color: #3f5e72;
+	background-color: var(--pale-gray-blue);
   -webkit-mask-image: url("../images/icon-daw.svg");
           mask-image: url("../images/icon-daw.svg");
   -webkit-mask-repeat: no-repeat;
@@ -608,17 +609,18 @@ body {
 
 .range-handle:focus {
 	outline: 3px solid var(--color-light-blue);
-	box-shadow: 0 4px 10px var(--color-black-25)
+	box-shadow: 0 4px 10px var(--color-black-25);
 }
 
 .range-handle:active {
 	outline: 2px solid var(--color-light-blue);
-	box-shadow: 0 7px 15px var(--color-black-40)
+	box-shadow: 0 7px 15px var(--color-black-40);
 }
 
 .section-button {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
   margin: 10px 50px 10px 0;
 }
@@ -626,18 +628,44 @@ body {
 .button-submit {
   width: 160px;
   padding: 14px 0 14px 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border: none;
   background-color: var(--color-light-blue);
 }
 
+.button-submit:hover {
+  background-color: var(--color-dark-blue);
+}
+
+.button-submit:active {
+  color: var(--color-light-cold-30);
+}
+
+.button-submit:focus-visible {
+  outline: 3px solid var(--color-white);
+}
+
 .button-reset {
   font-size: 18px;
-  padding: 20px 20px 0;
+  padding: 2px 12px;
+  width: 115px;
   color: inherit;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:active {
+  opacity: 0.3;
+}
+
+.button-reset:focus-visible {
+  outline: 3px solid var(--color-light-blue);
+  border-radius: 4px;
 }
 
 .pagination-show-more {
@@ -727,6 +755,11 @@ body {
   text-transform: uppercase;
 }
 
+.result-sort{
+  position: relative;
+  color: var(--white-color);
+}
+
 .select-control {
   border-radius: 4px;
   border-color: var(--color-grey-two);
@@ -735,6 +768,19 @@ body {
 
 .select-control-choice {
   padding: 12px 127px 13px 19px;
+}
+
+.result-sort::before {
+  content: "";
+  background-color: currentColor;
+  position: absolute;
+  top: 12px;
+  left: 247px;
+  width: 20px;
+  height: 20px;
+  -webkit-mask-image: url("../../images/icon-arrow.svg");
+          mask-image: url("../../images/icon-arrow.svg");
+  opacity: 0.3;
 }
 
 .button-card-list {

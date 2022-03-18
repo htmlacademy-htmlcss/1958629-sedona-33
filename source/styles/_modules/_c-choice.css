@@ -137,9 +137,9 @@
 
 .checker-input::after {
   content: "";
-  left: 5px;
+  left: 4px;
   top: 5px;
-	background-color: #3f5e72;
+	background-color: var(--pale-gray-blue);
   mask-image: url("../images/icon-daw.svg");
   mask-repeat: no-repeat;
 	opacity: 0;
@@ -321,17 +321,18 @@
 
 .range-handle:focus {
 	outline: 3px solid var(--color-light-blue);
-	box-shadow: 0 4px 10px var(--color-black-25)
+	box-shadow: 0 4px 10px var(--color-black-25);
 }
 
 .range-handle:active {
 	outline: 2px solid var(--color-light-blue);
-	box-shadow: 0 7px 15px var(--color-black-40)
+	box-shadow: 0 7px 15px var(--color-black-40);
 }
 
 .section-button {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
   margin: 10px 50px 10px 0;
 }
@@ -339,16 +340,42 @@
 .button-submit {
   width: 160px;
   padding: 14px 0 14px 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border: none;
   background-color: var(--color-light-blue);
 }
 
+.button-submit:hover {
+  background-color: var(--color-dark-blue);
+}
+
+.button-submit:active {
+  color: var(--color-light-cold-30);
+}
+
+.button-submit:focus-visible {
+  outline: 3px solid var(--color-white);
+}
+
 .button-reset {
   font-size: 18px;
-  padding: 20px 20px 0;
+  padding: 2px 12px;
+  width: 115px;
   color: inherit;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:active {
+  opacity: 0.3;
+}
+
+.button-reset:focus-visible {
+  outline: 3px solid var(--color-light-blue);
+  border-radius: 4px;
 }
