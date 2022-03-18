@@ -134,29 +134,29 @@
               <legend class="price-range-title text-bold">
                 Стоимость, ₽:
               </legend>
-              <div class="price-range-inputs">
-                <label class="catalog-filter-label catalog-filter-label-inputs">
-                  <input class="range-input" type="number" value="0" name="min-price">
-                  <span class="range-label">
-                    от
-                  </span>
+              <div class="range">
+                <label class="range-group">
+                  <input class="range-field" name="price[]" type="number" value="0" max="11100" min="0" step="100">
+                  <span class="range-label">От</span>
                 </label>
-                <label class="catalog-filter-label">
-                  <input class="range-input" type="number" value="9000" name="max-price">
-                  <span class="range-label">
-                    до
-                  </span>
+                <label class="range-group">
+                  <input class="range-field" name="price[]" type="number" value="9000" max="11100" min="0" step="100">
+                  <span class="range-label">До</span>
                 </label>
-              </div>
-              <div class="range-scale">
-                <span class="visually-hidden">
-                  Регулированние цены.
-                </span>
-                <div class="range-bar" style="left: 0; width: 227px;">
-                  <button type="button" class="range-toggle toggle-min">
-                  </button>
-                  <button type="button" class="range-toggle toggle-max">
-                  </button>
+                <div class="range-target">
+                  <div class="range-base">
+                    <div class="range-connect" style="transform: scaleX(0.810811)"></div>
+                    <div class="range-origin" style="transform: translate(-100%)">
+                      <button class="range-handle range-handle-lower" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                    </div>
+                    <div class="range-origin" style="transform: translate(-18.9189%)">
+                      <button class="range-handle range-handle-upper" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </fieldset>
