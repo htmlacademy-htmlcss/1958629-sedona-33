@@ -69,7 +69,7 @@
 }
 
 .newsletter-button:hover {
-  background-color: var(--color-dark-blue-1);
+  background-color: var(--color-dark-blue);
 }
 
 .newsletter-button:active {
