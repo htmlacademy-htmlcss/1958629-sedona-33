@@ -1,0 +1,192 @@
+{# Подключает лэйаут (общую часть страниц) #}
+{% extends "_layout.html" %}
+
+{# Переопределяет часть содержимого <title> #}
+{% set title = "главная" %}
+
+{# Устанавливает часть относительного пути до корневого каталога сайта #}
+{% set root = "" %}
+
+{# Устанавливает атрибут href со значением для ссылки на главную страницу #}
+{% set rootHref = "" %}
+
+{# Устанавливает атрибут href со значением для ссылки на каталог #}
+{% set catalogHref = "href=\"pages/catalog.html\"" %}
+
+{# Устанавливает класс, отвечающий за особенности блока рассылки на цветном фоне #}
+{% set newsletterClass = "newsletter-alter" %}
+
+{# Устанавливает содержимое уникальной части страницы внутри тега <main> #}
+{% block main %}
+<header class="welcome">
+  <h1 class="visually-hidden">
+    Добро пожаловать в Седону.
+  </h1>
+
+  <h3 class="h3 welcome-heading">
+    Седона — небольшой городок в Аризоне, заслуживающий большего!
+  </h3>
+
+  <p class="text welcome-description">
+    Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+  </p>
+</header>
+
+<ol class="benefits-list grid">
+  <li class="grid">
+    <div class="blue-card benefits-card-accent">
+      <h4 class="h4 benefits-header">
+        Настоящий городок
+      </h4>
+
+      <p class="benefits-description">
+        — №1 —
+      </p>
+
+      <p class="benefits-description">
+        Седона — не аттракцион для туристов, там течёт своя жизнь
+      </p>
+    </div>
+
+    <img class="benefits-img" src="{{ root }}images/sedona-street.jpg" width="800" height="384" alt="Улицы Седоны.">
+
+    <ul class="benefits-list-plus grid">
+      <li class="benefits-item translucent-card benefits-card-icon icon-home">
+        <h4 class="h4 benefits-header icon-header icon-header-housing">
+          Жильё
+        </h4>
+
+        <p class="benefits-description">
+          Рекомендуем пожить
+          <br>
+          в настоящем мотеле,
+          <br>
+          всё как в кино!
+        </p>
+      </li>
+
+      <li class="benefits-item white-card benefits-card-icon icon-burger">
+        <h4 class="h4 benefits-header icon-header icon-header-eat">
+          Еда
+        </h4>
+
+        <p class="benefits-description">
+          Всегда заказывайте
+          <br>
+          топовый фирменный бургер,
+          <br>
+          вы не разочаруетесь!
+        </p>
+      </li>
+
+      <li class="benefits-item translucent-card benefits-card-icon icon-gift">
+        <h4 class="h4 benefits-header icon-header icon-header-souvenir">
+          Сувениры
+        </h4>
+
+        <p class="benefits-description">
+          Не только китайского,
+          <br>
+          но и настоящего местного
+          <br>
+          производства!
+        </p>
+      </li>
+    </ul>
+  </li>
+
+  <li class="benefits-item grid">
+    <img class="benefits-img" src="{{ root }}images/devil-bridge.jpg" width="800" height="384" alt="Мост дьявола.">
+
+    <div class="blue-card benefits-card-accent">
+      <h4 class="h4 benefits-header">
+        Там есть мост дьявола
+      </h4>
+
+      <p class="benefits-description">
+        — №2 —
+      </p>
+
+      <p class="benefits-description">
+        Да, по нему можно пройти! Если вы осмелитесь, разумеется
+      </p>
+    </div>
+  </li>
+
+  <li class="benefits-item translucent-card benefits-card">
+    <h4 class="h4 benefits-header">
+      Небольшаяя площадь
+    </h4>
+
+    <p class="benefits-description">
+      — №3 —
+    </p>
+
+    <p class="benefits-description">
+      Все достопримечательности находятся очень близко
+    </p>
+  </li>
+
+  <li class="benefits-item translucent-card benefits-card">
+    <h4 class="h4 benefits-header">
+      Красивая
+      <br>
+      дорога
+    </h4>
+
+    <p class="benefits-description">
+      — №4 —
+    </p>
+
+    <p class="benefits-description">
+      Ехать в Седону из Лас-Вегаса совсем не скучно!
+    </p>
+  </li>
+
+  <li class="benefits-item translucent-card benefits-card">
+    <h4 class="h4 benefits-header">
+      Мало
+      <br>
+      туристов
+    </h4>
+
+    <p class="benefits-description">
+      — №5 —
+    </p>
+
+    <p class="benefits-description">
+      Большинство едет в Гранд Каньон и толпится там
+    </p>
+  </li>
+</ol>
+
+<div class="search-block">
+  <h3 class="h3 search-block-header">
+    Заинтересовались?
+  </h3>
+
+  <p class="text search-block-description">
+    Укажите предполагаемые даты поездки,
+    <br>
+    и мы покажем вам лучшие предложения гостиниц в Седоне
+  </p>
+
+  <a class="button search-block-button" href="#!">
+    Поиск гостиниц в Седоне
+  </a>
+</div>
+
+
+
+
+<div class="modal">
+  <div class="modal-back">
+    <div class="modal-window">
+
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
