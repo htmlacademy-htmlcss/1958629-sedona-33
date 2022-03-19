@@ -2,14 +2,15 @@
   background-image: url("../images/bg-welcome.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
-  margin-bottom: 80px;
+  margin-bottom: 82px;
   padding: 485px 72px 0;
 }
 
 .welcome-heading {
   max-width: 720px;
+  margin: 63px auto 38px;
+  line-height: 35px;
   text-align: center;
-  margin: 63px auto 31px;
 }
 
 .welcome-description {

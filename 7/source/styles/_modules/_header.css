@@ -11,7 +11,7 @@
 .navigation-wrapper {
   display: flex;
   align-items: center;
-  padding-left: 169px;
+  padding-left: 145px;
 }
 
 .navigation-logo {
@@ -41,7 +41,19 @@
   text-decoration: none;
 }
 
-.navigation-link.active {
+.navigation-link:hover {
+  color: var(--color-dark-brown);
+}
+
+.navigation-link:active {
+  color: var(--color-dark-brown-30);
+}
+
+.navigation-link:focus-visible {
+  outline: 3px solid var(--color-light-blue);
+}
+
+.navigation-link-current {
   border-bottom: 1px solid var(--color-light-brown);
 }
 
@@ -52,22 +64,66 @@
   background-color: var(--color-light-brown);
 }
 
+.navigation-button:hover {
+  background-color: var(--color-dark-brown);
+}
+
+.navigation-button:active {
+  color: var(--color-light-cold-30);
+}
+
+.navigation-button:focus-visible {
+  outline: 3px solid var(--color-light-blue);
+}
+
+.navigation-item {
+  position: relative;
+}
+
 .navigation-icon {
   display: block;
   width: 42px;
   height: 66px;
-  background-repeat: no-repeat;
-  background-position: center;
+  color: var(--color-black);
+}
+
+.navigation-icon::before {
+  content: "";
+  height: 19px;
+  margin: auto;
+  width: 20px;
+  mask-repeat: no-repeat;
+}
+
+.navigation-icon:hover {
+  color: var(--color-dark-brown);
+}
+
+.navigation-icon:active {
+  color: var(--color-dark-brown-30);
+}
+
+.navigation-icon:focus-visible {
+  outline: 3px solid var(--color-light-blue);
+}
+
+.navigation-search::before {
+  content: "";
+  background-color: currentColor;
+  position: absolute;
+  top: 24px;
+  left: 13px;
+  mask-image: url("../images/icon-glass.svg");
 }
 
 
-.navigation-search {
-  background-image: url("../images/icon-glass.svg");
-}
-
-.navigation-favorites {
-  position: relative;
-  background-image: url("../images/icon-favorite.svg");
+.navigation-favorites::before {
+  content: "";
+  background-color: currentColor;
+  position: absolute;
+  top: 25px;
+  left: 13px;
+  mask-image: url("../images/icon-favorite.svg");
 }
 
 .navigation-favorites-count {

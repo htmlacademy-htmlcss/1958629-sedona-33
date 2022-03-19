@@ -13,14 +13,47 @@
   text-transform: uppercase;
 }
 
+.result-sort{
+  position: relative;
+  color: var(--white-color);
+}
+
 .select-control {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   border-radius: 4px;
-  border-color: var(--color-grey-10);
+  border-color: var(--color-grey-two);
   cursor: pointer;
+}
+
+.select-control:hover {
+  outline: 2px solid var(--color-light-blue);
+}
+
+.select-control:active {
+  opacity: 0.3;
+  transition: opacity 0.3s
+}
+
+.select-control:focus-visible {
+  outline: 2px solid var(--color-light-blue);
 }
 
 .select-control-choice {
   padding: 12px 127px 13px 19px;
+}
+
+.result-sort::before {
+  content: "";
+  background-color: currentColor;
+  position: absolute;
+  top: 12px;
+  left: 247px;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../images/icon-arrow.svg");
+  opacity: 0.3;
 }
 
 .button-card-list {
@@ -40,21 +73,33 @@
   background-position: center;
 }
 
+.button-card:hover {
+  outline: 2px solid var(--color-light-blue);
+}
+
+.button-card:active {
+  border: 2px solid var(--color-black);
+}
+
+.button-card:focus-visible {
+  outline: 2px solid var(--color-light-blue);
+}
+
 .button-card-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.tile-mode {
+.button-card-active {
   background-image: url("../images/icon-mode-1.svg");
   border-color: var(--color-black);
 }
 
 .slideshow-mode {
   background-image: url("../images/icon-mode-2.svg");
-  border-color: var(--color-grey-10);
+  border-color: var(--color-grey-two);
 }
 
 .card-mode {
   background-image: url("../images/icon-mode-3.svg");
-  border-color: var(--color-grey-10);
+  border-color: var(--color-grey-two);
 }

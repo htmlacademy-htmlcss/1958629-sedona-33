@@ -3,12 +3,12 @@
 }
 
 .search-block-header {
-  margin: 0 0 43px;
+  margin: 0 0 31px;
   text-align: center;
 }
 
 .search-block-description {
-  margin: 0 0 42px;
+  margin: 0 0 60px;
   text-align: center;
 }
 
@@ -20,4 +20,16 @@
   width: 575px;
   border-radius: 10px;
   background-color: var(--color-light-brown);
+}
+
+.search-block-button:hover {
+  background-color: var(--color-dark-brown);
+}
+
+.search-block-button:active {
+  color: var(--color-light-cold-30);
+}
+
+.search-block-button:focus-visible {
+  outline: 3px solid var(--color-light-blue);
 }
