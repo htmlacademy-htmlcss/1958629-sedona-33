@@ -15,7 +15,7 @@
 }
 
 .newsletter-alter {
-  padding: 103px 72px 94px;
+  padding: 101px 72px 94px;
   background-image: url("../images/bg-blurry-mountains.jpg");
   background-size: cover;
   color: var(--color-white);
@@ -52,8 +52,8 @@
 
 .newsletter-field::placeholder {
   line-height: 26px;
-  font: inherit;
   opacity: 0.6;
+  font: inherit;
 }
 
 .newsletter-field:invalid {
@@ -63,9 +63,9 @@
 .newsletter-button {
   width: 200px;
   border-radius: 0 10px 10px 0;
-  background-color: var(--color-light-blue);
   font-size: 20px;
   line-height: 26px;
+  background-color: var(--color-light-blue);
 }
 
 .newsletter-button:hover {

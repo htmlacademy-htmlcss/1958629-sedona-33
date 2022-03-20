@@ -104,6 +104,7 @@ body {
   line-height: 20px;
   font-weight: 700;
   box-sizing: border-box;
+  font-family: inherit;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
@@ -961,7 +962,7 @@ body {
 }
 
 .footer-phone-contacts {
-  padding: 15px 33px 15px 15px;
+  padding: 14px 33px 15px 15px;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
@@ -1070,48 +1071,40 @@ body {
 }
 
 .footer-site-link {
-
   position: relative;
   width: 120px;
   height: 40px;
-  color: red;
+  color: var(--color-black);
 }
 
 .footer-site-link::after {
   content: "";
   position: absolute;
+  left: 4px;
+  top: 2px;
   background-color: currentColor;
   width: 115px;
-  height: 34px;
-  -webkit-mask-image: url("{{ root }}images/logo-htmlacademy.svg");
-          mask-image: url("{{ root }}images/logo-htmlacademy.svg");
+  height: 33px;
+  -webkit-mask-image: url("/images/logo-htmlacademy.svg");
+          mask-image: url("/images/logo-htmlacademy.svg");
 }
 
-/* .footer-site-link-logo {
-  color: red;
+.footer-site-link-logo {
+ opacity: 0;
 }
 
-.footer-site-link-logo::after {
-  background-color: currentColor;
-  content: "";
-  mask-image: url("../images/logo-htmlacademy.svg");
-  pointer-events: none;
-  position: absolute;
-}
-
-
-.footer-site-link-logo:hover {
+.footer-site-link:hover {
   color: var(--color-light-brown);
 }
 
-.footer-site-link-logo:active {
+.footer-site-link:active {
   opacity: 0.3;
 }
 
-.footer-site-link-logo:focus-visible {
+.footer-site-link:focus-visible {
   outline: 3px solid var(--color-light-blue);
   border-radius: 10px;
-} */
+}
 
 .page-header {
   padding: 0 72px;
@@ -1301,7 +1294,7 @@ body {
 }
 
 .newsletter-alter {
-  padding: 103px 72px 94px;
+  padding: 101px 72px 94px;
   background-image: url("../images/bg-blurry-mountains.jpg");
   background-size: cover;
   color: var(--color-white);
@@ -1338,14 +1331,14 @@ body {
 
 .newsletter-field::-moz-placeholder {
   line-height: 26px;
-  font: inherit;
   opacity: 0.6;
+  font: inherit;
 }
 
 .newsletter-field::placeholder {
   line-height: 26px;
-  font: inherit;
   opacity: 0.6;
+  font: inherit;
 }
 
 .newsletter-field:invalid {
@@ -1355,9 +1348,9 @@ body {
 .newsletter-button {
   width: 200px;
   border-radius: 0 10px 10px 0;
-  background-color: var(--color-light-blue);
   font-size: 20px;
   line-height: 26px;
+  background-color: var(--color-light-blue);
 }
 
 .newsletter-button:hover {
@@ -1373,7 +1366,7 @@ body {
 }
 
 .search-block {
-  padding: 91px 72px 93px;
+  padding: 91px 72px 90px;
 }
 
 .search-block-header {
@@ -1382,13 +1375,14 @@ body {
 }
 
 .search-block-description {
-  margin: 0 0 60px;
+  margin: 0 0 57px;
   text-align: center;
 }
 
 .search-block-button {
   display: block;
   margin: 0 auto;
+  padding: 14px 15px 12px;
   font-size: 20px;
   line-height: 36px;
   width: 575px;
