@@ -51,7 +51,6 @@
 }
 
 .newsletter-field::placeholder {
-  line-height: 26px;
   opacity: 0.6;
   font: inherit;
 }
