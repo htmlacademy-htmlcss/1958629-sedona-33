@@ -1162,13 +1162,11 @@ body {
 .newsletter-field::-moz-placeholder {
   color: inherit;
   opacity: 0.6;
-  font: inherit;
 }
 
 .newsletter-field::placeholder {
   color: inherit;
   opacity: 0.6;
-  font: inherit;
 }
 
 .newsletter-field:invalid {
