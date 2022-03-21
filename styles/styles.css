@@ -272,11 +272,11 @@ body {
   display: block;
   margin-bottom: 16px;
   text-decoration: none;
+  transition: opacity 0.3s ease;
 }
 
 .hotel-card-link:hover {
   opacity: 0.6;
-  transition: 0.3s;
 }
 
 .hotel-card-link:active {
