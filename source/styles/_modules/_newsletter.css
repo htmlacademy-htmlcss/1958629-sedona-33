@@ -26,8 +26,12 @@
 }
 
 .newsletter-description {
-  margin: 0 0 46px;
+  margin: 21px 0 44px;
   text-align: center;
+}
+
+.newsletter-alter .newsletter-description {
+  margin: 1px 0 44px;
 }
 
 .newsletter-alter .newsletter-description {
@@ -48,7 +52,7 @@
   width: 100%;
   border: 3px solid transparent;
   border-radius: 10px 0 0 10px;
-  padding: 14px 22px;
+  padding: 17px 22px;
   font: inherit;
   background-color: var(--color-light);
 }
@@ -66,7 +70,6 @@
   width: 200px;
   border-radius: 0 10px 10px 0;
   font-size: 20px;
-  line-height: 26px;
   background-color: var(--color-light-blue);
 }
 
