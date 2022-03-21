@@ -68,10 +68,6 @@
   background-color: var(--color-dark-brown);
 }
 
-.navigation-button:active {
-  color: var(--color-light-cold-30);
-}
-
 .navigation-button:focus-visible {
   outline: 3px solid var(--color-light-blue);
 }

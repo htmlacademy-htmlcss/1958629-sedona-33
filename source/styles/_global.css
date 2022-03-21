@@ -2,22 +2,22 @@
   --color-black: #000000;
   --color-dark: #333333;
   --color-dark-light: #c4c4c4;
-  --color-grey: #e5e5e5;
-  --color-grey-two: #e6e6e6;
+  --color-grey: #e6e6e6;
+  --color-grey-bg: #e5e5e5;
   --color-light: #f2f2f2;
   --color-white: #ffffff;
   --color-light-brown: #756257;
   --color-dark-brown: #615048;
   --color-light-green: #7db54f;
   --color-dark-green: #6c9e42;
-  --pale-gray-blue: #3F5E72;
+  --pale-gray-blue: #3f5e72;
   --color-light-blue: #83b3d3;
   --color-dark-blue: #68a2ca;
   --color-black-25: rgba(0, 0, 0, 0.25);
   --color-black-40: rgba(0, 0, 0, 0.4);
   --color-dark-blue-60: rgba(255, 255, 255, 0.6);
   --color-light-cold-20: rgba(131, 179, 211, 0.2);
-  --color-light-cold-30: rgba(255, 255, 255, 0.3);
+  --color-white-30: rgba(255, 255, 255, 0.3);
   --color-light-cold-12: rgba(131, 179, 211, 0.12);
   --color-dark-brown-30: rgba(117, 98, 87, 0.3);
   --color-error: #ff5757;
@@ -40,7 +40,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: var(--color-grey-light);
+  background-color: var(--color-grey-bg);
   color: var(--color-black);
   margin: 0;
 }

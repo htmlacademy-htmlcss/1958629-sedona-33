@@ -1,14 +1,7 @@
 .price-range-group {
   padding: 0;
-  margin: 10px 86px 10px 100px;
+  margin: 10px 0 0 auto;
   border: none;
-}
-
-.price-range-title {
-  margin-bottom: 34px;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: bold;
 }
 
 .range {
@@ -27,39 +20,39 @@
 }
 
 .range-group:nth-of-type(2n + 1) { /* Левая группа */
-	border-right-color: transparent;
-	border-radius: 4px 0 0 4px;
+  border-right-color: transparent;
+  border-radius: 4px 0 0 4px;
 }
 
 .range-group:nth-of-type(2n + 1):hover:not(:focus-within):not(:active) {
-	border-right-color: var(--color-dark-blue-60);
+  border-right-color: var(--color-dark-blue-60);
 }
 
 .range-group:nth-of-type(2n + 1):hover + .range-group:not(:focus-within) {
-	border-left-color: transparent;
+  border-left-color: transparent;
 }
 
 .range-group:nth-of-type(2n) { /* Правая группа */
-	border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .range-group:hover {
-	z-index: 1;
-	border-color: var(--color-dark-blue-60);
+  z-index: 1;
+  border-color: var(--color-dark-blue-60);
 }
 
 .range-group:focus-within {
-	z-index: 2;
-	border-color: currentColor;
-	outline: 3px solid var(--color-light-blue);
-	box-shadow: inset 0 0 0 3px var(--color-light-blue);
+  z-index: 2;
+  border-color: currentColor;
+  outline: 3px solid var(--color-light-blue);
+  box-shadow: inset 0 0 0 3px var(--color-light-blue);
 }
 
 .range-group:active {
-	background-color: var(--color-light-brown);
-	border-color: currentColor;
-	outline: none;
-	box-shadow: none;
+  background-color: var(--color-light-brown);
+  border-color: currentColor;
+  outline: none;
+  box-shadow: none;
 }
 
 .range-field {
@@ -73,7 +66,7 @@
 }
 
 .range-field:focus {
-	outline: none;
+  outline: none;
 }
 
 .range-field::-webkit-outer-spin-button,
@@ -85,7 +78,7 @@
   margin-left: auto;
   text-transform: lowercase;
   opacity: 0.3;
-	transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .range-target {
@@ -100,14 +93,14 @@
 }
 
 .range-base::before {
-	content: "";
-	position: absolute;
-	top: 8px;
-	right: -20px;
-	bottom: 8px;
-	left: 0;
-	background-color: currentColor;
-	opacity: 0.3;
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -20px;
+  bottom: 8px;
+  left: 0;
+  background-color: currentColor;
+  opacity: 0.3;
 }
 
 .range-connect,
@@ -145,15 +138,15 @@
 }
 
 .range-handle:hover {
-	box-shadow: 0 4px 10px var(--color-black-25)
+  box-shadow: 0 4px 10px var(--color-black-25);
 }
 
 .range-handle:focus {
-	outline: 3px solid var(--color-light-blue);
-	box-shadow: 0 4px 10px var(--color-black-25);
+  outline: 3px solid var(--color-light-blue);
+  box-shadow: 0 4px 10px var(--color-black-25);
 }
 
 .range-handle:active {
-	outline: 2px solid var(--color-light-blue);
-	box-shadow: 0 7px 15px var(--color-black-40);
+  outline: 2px solid var(--color-light-blue);
+  box-shadow: 0 7px 15px var(--color-black-40);
 }

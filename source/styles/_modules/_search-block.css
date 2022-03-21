@@ -27,10 +27,6 @@
   background-color: var(--color-dark-brown);
 }
 
-.search-block-button:active {
-  color: var(--color-light-cold-30);
-}
-
 .search-block-button:focus-visible {
   outline: 3px solid var(--color-light-blue);
 }

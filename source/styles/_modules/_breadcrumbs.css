@@ -28,12 +28,13 @@
 .breadcrumbs-item:not(:last-child)::after {
   background-color: currentColor;
   content: "";
-  height: 8px;
-  mask-image: url("../images/icon-gray-arrow.svg");
   position: absolute;
   right: 1px;
   top: 7px;
+  height: 8px;
   width: 5px;
+  opacity: 0.3;
+  mask-image: url("../images/icon-arrow.svg");
 }
 
 .breadcrumbs-link:hover {

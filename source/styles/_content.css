@@ -65,3 +65,6 @@
   cursor: pointer;
 }
 
+.button:active {
+  color: var(--color-white-30);
+}

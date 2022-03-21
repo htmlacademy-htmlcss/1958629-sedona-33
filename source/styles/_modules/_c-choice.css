@@ -15,7 +15,7 @@
 }
 
 .catalog-filter-title {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -24,7 +24,7 @@
 .section-filter {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 23px 65px;
+  padding: 0 73px 65px 23px;
 }
 
 .catalog-filter-list {
@@ -39,7 +39,7 @@
   border: 0;
 }
 
-.catalog-filtre-ltem:not(:last-child) {
+.catalog-filter-ltem:not(:last-child) {
   margin-bottom: 13px;
 }
 
@@ -65,45 +65,45 @@
 
 .checker-input::before,
 .checker-input::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	border-radius: inherit;
-	transition: opacity 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .checker-input::before {
-	background-color: currentColor;
+  background-color: currentColor;
 }
 
 .checker-input::after {
   content: "";
   left: 4px;
   top: 5px;
-	background-color: var(--pale-gray-blue);
+  background-color: var(--pale-gray-blue);
   mask-image: url("../images/icon-daw.svg");
   mask-repeat: no-repeat;
-	opacity: 0;
+  opacity: 0;
 }
 
 .checker-input:focus-visible,
 .checker-input:hover::before {
-	opacity: 0.6;
+  opacity: 0.6;
 }
 
 .checker-input:disabled::before {
-	opacity: 0.3;
+  opacity: 0.3;
 }
 
 .checker-input:checked::after {
-	opacity: 1;
+  opacity: 1;
 }
 
 .checker-input[type="radio"] {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 .checker-input[type="radio"]::after {
@@ -118,7 +118,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  margin: 10px 50px 10px 0;
+  margin: 10px 0 0 86px;
 }
 
 .button-submit {
@@ -132,10 +132,6 @@
   background-color: var(--color-dark-blue);
 }
 
-.button-submit:active {
-  color: var(--color-light-cold-30);
-}
-
 .button-submit:focus-visible {
   outline: 3px solid var(--color-white);
 }
@@ -144,6 +140,7 @@
   font-size: 18px;
   padding: 2px 12px;
   width: 115px;
+  border-radius: 4px;
   color: inherit;
   background-color: transparent;
   border: none;
@@ -160,5 +157,4 @@
 
 .button-reset:focus-visible {
   outline: 3px solid var(--color-light-blue);
-  border-radius: 4px;
 }
