@@ -8,14 +8,14 @@
 
 .choice-housing-title {
   margin: 0;
-  padding: 35px 601px 11px 73px;
+  padding: 35px 601px 0 73px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 }
 
 .catalog-filter-title {
-  margin-bottom: 34px;
+  margin-bottom: 30px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -24,7 +24,7 @@
 .section-filter {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 73px 65px 23px;
+  padding: 0 71px 84px 23px;
 }
 
 .catalog-filter-list {
@@ -33,9 +33,9 @@
 }
 
 .catalog-filter-group {
-  width: 180px;
-  padding: 0;
-  margin: 10px 0 0 50px;
+  width: 176px;
+  padding: 0 0 0 5px;
+  margin: 10px 0 0 42px;
   border: 0;
 }
 
@@ -118,13 +118,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  margin: 10px 0 0 86px;
+  margin: 10px 0 0 81px;
 }
 
 .button-submit {
   width: 160px;
   padding: 14px 0 14px 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   background-color: var(--color-light-blue);
 }
 
@@ -137,10 +137,10 @@
 }
 
 .button-reset {
-  font-size: 18px;
   padding: 2px 12px;
   width: 115px;
   border-radius: 4px;
+  font: inherit;
   color: inherit;
   background-color: transparent;
   border: none;

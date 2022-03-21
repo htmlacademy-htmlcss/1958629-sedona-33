@@ -107,8 +107,9 @@
   margin: 0;
   width: 18px;
   height: 17px;
-  align-self: center;
+  background-position: -2px -3px;
   background-image: url("../images/icon-star.svg");
+  align-self: center;
 }
 
 .star-rating-5 {
