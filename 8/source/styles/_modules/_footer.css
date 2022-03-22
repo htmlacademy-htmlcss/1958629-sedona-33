@@ -1,0 +1,145 @@
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  padding: 26px 72px 30px;
+}
+
+.footer-phone-contacts {
+  padding: 14px 33px 15px 15px;
+  font-size: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.footer-phone-contacts:hover {
+  color: var(--color-light-brown);
+}
+
+.footer-phone-contacts:active {
+  opacity: 0.3;
+}
+
+.footer-phone-contacts:focus-visible {
+  outline: 3px solid var(--color-light-blue);
+}
+
+.footer-social-list {
+  display: flex;
+  padding: 0;
+  margin: -18px 0 0 -18px;
+}
+
+.footer-social-item {
+  position: relative;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 21px;
+}
+
+.footer-social-link {
+  display: block;
+  margin: 8px 0 0 8px;
+  width: 30px;
+  height: 30px;
+  color: var(--color-light-blue);
+}
+
+.footer-social-link:hover {
+  color: var(--color-dark-blue);
+}
+
+.footer-social-link:active {
+  opacity: 0.6;
+}
+
+.footer-social-link:focus-visible {
+  outline: 3px solid var(--color-dark-blue);
+  border-radius: 10px;
+}
+
+.twitter::before {
+  content: "";
+  position: absolute;
+  background-color: currentColor;
+  top: 7px;
+  left: 6px;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../images/icon-twitter.svg");
+  mask-repeat: no-repeat;
+}
+
+.facebook {
+  transform: translate(-9px, 1px);
+}
+
+.facebook::before {
+  content: "";
+  position: absolute;
+  background-color: currentColor;
+  top: -3px;
+  left: -1px;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../images/icon-facebook.svg");
+  mask-repeat: no-repeat;
+}
+
+.youtube {
+  transform: translate(-24px, 1px);
+}
+
+.youtube::before {
+  content: "";
+  position: absolute;
+  background-color: currentColor;
+  top: -2px;
+  left: -5px;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../images/icon-youtube.svg");
+  mask-repeat: no-repeat;
+}
+
+.footer-site-link {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  color: var(--color-black);
+}
+
+.footer-site-link::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  background-color: currentColor;
+  width: 115px;
+  height: 33px;
+  mask-image: url("/images/logo-htmlacademy.svg");
+}
+
+.footer-site-link-logo {
+  opacity: 0;
+}
+
+.footer-site-link:hover {
+  color: var(--color-light-brown);
+}
+
+.footer-site-link:active {
+  opacity: 0.3;
+}
+
+.footer-site-link:focus-visible {
+  outline: 3px solid var(--color-light-blue);
+  border-radius: 10px;
+}

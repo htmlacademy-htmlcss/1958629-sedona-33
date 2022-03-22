@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Седона - {{ title }}</title>
+
+  <link rel="stylesheet" href="{{ root }}styles/styles.css">
+</head>
+
+<body class="body">
+  <div class="page-wrapper">
+    <header class="page-header">
+      <nav class="navigation">
+        <div class="navigation-wrapper">
+          <a class="navigation-logo" {{ rootHref }}>
+            <img src="{{ root }}images/logo.svg" width="139" height="70" alt="Логотип Седоны.">
+          </a>
+
+          <ul class="navigation-list navigation-pages">
+            <li class="navigation-item">
+              <a class="navigation-link {{ 'navigation-link-current' if page == 'index' }}" {{ rootHref }}>
+                Главная
+              </a>
+            </li>
+
+            <li class="navigation-item">
+              <a class="navigation-link" href="#!">
+                О Седоне
+              </a>
+            </li>
+
+            <li class="navigation-item">
+              <a class="navigation-link {{ 'navigation-link-current' if page == 'pages/catalog' }}" {{ catalogHref }}>
+                Гостиницы
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-icon navigation-search" href="#!">
+              <span class="visually-hidden">
+                Поиск.
+              </span>
+            </a>
+          </li>
+
+          <li class="navigation-item">
+            <a class="navigation-icon navigation-favorites" href="#!">
+              <span  class="visually-hidden">
+                Избранное.
+              </span>
+              <span class="navigation-favorites-count">
+                12
+              </span>
+            </a>
+          </li>
+
+          <li class="navigation-item">
+            <a class="button navigation-button" href="#!">
+              Хочу сюда!
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      {# Сюда будет добавлена уникальная часть страницы при сборке #}
+      {% block main %}Страница в разработке.{% endblock %}
+
+      <section class="newsletter {{ newsletterClass }}">
+        <h3 class="h3 newsletter-header">
+          Подпишитесь на рассылку
+        </h3>
+
+        <p class="text newsletter-description">
+          Только полезная информация и никакого спама,
+          <br>
+          честное бойскаутское!
+        </p>
+
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="newsletter-label">
+            <input class="newsletter-field" placeholder="Ваш e-mail" type="email" name="newsletter-email">
+          </label>
+
+          <button class="newsletter-button button" type="submit">
+            Подписаться
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="footer-social-link twitter" href="https://twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">
+              Твиттер.
+            </span>
+          </a>
+        </li>
+
+        <li class="footer-social-item">
+          <a class="footer-social-link facebook" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">
+              Фейсбук.
+            </span>
+          </a>
+        </li>
+
+        <li class="footer-social-item">
+          <a class="footer-social-link youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <span class="visually-hidden">
+              Ютуб.
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="footer-phone-contacts" href="tel:+78128121212">
+        +7 (812) 812-12-12
+      </a>
+
+      <a class="footer-site-link" href="https://htmlacademy.ru/">
+        <img class="footer-site-link-logo" src="{{ root }}images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy.">
+      </a>
+    </footer>
+  </div>
+</body>
+
+</html>

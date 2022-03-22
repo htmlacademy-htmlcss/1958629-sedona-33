@@ -1,0 +1,83 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0 200px 140px;
+}
+
+.newsletter-alter {
+  padding: 101px 72px 94px;
+  background-image: url("../images/bg-blurry-mountains.jpg");
+  background-size: cover;
+  color: var(--color-white);
+}
+
+.newsletter-field:hover {
+  background-color: var(--color-grey);
+}
+
+.newsletter-field:focus {
+  outline: 3px solid var(--color-light-blue);
+}
+
+.newsletter-header {
+  margin: 0 0 29px;
+}
+
+.newsletter-description {
+  margin: 21px 0 44px;
+  text-align: center;
+}
+
+.newsletter-alter .newsletter-description {
+  margin: 1px 0 44px;
+}
+
+.newsletter-alter .newsletter-description {
+  color: inherit;
+}
+
+.newsletter-form {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+}
+
+.newsletter-label {
+  flex-grow: 1;
+}
+
+.newsletter-field {
+  width: 100%;
+  border: 3px solid transparent;
+  border-radius: 10px 0 0 10px;
+  padding: 17px 22px;
+  font: inherit;
+  background-color: var(--color-light);
+}
+
+.newsletter-field::placeholder {
+  color: inherit;
+  opacity: 0.6;
+}
+
+.newsletter-field:invalid {
+  border: 3px solid var(--color-error);
+}
+
+.newsletter-button {
+  width: 200px;
+  border-radius: 0 10px 10px 0;
+  font-size: 20px;
+  background-color: var(--color-light-blue);
+}
+
+.newsletter-button:hover {
+  background-color: var(--color-dark-blue);
+}
+
+.newsletter-button:focus-visible {
+  outline: 3px solid var(--color-light-brown);
+}
+
