@@ -11,10 +11,11 @@
 .hotel-card-link {
   display: block;
   margin-bottom: 16px;
-  text-decoration: none;
   transition: opacity 0.3s ease;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
 }
-
 
 .hotel-card-link:hover {
   opacity: 0.6;
@@ -26,6 +27,7 @@
 
 .hotel-card-link:focus-visible .hotel-card-img {
   outline: 3px solid var(--color-light-blue);
+  outline-offset: 0
 }
 
 /* .hotel-card-link:focus-visible hotel-card-img {
@@ -109,14 +111,14 @@
   margin: 0;
   width: 18px;
   height: 21px;
-  background-position:-3px -2px;
+  background-position: -2px -2px;
   background-size: 24px;
   background-image: url("../images/icon-star.svg");
   align-self: center;
 }
 
 .star-rating-5 {
-  width: 100px;
+  width: 103px;
 }
 
 .star-rating-4 {
@@ -129,7 +131,7 @@
 }
 
 .star-rating-2 {
-  width: 42px;
+  width: 46px;
 }
 
 .hotel-card-rating {
