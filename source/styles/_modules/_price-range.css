@@ -1,5 +1,5 @@
 .price-range-group {
-  width: 287px;
+  min-width: 287px;
   padding: 0;
   margin: 20px 0 0 auto;
   border: none;
