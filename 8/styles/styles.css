@@ -1067,13 +1067,14 @@ body {
   background-color: var(--color-light);
 }
 
-.modal {
+.modal-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   z-index: 100;
+  background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal-back {
@@ -1082,7 +1083,7 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(242, 242, 242, 0.8);
+
 }
 
 .modal-window {
@@ -1178,7 +1179,7 @@ body {
 }
 
 .price-range-group {
-  width: 287px;
+  min-width: 287px;
   padding: 0;
   margin: 20px 0 0 auto;
   border: none;
