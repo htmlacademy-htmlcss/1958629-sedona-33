@@ -25,14 +25,10 @@
   opacity: 0.3;
 }
 
-.hotel-card-link:focus-visible .hotel-card-img {
+.hotel-card-link:focus-within .hotel-card-img {
   outline: 3px solid var(--color-light-blue);
   outline-offset: 0
 }
-
-/* .hotel-card-link:focus-visible hotel-card-img {
-  outline: 3px solid var(--color-light-blue);
-} */
 
 .hotel-card-img {
   display: block;

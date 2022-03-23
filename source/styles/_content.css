@@ -68,3 +68,7 @@
 .button:active {
   color: var(--color-white-30);
 }
+
+.overflow-hidden {
+  overflow: hidden;
+}

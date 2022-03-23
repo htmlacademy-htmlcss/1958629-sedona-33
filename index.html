@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body class="body">
+<body class="body js-body">
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="navigation">
@@ -187,10 +187,29 @@
           <br>
           и мы покажем вам лучшие предложения гостиниц в Седоне &nbsp;
         </p>
-        <a class="button search-block-button" href="#!">
+        <a class="button search-block-button js-modal-open" href="#!">
           Поиск гостиницы в Седоне
         </a>
       </div>
+      <section class="modal-container js-modal">
+        <div class="modal-back">
+          <form class="modal-window">
+            <div>
+              <h2 class="">
+                Поиск гостиницы в Седоне
+              </h2>
+              <button class="js-modal-close">
+                x
+              </button>
+            </div>
+            <div>
+            </div>
+            <button class="js-modal-search">
+              Найти
+            </button>
+          </form>
+        </div>
+      </section>
       <section class="newsletter newsletter-alter">
         <h3 class="h3 newsletter-header">
           Подпишитесь на рассылку
@@ -243,5 +262,22 @@
       </a>
     </footer>
   </div>
+  <script>
+    const MODAL_CLOSE = function() {
+      document.querySelector(".js-modal").classList.remove("modal-open");
+      document.querySelector(".js-body").classList.remove("overflow-hidden");
+    };
+    document.querySelector(".js-modal-open").onclick = function() {
+      document.querySelector(".js-modal").classList.add("modal-open");
+      document.querySelector(".js-body").classList.add("overflow-hidden");
+    };
+    document.querySelector(".js-modal-close").onclick = function() {
+      MODAL_CLOSE();
+    };
+    document.querySelector(".js-modal-search").onclick = function() {
+      MODAL_CLOSE();
+    };
+
+  </script>
 </body>
 </html>
