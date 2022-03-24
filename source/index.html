@@ -178,6 +178,12 @@
   </a>
 </div>
 
+
+
+
+
+
+
 <section class="modal-container modal-open js-modal">
   <form class="modal-window">
     <div class="modal-header">
@@ -187,43 +193,104 @@
 
       <button class="modal-close js-modal-close">
         <span class="visually-hidden">
-          Закрыть
+          Закрыть.
         </span>
       </button>
     </div>
 
     <div class="modal-select-block">
-      <label class="modal-select">
-        <span class="modal-date-text">
+      <p class="modal-select calendar">
+        <label class="modal-date-text">
           Дата заезда:
-        </span>
+        </label>
 
         <select class="select-control select-control-date" name="booking-date">
           <option>
             27 апреля 2020
           </option>
         </select>
-      </label>
 
-      <p class="select-comment">
-        Мы не можем отправить вас в прошлое.
+        <span class="select-comment error">
+          Мы не можем отправить вас в прошлое.
+        </span>
       </p>
 
-      <label class="modal-select">
-        <span class="modal-date-text">
+
+
+
+
+      <p class="modal-select calendar">
+        <label class="modal-date-text">
           Дата выезда:
-        </span>
+        </label>
 
         <select class="select-control select-control-date" name="booking-date">
           <option>
             1 сентября 2021
           </option>
         </select>
-      </label>
 
-      <p class="select-comment">
-        На эти даты есть свободные номера. Пока есть.
+        <span class="select-comment">
+          На эти даты есть свободные номера. Пока есть.
+        </span>
       </p>
+
+
+
+
+      <div class="modal-form-section">
+        <span class="visually-hidden">
+          Количество взрослых.
+        </span>
+
+        <p class="modal-select">
+          <label class="modal-date-text">
+            Взрослые:
+          </label>
+
+          <button class="modal-form-button button-decrease">
+            <span class="visually-hidden">
+              Меньше.
+            </span>
+          </button>
+
+          <input class="modal-form-field" id="count-adults" name="count[]" value="2" type="number" min="1" max="99" required="">
+
+          <button class="modal-form-button button-add">
+            <span class="visually-hidden">
+              Больше.
+            </span>
+          </button>
+        </p>
+
+
+
+
+
+        <span class="visually-hidden">
+          Количество детей.
+        </span>
+
+        <p class="modal-select">
+          <label class="modal-date-text">
+            Дети:
+          </label>
+
+          <button class="modal-form-button button-decrease">
+            <span class="visually-hidden">
+              Меньше.
+            </span>
+          </button>
+
+          <input class="modal-form-field" id="count-adults" name="count[]" value="2" type="number" min="1" max="99" required="">
+
+          <button class="modal-form-button button-add">
+            <span class="visually-hidden">
+              Больше.
+            </span>
+          </button>
+        </p>
+      </div>
     </div>
 
     <button class="js-modal-search">

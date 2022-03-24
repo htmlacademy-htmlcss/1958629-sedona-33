@@ -41,7 +41,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: var(--color-grey-bg);
+  background-color: var(--color-light);
   color: var(--color-black);
   margin: 0;
 }
@@ -1088,7 +1088,7 @@ body {
   width: 715px;
   border-radius: 30px;
   background-color: var(--color-white);
-  padding: 62px 70px 70px 70px;
+  padding: 48px 70px 70px 68px;
 }
 
 .modal-header {
@@ -1096,6 +1096,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 38px;
 }
 
 .modal-title {
@@ -1108,6 +1109,7 @@ body {
 .modal-close {
   width: 53px;
   height: 53px;
+  margin-bottom: 11px;
   margin-left: auto;
   border-radius: 50%;
   background-color: var(--color-light);
@@ -1135,7 +1137,7 @@ body {
   content: "";
   background-color: currentColor;
   position: absolute;
-  top: 31px;
+  top: 23px;
   right: 16px;
   width: 20px;
   height: 20px;
@@ -1146,12 +1148,14 @@ body {
 
 .modal-select {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   position: relative;
-
+  margin: 0 0 15px 0;
+  padding: 0;
 }
 
-.modal-select::before {
+.calendar::before {
   content: "";
   background-color: currentColor;
   position: absolute;
@@ -1166,24 +1170,98 @@ body {
 }
 
 .modal-date-text {
-  width: 150px;
-}
+  font-family: inherit;
+  width: 158px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px 10px 0 0;
 
-.modal-date-text {
-  display: block;
 }
 
 .select-control-date {
-  width: 100%;
+  width: 418px;
   background-color: var(--color-light);
   font-weight: 700;
 
 }
 
 .select-comment {
-  
-  margin-left: 163px;
-  margin-bottom: 11px;
+  margin: 3px 0 0 157px;
+  padding: 0;
+  font-size: 16px;
+}
+
+.error {
+  color: var(--color-error);
+}
+
+.modal-form-section {
+  display: flex;
+}
+
+.modal-form-field {
+  background-color: var(--color-light);
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 2px 35px 4px;
+  max-width: 130px;
+  height: 50px;
+  text-align: center;
+}
+
+.modal-form-field::-webkit-outer-spin-button,
+.modal-form-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.modal-form-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.button-decrease {
+  left: 173px;
+}
+
+.button-add {
+  left: 254px;
+}
+
+.button-decrease::after {
+  content: "";
+  background-color: currentColor;
+  position: absolute;
+  top: 8px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  -webkit-mask-image: url("../images/icon-decrease.svg");
+          mask-image: url("../images/icon-decrease.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+.button-add::before {
+  content: "";
+  background-color: currentColor;
+  position: absolute;
+  top: 2px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  -webkit-mask-image: url("../images/icon-add.svg");
+          mask-image: url("../images/icon-add.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
 }
 
 .newsletter {
