@@ -7,9 +7,10 @@
 }
 
 .footer-phone-contacts {
-  padding: 15px 33px 15px 15px;
+  padding: 14px 33px 15px 15px;
   font-size: 40px;
   line-height: 40px;
+  border-radius: 10px;
   text-decoration: none;
   color: var(--color-black);
 }
@@ -24,7 +25,6 @@
 
 .footer-phone-contacts:focus-visible {
   outline: 3px solid var(--color-light-blue);
-  border-radius: 10px;
 }
 
 .footer-social-list {
@@ -110,45 +110,36 @@
 }
 
 .footer-site-link {
-
   position: relative;
   width: 120px;
   height: 40px;
-  color: red;
+  color: inherit;
 }
 
 .footer-site-link::after {
   content: "";
   position: absolute;
+  left: 4px;
+  top: 2px;
   background-color: currentColor;
   width: 115px;
-  height: 34px;
-  mask-image: url("{{ root }}images/logo-htmlacademy.svg");
-}
-
-
-/* .footer-site-link-logo {
-  color: red;
-}
-
-.footer-site-link-logo::after {
-  background-color: currentColor;
-  content: "";
+  height: 33px;
   mask-image: url("../images/logo-htmlacademy.svg");
-  pointer-events: none;
-  position: absolute;
 }
 
+.footer-site-link-logo {
+ opacity: 0;
+}
 
-.footer-site-link-logo:hover {
+.footer-site-link:hover {
   color: var(--color-light-brown);
 }
 
-.footer-site-link-logo:active {
+.footer-site-link:active {
   opacity: 0.3;
 }
 
-.footer-site-link-logo:focus-visible {
+.footer-site-link:focus-visible {
   outline: 3px solid var(--color-light-blue);
   border-radius: 10px;
-} */
+}

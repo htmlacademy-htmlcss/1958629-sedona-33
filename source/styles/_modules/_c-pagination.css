@@ -1,7 +1,7 @@
 .pagination-show-more {
   display: block;
-  width: 610px;
-  margin: 47px auto;
+  width: 620px;
+  margin: 30px auto;
   padding: 17px 40px;
   font-size: 20px;
   line-height: 26px;
@@ -13,25 +13,21 @@
   background-color: var(--color-dark-blue);
 }
 
-.pagination-show-more:active {
-  color: var(--color-light-cold-30);
-}
-
 .pagination-show-more:focus-visible {
   outline: 3px solid var(--color-light-brown);
 }
 
 .pagination-show-more-wrapper {
   margin: 0 72px;
-  border-top: 1px solid var(--color-grey-two);
-  border-bottom: 1px solid var(--color-grey-two);
+  border-top: 1px solid var(--color-grey);
+  border-bottom: 1px solid var(--color-grey);
 }
 
 .pagination-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 73px 73px;
+  padding: 30px 73px 74px;
 }
 
 .pagination-list {
@@ -43,9 +39,6 @@
 
 .pagination-item {
   margin: 8px 0 0;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: bold;
 }
 
 .pagination-item:not(:last-child) {
@@ -71,7 +64,7 @@
 }
 
 .pagination-link:not(.pagination-current):active {
-  color: var(--color-light-cold-30);
+  color: var(--color-white-30);
 }
 
 .pagination-link:not(.pagination-current):focus-visible {
@@ -83,30 +76,12 @@
   background-color: var(--color-light);
 }
 
-.hotel-page {
-  position: relative;
-  color: var(--white-color);
-}
-
-.hotel-page::before {
-  content: "";
-  background-color: currentColor;
-  position: absolute;
-  top: 12px;
-  left: 359px;
-  width: 20px;
-  height: 20px;
-  mask-image: url("../images/icon-arrow.svg");
-  opacity: 0.3;
-}
-
 .hotel-page-text {
-  margin-right: 51px;
+  margin-right: 45px;
   font-size: 18px;
   line-height: 23px;
 }
 
 .select-control-number {
-  padding: 13px 133px 12px 17px;
-  text-decoration: none;
+  width: 160px;
 }

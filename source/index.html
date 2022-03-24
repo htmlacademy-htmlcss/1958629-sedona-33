@@ -163,18 +163,44 @@
 </ol>
 
 <div class="search-block">
-  <h3 class="h3 search-block-header">
+  <p class="h3 search-block-header">
     Заинтересовались?
-  </h3>
+  </p>
 
   <p class="text search-block-description">
     Укажите предполагаемые даты поездки,
     <br>
-    и мы покажем вам лучшие предложения гостиниц в Седоне
+    и мы покажем вам лучшие предложения гостиниц в Седоне &nbsp;
   </p>
 
-  <a class="button search-block-button" href="#!">
-    Поиск гостиниц в Седоне
+  <a class="button search-block-button js-modal-open" href="#!">
+    Поиск гостиницы в Седоне
   </a>
 </div>
+
+<section class="modal-container modal-open js-modal">
+  <form class="modal-window">
+    <div>
+      <h2 class="">
+        Поиск гостиницы в Седоне
+      </h2>
+
+      <button class="modal-close js-modal-close">
+        x
+      </button>
+
+      <span class="visually-hidden">
+        Закрыть
+      </span>
+    </div>
+
+    <div>
+
+    </div>
+
+    <button class="js-modal-search">
+      Найти
+    </button>
+  </form>
+</section>
 {% endblock %}

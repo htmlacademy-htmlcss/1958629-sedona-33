@@ -1,80 +1,87 @@
 .search-hotel {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 52px 73px;
+  padding: 44px 72px 52px;
 }
 
 .number-hotels {
   margin: 0;
+  padding-right: 190px;
   font-size: 30px;
   line-height: 39px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.result-sort{
-  position: relative;
-  color: var(--white-color);
+.result-sort {
+  width: 18rem;
 }
 
 .select-control {
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  box-sizing: border-box;
+  padding: 9px 50px 12px 15px;
   border-radius: 4px;
-  border-color: var(--color-grey-two);
+  border: 2px solid var(--color-grey);
+  background-color: var(--white-color);
+  font: inherit;
   cursor: pointer;
+  outline: none;
 }
 
 .select-control:hover {
-  outline: 2px solid var(--color-light-blue);
+  border: 2px solid var(--color-light-blue);
 }
 
 .select-control:active {
   opacity: 0.3;
-  transition: opacity 0.3s
 }
 
 .select-control:focus-visible {
-  outline: 2px solid var(--color-light-blue);
+  border: 2px solid var(--color-light-blue);
 }
 
 .select-control-choice {
-  padding: 12px 127px 13px 19px;
+  width: 100%;
 }
 
-.result-sort::before {
+.select {
+  position: relative;
+  color: var(--white-color);
+}
+
+.select::before {
   content: "";
   background-color: currentColor;
   position: absolute;
-  top: 12px;
-  left: 247px;
+  top: 20px;
+  right: 13px;
   width: 20px;
   height: 20px;
-  mask-image: url("../images/icon-arrow.svg");
-  opacity: 0.3;
+  mask-image: url("../images/icon-arrow-select.svg");
+  mask-repeat: no-repeat;
 }
 
 .button-card-list {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 auto;
 }
 
 .button-card {
+  display: block;
   width: 16px;
   height: 14px;
-  border: 2px solid;
-  padding: 17px 16px;
+  border: 2px solid var(--color-grey);
+  padding: 22px;
   border-radius: 4px;
-  display: block;
+  outline: none;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.button-card:hover {
-  outline: 2px solid var(--color-light-blue);
+.button-card:not(.activ):hover {
+  border: 2px solid var(--color-light-blue);
 }
 
 .button-card:active {
@@ -82,24 +89,25 @@
 }
 
 .button-card:focus-visible {
-  outline: 2px solid var(--color-light-blue);
+  border: 2px solid var(--color-light-blue);
 }
 
 .button-card-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.button-card-active {
+.button-card-tile {
   background-image: url("../images/icon-mode-1.svg");
-  border-color: var(--color-black);
 }
 
 .slideshow-mode {
   background-image: url("../images/icon-mode-2.svg");
-  border-color: var(--color-grey-two);
 }
 
 .card-mode {
   background-image: url("../images/icon-mode-3.svg");
-  border-color: var(--color-grey-two);
+}
+
+.activ {
+  border-color: var(--color-black);
 }

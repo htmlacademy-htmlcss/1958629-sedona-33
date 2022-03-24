@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body class="body">
+<body class="js-body">
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="navigation">
@@ -179,18 +179,38 @@
         </li>
       </ol>
       <div class="search-block">
-        <h3 class="h3 search-block-header">
+        <p class="h3 search-block-header">
           Заинтересовались?
-        </h3>
+        </p>
         <p class="text search-block-description">
           Укажите предполагаемые даты поездки,
           <br>
-          и мы покажем вам лучшие предложения гостиниц в Седоне
+          и мы покажем вам лучшие предложения гостиниц в Седоне &nbsp;
         </p>
-        <a class="button search-block-button" href="#!">
-          Поиск гостиниц в Седоне
+        <a class="button search-block-button js-modal-open" href="#!">
+          Поиск гостиницы в Седоне
         </a>
       </div>
+      <section class="modal-container modal-open js-modal">
+        <form class="modal-window">
+          <div>
+            <h2 class="">
+              Поиск гостиницы в Седоне
+            </h2>
+            <button class="modal-close js-modal-close">
+              x
+            </button>
+            <span class="visually-hidden">
+              Закрыть
+            </span>
+          </div>
+          <div>
+          </div>
+          <button class="js-modal-search">
+            Найти
+          </button>
+        </form>
+      </section>
       <section class="newsletter newsletter-alter">
         <h3 class="h3 newsletter-header">
           Подпишитесь на рассылку
@@ -239,9 +259,11 @@
         +7 (812) 812-12-12
       </a>
       <a class="footer-site-link" href="https://htmlacademy.ru/">
-        <img class="footer-site-link-logo" width="115" height="34" alt="Логотип HTML Academy.">
+        <img class="footer-site-link-logo" src="images/logo-htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy.">
       </a>
     </footer>
   </div>
+  <script src="scripts/modal.js" type="module">
+  </script>
 </body>
 </html>

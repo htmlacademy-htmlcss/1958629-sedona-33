@@ -1,7 +1,7 @@
 .hotel-cards-list {
-  margin: 0 0 34px;
-  padding: 0 73px 30px;
-  gap: 10px 18px;
+  margin: 0 0 29px;
+  padding: 0 73px;
+  gap: 5px 18px;
 }
 
 .hotel-card-item {
@@ -11,10 +11,11 @@
 .hotel-card-link {
   display: block;
   margin-bottom: 16px;
+  transition: opacity 0.3s ease;
   text-decoration: none;
-  transition: 0.3s;
+  outline: none;
+  color: inherit;
 }
-
 
 .hotel-card-link:hover {
   opacity: 0.6;
@@ -24,17 +25,16 @@
   opacity: 0.3;
 }
 
-.hotel-card-link:focus-visible .hotel-card-img {
+.hotel-card-link:focus-within .hotel-card-img {
   outline: 3px solid var(--color-light-blue);
+  outline-offset: 0
 }
-/* .hotel-card-link:focus-visible {
-  outline: 3px solid var(--color-light-blue);
-} */
 
 .hotel-card-img {
   display: block;
   margin: 0 auto 16px;
 }
+
 .hotel-card-title {
   font-size: 24px;
   line-height: 32px;
@@ -42,103 +42,101 @@
   margin: 0;
 }
 
-.product-card-grid {
+.hotel-card-grid {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 133px 1fr;
-  grid-template-rows: 23px 37px 37px;
   gap: 16px 26px;
 }
 
-.product-card-price {
+.hotel-card-price {
   line-height: 23px;
   padding: 0;
   margin: 0;
 }
 
-.product-card-more {
-  transition: opacity 0.3s;
+.hotel-card-more {
   background-color: var(--color-light-brown);
 }
 
-.product-card-favorites {
+.hotel-card-favorites {
   background-color: var(--color-light-blue);
 }
 
-.product-card-more:hover {
+.hotel-card-more:hover {
   background-color: var(--color-dark-brown);
 }
 
-.product-card-more:active {
-  color: var(--color-light-cold-30);
+.hotel-card-more:active {
   background-color: var(--color-light-brown);
 }
 
-.product-card-more:focus-visible {
+.hotel-card-more:focus-visible {
   outline: 3px solid var(--color-light-blue);
 }
 
-.product-card-favorites:hover {
+.hotel-card-favorites:hover {
   background-color: var(--color-dark-blue);
 }
 
-.product-card-favorites:active {
-  color: var(--color-light-cold-30);
+.hotel-card-favorites:active {
   background-color: rgba(--color-dark-blue);
 }
 
-.product-card-favorites:focus-visible {
+.hotel-card-favorites:focus-visible {
   outline: 3px solid var(--color-light-brown);
 }
 
-.product-card-favorites-added:hover {
+.hotel-card-favorites-added:hover {
   background-color: var(--color-dark-green);
 }
 
-.product-card-favorites-added:active {
-  color: var(--color-light-cold-30);
+.hotel-card-favorites-added:active {
   background-color: rgba(--color-dark-green);
 }
 
-.product-card-favorites-added:focus-visible {
+.hotel-card-favorites-added:focus-visible {
   outline: 3px solid var(--color-light-brown);
 }
 
-.product-card-favorites-added {
+.hotel-card-favorites-added {
   background-color: var(--color-light-green);
 }
 
 .star-rating {
   margin: 0;
   width: 18px;
-  height: 17px;
-  align-self: center;
+  height: 21px;
+  background-position: -2px -2px;
+  background-size: 24px;
   background-image: url("../images/icon-star.svg");
+  align-self: center;
 }
 
 .star-rating-5 {
-  width: 100px;
+  width: 103px;
 }
 
 .star-rating-4 {
-  width: 80px;
+  width: 94px;
+
 }
 
 .star-rating-3 {
-  width: 60px;
+  width: 70px;
 }
 
 .star-rating-2 {
-  width: 40px;
+  width: 46px;
 }
 
-.product-card-rating {
+.hotel-card-rating {
   font-size: 16px;
-  line-height: 21px;
-  text-transform: uppercase;
-  color: var(--color-dark);
   margin: 0 0 0 -18px;
   padding: 10px 28px;
   border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-dark);
   background-color: var(--color-light);
 }
