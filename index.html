@@ -193,18 +193,43 @@
       </div>
       <section class="modal-container modal-open js-modal">
         <form class="modal-window">
-          <div>
-            <h2 class="">
+          <div class="modal-header">
+            <h2 class="modal-title">
               Поиск гостиницы в Седоне
             </h2>
             <button class="modal-close js-modal-close">
-              x
+              <span class="visually-hidden">
+                Закрыть
+              </span>
             </button>
-            <span class="visually-hidden">
-              Закрыть
-            </span>
           </div>
-          <div>
+          <div class="modal-select-block">
+            <label class="modal-select">
+              <span class="modal-date-text">
+                Дата заезда:
+              </span>
+              <select class="select-control select-control-date" name="booking-date">
+                <option>
+                  27 апреля 2020
+                </option>
+              </select>
+            </label>
+            <p class="select-comment">
+              Мы не можем отправить вас в прошлое.
+            </p>
+            <label class="modal-select">
+              <span class="modal-date-text">
+                Дата выезда:
+              </span>
+              <select class="select-control select-control-date" name="booking-date">
+                <option>
+                  1 сентября 2021
+                </option>
+              </select>
+            </label>
+            <p class="select-comment">
+              На эти даты есть свободные номера. Пока есть.
+            </p>
           </div>
           <button class="js-modal-search">
             Найти

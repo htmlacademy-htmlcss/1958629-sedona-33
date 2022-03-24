@@ -16,24 +16,101 @@
 }
 
 .modal-window {
-  position: relative;
   width: 715px;
   border-radius: 30px;
   background-color: var(--color-white);
-  padding: 70px;
+  padding: 62px 70px 70px 70px;
+}
+
+.modal-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-title {
+  font-size: 30px;
+  height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .modal-close {
+  width: 53px;
+  height: 53px;
+  margin-left: auto;
   border-radius: 50%;
+  background-color: var(--color-light);
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background-color: var(--color-grey);
+}
+
+.modal-close:focus-within {
+  outline: 3px solid var(--color-light-blue);
+}
+
+/* .modal-select-block {
+  background-color: var(--color-light);
+} */
+
+.modal-close:active {
+  opacity: 0.6;
 }
 
 .modal-close::before {
   content: "";
-  position: absolute;
   background-color: currentColor;
+  position: absolute;
+  top: 31px;
+  right: 16px;
   width: 20px;
   height: 20px;
   mask-image: url("../../images/icon-cross.svg");
+  opacity: 0.6;
+}
 
+.modal-select {
+  display: flex;
+  align-items: center;
+  position: relative;
 
 }
+
+.modal-select::before {
+  content: "";
+  background-color: currentColor;
+  position: absolute;
+  top: 20px;
+  right: 13px;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../images/icon-calendar.svg");
+  mask-repeat: no-repeat;
+}
+
+.modal-date-text {
+  width: 150px;
+}
+
+.modal-date-text {
+  display: block;
+}
+
+.select-control-date {
+  width: 100%;
+  background-color: var(--color-light);
+  font-weight: 700;
+
+}
+
+.select-comment {
+  
+  margin-left: 163px;
+  margin-bottom: 11px;
+}
+
