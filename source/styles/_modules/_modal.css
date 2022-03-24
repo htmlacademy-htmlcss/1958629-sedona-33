@@ -1,7 +1,6 @@
 .modal-container {
-  /* display: none; */
+  display: none;
   position: fixed;
-  display: flex;
   justify-content: center;
   align-items: center;
   top: 0;
