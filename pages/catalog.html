@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<body class="body js-body">
+<body class="js-body">
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="navigation">
@@ -443,22 +443,7 @@
       </a>
     </footer>
   </div>
-  <script>
-    const MODAL_CLOSE = function() {
-      document.querySelector(".js-modal").classList.remove("modal-open");
-      document.querySelector(".js-body").classList.remove("overflow-hidden");
-    };
-    document.querySelector(".js-modal-open").onclick = function() {
-      document.querySelector(".js-modal").classList.add("modal-open");
-      document.querySelector(".js-body").classList.add("overflow-hidden");
-    };
-    document.querySelector(".js-modal-close").onclick = function() {
-      MODAL_CLOSE();
-    };
-    document.querySelector(".js-modal-search").onclick = function() {
-      MODAL_CLOSE();
-    };
-
+  <script src="/scripts/modal.js" type="module">
   </script>
 </body>
 </html>
