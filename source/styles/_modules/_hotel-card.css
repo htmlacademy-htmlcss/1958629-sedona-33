@@ -92,7 +92,7 @@
 }
 
 .hotel-card-favorites-added:focus-visible {
-outline: 3px solid var(--color-light-brown);
+  outline: 3px solid var(--color-light-brown);
 }
 
 .hotel-card-favorites-added:active {
