@@ -25,7 +25,7 @@
 .field-invalid,
 .field:invalid:not(:placeholder-shown) {
   border-color: var(--color-error);
- }
+}
 
 .newsletter-header {
   margin: 0 0 29px;
