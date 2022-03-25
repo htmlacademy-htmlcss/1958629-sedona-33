@@ -54,7 +54,8 @@
 }
 
 .navigation-link-current {
-  border-bottom: 1px solid var(--color-light-brown);
+  border-bottom: 2px solid var(--color-light-brown);
+  margin-top: -1px;
 }
 
 .navigation-button {

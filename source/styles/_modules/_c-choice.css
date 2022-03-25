@@ -15,7 +15,8 @@
 }
 
 .catalog-filter-title {
-  margin-bottom: 30px;
+  padding: 0;
+  margin: 0 0 30px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -37,6 +38,10 @@
   padding: 0 0 0 5px;
   margin: 20px 0 0 42px;
   border: 0;
+}
+
+.catalog-filter-checkbox {
+  margin-left: 3px;
 }
 
 .catalog-filter-ltem:not(:last-child) {

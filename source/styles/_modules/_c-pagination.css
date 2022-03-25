@@ -28,7 +28,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 30px 73px 74px;
+  padding: 28px 73px 76px;
 }
 
 .pagination-list {
@@ -86,7 +86,7 @@
 }
 
 .hotel-page-text {
-  margin-right: 45px;
+  margin-right: 50px;
   font-size: 18px;
   line-height: 23px;
 }

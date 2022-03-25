@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body class="js-body">
+<body>
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="navigation">
@@ -64,9 +64,9 @@
         <h1 class="visually-hidden">
           Добро пожаловать в Седону.
         </h1>
-        <h3 class="h3 welcome-heading">
+        <h2 class="h3 welcome-heading">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </h3>
+        </h2>
         <p class="text welcome-description">
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
         </p>
@@ -74,9 +74,9 @@
       <ol class="benefits-list grid">
         <li class="grid">
           <div class="blue-card benefits-card-accent">
-            <h4 class="h4 benefits-header">
+            <h3 class="h4 benefits-header">
               Настоящий городок
-            </h4>
+            </h3>
             <p class="benefits-description">
               — №1 —
             </p>
@@ -87,10 +87,10 @@
           <img class="benefits-img" src="images/sedona-street.jpg" width="800" height="384" alt="Улицы Седоны.">
           <ul class="benefits-list-plus grid">
             <li class="benefits-item translucent-card benefits-card-icon icon-home">
-              <h4 class="h4 benefits-header icon-header icon-header-housing">
+              <h3 class="h4 benefits-header icon-header icon-header-housing">
                 Жильё
-              </h4>
-              <p class="benefits-description benefits-description-translate">
+              </h3>
+              <p class="benefits-description benefits-description-plus">
                 Рекомендуем пожить
                 <br>
                 в настоящем мотеле,
@@ -99,10 +99,10 @@
               </p>
             </li>
             <li class="benefits-item white-card benefits-card-icon icon-burger">
-              <h4 class="h4 benefits-header icon-header icon-header-eat">
+              <h3 class="h4 benefits-header icon-header icon-header-eat">
                 Еда
-              </h4>
-              <p class="benefits-description benefits-description-translate">
+              </h3>
+              <p class="benefits-description benefits-description-plus">
                 Всегда заказывайте
                 <br>
                 топовый фирменный бургер,
@@ -111,10 +111,10 @@
               </p>
             </li>
             <li class="benefits-item translucent-card benefits-card-icon icon-gift">
-              <h4 class="h4 benefits-header icon-header icon-header-souvenir">
+              <h3 class="h4 benefits-header icon-header icon-header-souvenir">
                 Сувениры
-              </h4>
-              <p class="benefits-description benefits-description-translate">
+              </h3>
+              <p class="benefits-description benefits-description-plus">
                 Не только китайского,
                 <br>
                 но и настоящего местного
@@ -127,11 +127,11 @@
         <li class="benefits-item grid">
           <img class="benefits-img" src="images/devil-bridge.jpg" width="800" height="384" alt="Мост дьявола.">
           <div class="blue-card benefits-card-accent">
-            <h4 class="h4 benefits-header">
+            <h3 class="h4 benefits-header">
               Там есть
               <br>
               мост дьявола
-            </h4>
+            </h3>
             <p class="benefits-description">
               — №2 —
             </p>
@@ -141,9 +141,9 @@
           </div>
         </li>
         <li class="benefits-item translucent-card benefits-card">
-          <h4 class="h4 benefits-header">
+          <h3 class="h4 benefits-header">
             Небольшая площадь
-          </h4>
+          </h3>
           <p class="benefits-description">
             — №3 —
           </p>
@@ -152,11 +152,11 @@
           </p>
         </li>
         <li class="benefits-item translucent-card benefits-card">
-          <h4 class="h4 benefits-header">
+          <h3 class="h4 benefits-header">
             Красивая
             <br>
             дорога
-          </h4>
+          </h3>
           <p class="benefits-description">
             — №4 —
           </p>
@@ -165,11 +165,11 @@
           </p>
         </li>
         <li class="benefits-item translucent-card benefits-card">
-          <h4 class="h4 benefits-header">
+          <h3 class="h4 benefits-header">
             Мало
             <br>
             туристов
-          </h4>
+          </h3>
           <p class="benefits-description">
             — №5 —
           </p>
@@ -191,7 +191,7 @@
           Поиск гостиницы в Седоне
         </a>
       </div>
-      <section class="modal-container modal-open js-modal">
+      <section class="modal-container js-modal">
         <form class="modal-window">
           <div class="modal-header">
             <h2 class="modal-title">
@@ -200,6 +200,8 @@
             <button class="modal-close js-modal-close">
               <span class="visually-hidden">
                 Закрыть.
+              </span>
+              <span class="modal-cross">
               </span>
             </button>
           </div>
@@ -226,24 +228,24 @@
               <span class="visually-hidden">
                 Количество взрослых.
               </span>
-              <p class="modal-select">
+              <div class="modal-select">
                 <label class="modal-date-text " for="count-adults">
                   Взрослые:
                 </label>
-              <div class="modal-field-wrapper">
-                <button class="modal-form-button button-decrease">
-                  <span class="visually-hidden">
-                    Меньше.
-                  </span>
-                </button>
-                <input class="modal-form-field input-control" id="count-adults" value="2" type="number" min="1" max="99" required="">
-                <button class="modal-form-button button-add">
-                  <span class="visually-hidden">
-                    Больше.
-                  </span>
-                </button>
+                <div class="modal-field-wrapper">
+                  <button class="modal-form-button button-decrease">
+                    <span class="visually-hidden">
+                      Меньше.
+                    </span>
+                  </button>
+                  <input class="modal-form-field input-control" id="count-adults" value="2" type="number" min="1" max="99" required="">
+                  <button class="modal-form-button button-add">
+                    <span class="visually-hidden">
+                      Больше.
+                    </span>
+                  </button>
+                </div>
               </div>
-              </p>
               <span class="visually-hidden">
                 Количество детей.
               </span>

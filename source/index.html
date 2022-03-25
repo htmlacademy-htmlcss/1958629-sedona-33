@@ -23,9 +23,9 @@
     Добро пожаловать в Седону.
   </h1>
 
-  <h3 class="h3 welcome-heading">
+  <h2 class="h3 welcome-heading">
     Седона — небольшой городок в Аризоне, заслуживающий большего!
-  </h3>
+  </h2>
 
   <p class="text welcome-description">
     Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
@@ -35,9 +35,9 @@
 <ol class="benefits-list grid">
   <li class="grid">
     <div class="blue-card benefits-card-accent">
-      <h4 class="h4 benefits-header">
+      <h3 class="h4 benefits-header">
         Настоящий городок
-      </h4>
+      </h3>
 
       <p class="benefits-description">
         — №1 —
@@ -52,11 +52,11 @@
 
     <ul class="benefits-list-plus grid">
       <li class="benefits-item translucent-card benefits-card-icon icon-home">
-        <h4 class="h4 benefits-header icon-header icon-header-housing">
+        <h3 class="h4 benefits-header icon-header icon-header-housing">
           Жильё
-        </h4>
+        </h3>
 
-        <p class="benefits-description benefits-description-translate">
+        <p class="benefits-description benefits-description-plus">
           Рекомендуем пожить
           <br>
           в настоящем мотеле,
@@ -66,11 +66,11 @@
       </li>
 
       <li class="benefits-item white-card benefits-card-icon icon-burger">
-        <h4 class="h4 benefits-header icon-header icon-header-eat">
+        <h3 class="h4 benefits-header icon-header icon-header-eat">
           Еда
-        </h4>
+        </h3>
 
-        <p class="benefits-description benefits-description-translate">
+        <p class="benefits-description benefits-description-plus">
           Всегда заказывайте
           <br>
           топовый фирменный бургер,
@@ -80,11 +80,11 @@
       </li>
 
       <li class="benefits-item translucent-card benefits-card-icon icon-gift">
-        <h4 class="h4 benefits-header icon-header icon-header-souvenir">
+        <h3 class="h4 benefits-header icon-header icon-header-souvenir">
           Сувениры
-        </h4>
+        </h3>
 
-        <p class="benefits-description benefits-description-translate">
+        <p class="benefits-description benefits-description-plus">
           Не только китайского,
           <br>
           но и настоящего местного
@@ -99,11 +99,11 @@
     <img class="benefits-img" src="{{ root }}images/devil-bridge.jpg" width="800" height="384" alt="Мост дьявола.">
 
     <div class="blue-card benefits-card-accent">
-      <h4 class="h4 benefits-header">
+      <h3 class="h4 benefits-header">
         Там есть
         <br>
         мост дьявола
-      </h4>
+      </h3>
 
       <p class="benefits-description">
         — №2 —
@@ -116,9 +116,9 @@
   </li>
 
   <li class="benefits-item translucent-card benefits-card">
-    <h4 class="h4 benefits-header">
+    <h3 class="h4 benefits-header">
       Небольшая площадь
-    </h4>
+    </h3>
 
     <p class="benefits-description">
       — №3 —
@@ -130,11 +130,11 @@
   </li>
 
   <li class="benefits-item translucent-card benefits-card">
-    <h4 class="h4 benefits-header">
+    <h3 class="h4 benefits-header">
       Красивая
       <br>
       дорога
-    </h4>
+    </h3>
 
     <p class="benefits-description">
       — №4 —
@@ -146,11 +146,11 @@
   </li>
 
   <li class="benefits-item translucent-card benefits-card">
-    <h4 class="h4 benefits-header">
+    <h3 class="h4 benefits-header">
       Мало
       <br>
       туристов
-    </h4>
+    </h3>
 
     <p class="benefits-description">
       — №5 —
@@ -178,13 +178,7 @@
   </a>
 </div>
 
-
-
-
-
-
-
-<section class="modal-container modal-open js-modal">
+<section class="modal-container js-modal">
   <form class="modal-window">
     <div class="modal-header">
       <h2 class="modal-title">
@@ -194,6 +188,9 @@
       <button class="modal-close js-modal-close">
         <span class="visually-hidden">
           Закрыть.
+        </span>
+        <span class="modal-cross">
+          
         </span>
       </button>
     </div>
@@ -211,10 +208,6 @@
         </span>
       </p>
 
-
-
-
-
       <p class="modal-select calendar">
         <label class="modal-date-text" for="departure-date">
           Дата выезда:
@@ -227,15 +220,12 @@
         </span>
       </p>
 
-
-
-
       <div class="modal-form-section">
         <span class="visually-hidden">
           Количество взрослых.
         </span>
 
-        <p class="modal-select">
+        <div class="modal-select">
           <label class="modal-date-text " for="count-adults">
             Взрослые:
           </label>
@@ -255,7 +245,7 @@
               </span>
             </button>
           </div>
-        </p>
+        </div>
 
         <span class="visually-hidden">
           Количество детей.

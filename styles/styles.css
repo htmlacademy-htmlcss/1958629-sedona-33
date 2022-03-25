@@ -15,6 +15,7 @@
   --color-dark-blue: #68a2ca;
   --color-black-25: rgba(0, 0, 0, 0.25);
   --color-black-40: rgba(0, 0, 0, 0.4);
+  --color-bg-modal-80: rgba(242, 242, 242, 0.8);
   --color-dark-blue-60: rgba(255, 255, 255, 0.6);
   --color-light-cold-20: rgba(131, 179, 211, 0.2);
   --color-white-30: rgba(255, 255, 255, 0.3);
@@ -142,8 +143,8 @@ body {
   line-height: 21px;
 }
 
-.benefits-description-translate {
-  transform: translate(0, -11px);
+.benefits-description-plus {
+  margin-top: 18px;
 }
 
 .blue-card {
@@ -179,7 +180,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 79px 75px;
+  padding: 79px 75px 89px;
 }
 
 .benefits-card-icon::before {
@@ -274,7 +275,8 @@ body {
 }
 
 .catalog-filter-title {
-  margin-bottom: 30px;
+  padding: 0;
+  margin: 0 0 30px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -296,6 +298,10 @@ body {
   padding: 0 0 0 5px;
   margin: 20px 0 0 42px;
   border: 0;
+}
+
+.catalog-filter-checkbox {
+  margin-left: 3px;
 }
 
 .catalog-filter-ltem:not(:last-child) {
@@ -453,7 +459,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 30px 73px 74px;
+  padding: 28px 73px 76px;
 }
 
 .pagination-list {
@@ -511,7 +517,7 @@ body {
 }
 
 .hotel-page-text {
-  margin-right: 45px;
+  margin-right: 50px;
   font-size: 18px;
   line-height: 23px;
 }
@@ -846,7 +852,8 @@ body {
 }
 
 .navigation-link-current {
-  border-bottom: 1px solid var(--color-light-brown);
+  border-bottom: 2px solid var(--color-light-brown);
+  margin-top: -1px;
 }
 
 .navigation-button {
@@ -1084,7 +1091,7 @@ body {
   width: 100%;
   height: 100vh;
   z-index: 100;
-  background-color: rgba(242, 242, 242, 0.8);
+  background-color: var(--color-bg-modal-80);
 }
 
 .modal-open {
@@ -1114,8 +1121,7 @@ body {
 }
 
 .modal-close {
-  width: 53px;
-  height: 53px;
+  padding: 16px;
   margin-bottom: 11px;
   margin-left: auto;
   border-radius: 50%;
@@ -1132,24 +1138,17 @@ body {
   outline: 3px solid var(--color-light-blue);
 }
 
-/* .modal-select-block {
-  background-color: var(--color-light);
-} */
-
 .modal-close:active {
   opacity: 0.6;
 }
 
-.modal-close::before {
-  content: "";
+.modal-cross {
+  display: block;
   background-color: currentColor;
-  position: absolute;
-  top: 23px;
-  right: 16px;
   width: 20px;
   height: 20px;
-  -webkit-mask-image: url("../../images/icon-cross.svg");
-          mask-image: url("../../images/icon-cross.svg");
+  -webkit-mask-image: url("../images/icon-cross.svg");
+          mask-image: url("../images/icon-cross.svg");
 }
 
 .modal-select {
@@ -1271,8 +1270,8 @@ body {
 }
 
 .modal-form-button:hover {
- color: var(--color-black);
- opacity: 1;
+  color: var(--color-black);
+  opacity: 1;
 }
 
 .modal-form-button:active {
@@ -1292,7 +1291,7 @@ body {
   right: 15px;
 }
 
-.button-decrease::before  {
+.button-decrease::before {
   content: "";
   background-color: currentColor;
   position: absolute;
@@ -1327,6 +1326,14 @@ body {
   line-height: 26px;
   padding: 19px 40px 15px;
   background-color: var(--color-light-blue);
+}
+
+.modal-search:hover {
+  background-color: var(--color-dark-blue);
+}
+
+.modal-search:focus-visible {
+  outline: 3px solid var(--color-dark-brown);
 }
 
 .tooltip {
@@ -1369,7 +1376,6 @@ body {
           mask-image: url("../images/icon-info.svg");
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
-
 }
 
 .tooltip-text {
@@ -1379,7 +1385,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-  background-color: var( --color-dark);
+  background-color: var(--color-dark);
   color: var(--color-white);
   font-size: 16px;
   line-height: 20px;
@@ -1390,8 +1396,13 @@ body {
   width: 256px;
 }
 
+.tooltip-toggle:hover,
+.tooltip-toggle:focus-visible {
+  background-color: var(--color-dark-blue);
+}
+
 .tooltip-toggle:hover + .tooltip-text,
-.tooltip-toggle:focus + .tooltip-text {
+.tooltip-toggle:focus-visible + .tooltip-text {
   display: block;
 }
 
@@ -1639,7 +1650,7 @@ body {
 }
 
 .search-block {
-  padding: 91px 72px 90px;
+  padding: 94px 72px 90px;
 }
 
 .search-block-header {
@@ -1712,5 +1723,3 @@ body {
   src: url("../fonts/ptsans-700.woff2");
   font-display: swap;
 }
-
-
