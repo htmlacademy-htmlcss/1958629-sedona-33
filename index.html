@@ -3,20 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>Седона - главная</title>
+  <link rel="icon" href="/images/favicon-32x32.png" sizes="32x32">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body class="js-body">
+<body>
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="navigation">
         <div class="navigation-wrapper">
-          <a class="navigation-logo">
+          <a class="navigation-logo" href="index.html" aria-current="page">
             <img src="images/logo.svg" width="139" height="70" alt="Логотип Седоны.">
           </a>
           <ul class="navigation-list navigation-pages">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current">
+              <a class="navigation-link navigation-link-current" href="index.html" aria-current="page">
                 Главная
               </a>
             </li>
@@ -64,9 +65,9 @@
         <h1 class="visually-hidden">
           Добро пожаловать в Седону.
         </h1>
-        <h3 class="h3 welcome-heading">
+        <h2 class="h3 welcome-heading">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </h3>
+        </h2>
         <p class="text welcome-description">
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
         </p>
@@ -74,9 +75,9 @@
       <ol class="benefits-list grid">
         <li class="grid">
           <div class="blue-card benefits-card-accent">
-            <h4 class="h4 benefits-header">
+            <h3 class="h4 benefits-header">
               Настоящий городок
-            </h4>
+            </h3>
             <p class="benefits-description">
               — №1 —
             </p>
@@ -87,10 +88,10 @@
           <img class="benefits-img" src="images/sedona-street.jpg" width="800" height="384" alt="Улицы Седоны.">
           <ul class="benefits-list-plus grid">
             <li class="benefits-item translucent-card benefits-card-icon icon-home">
-              <h4 class="h4 benefits-header icon-header icon-header-housing">
+              <h3 class="h4 benefits-header icon-header icon-header-housing">
                 Жильё
-              </h4>
-              <p class="benefits-description benefits-description-translate">
+              </h3>
+              <p class="benefits-description benefits-description-plus">
                 Рекомендуем пожить
                 <br>
                 в настоящем мотеле,
@@ -99,10 +100,10 @@
               </p>
             </li>
             <li class="benefits-item white-card benefits-card-icon icon-burger">
-              <h4 class="h4 benefits-header icon-header icon-header-eat">
+              <h3 class="h4 benefits-header icon-header icon-header-eat">
                 Еда
-              </h4>
-              <p class="benefits-description benefits-description-translate">
+              </h3>
+              <p class="benefits-description benefits-description-plus">
                 Всегда заказывайте
                 <br>
                 топовый фирменный бургер,
@@ -111,10 +112,10 @@
               </p>
             </li>
             <li class="benefits-item translucent-card benefits-card-icon icon-gift">
-              <h4 class="h4 benefits-header icon-header icon-header-souvenir">
+              <h3 class="h4 benefits-header icon-header icon-header-souvenir">
                 Сувениры
-              </h4>
-              <p class="benefits-description benefits-description-translate">
+              </h3>
+              <p class="benefits-description benefits-description-plus">
                 Не только китайского,
                 <br>
                 но и настоящего местного
@@ -127,11 +128,11 @@
         <li class="benefits-item grid">
           <img class="benefits-img" src="images/devil-bridge.jpg" width="800" height="384" alt="Мост дьявола.">
           <div class="blue-card benefits-card-accent">
-            <h4 class="h4 benefits-header">
+            <h3 class="h4 benefits-header">
               Там есть
               <br>
               мост дьявола
-            </h4>
+            </h3>
             <p class="benefits-description">
               — №2 —
             </p>
@@ -141,9 +142,9 @@
           </div>
         </li>
         <li class="benefits-item translucent-card benefits-card">
-          <h4 class="h4 benefits-header">
+          <h3 class="h4 benefits-header">
             Небольшая площадь
-          </h4>
+          </h3>
           <p class="benefits-description">
             — №3 —
           </p>
@@ -152,11 +153,11 @@
           </p>
         </li>
         <li class="benefits-item translucent-card benefits-card">
-          <h4 class="h4 benefits-header">
+          <h3 class="h4 benefits-header">
             Красивая
             <br>
             дорога
-          </h4>
+          </h3>
           <p class="benefits-description">
             — №4 —
           </p>
@@ -165,11 +166,11 @@
           </p>
         </li>
         <li class="benefits-item translucent-card benefits-card">
-          <h4 class="h4 benefits-header">
+          <h3 class="h4 benefits-header">
             Мало
             <br>
             туристов
-          </h4>
+          </h3>
           <p class="benefits-description">
             — №5 —
           </p>
@@ -191,22 +192,92 @@
           Поиск гостиницы в Седоне
         </a>
       </div>
-      <section class="modal-container modal-open js-modal">
+      <section class="modal-container js-modal">
         <form class="modal-window">
-          <div>
-            <h2 class="">
+          <div class="modal-header">
+            <h2 class="modal-title">
               Поиск гостиницы в Седоне
             </h2>
             <button class="modal-close js-modal-close">
-              x
+              <span class="visually-hidden">
+                Закрыть.
+              </span>
+              <span class="modal-cross">
+              </span>
             </button>
-            <span class="visually-hidden">
-              Закрыть
-            </span>
           </div>
-          <div>
+          <div class="modal-select-block">
+            <p class="modal-select calendar">
+              <label class="modal-date-text" for="arrival-date">
+                Дата заезда:
+              </label>
+              <input class="input-control-date input-control" id="arrival-date" name="booking-date" placeholder="Введите дату" required="">
+              <span class="select-comment error">
+                Мы не можем отправить вас в прошлое.
+              </span>
+            </p>
+            <p class="modal-select calendar">
+              <label class="modal-date-text" for="departure-date">
+                Дата выезда:
+              </label>
+              <input class="input-control-date input-control" id="departure-date" name="booking-date" placeholder="Введите дату" required="">
+              <span class="select-comment">
+                На эти даты есть свободные номера. Пока есть.
+              </span>
+            </p>
+            <div class="modal-form-section">
+              <span class="visually-hidden">
+                Количество взрослых.
+              </span>
+              <div class="modal-select">
+                <label class="modal-date-text " for="count-adults">
+                  Взрослые:
+                </label>
+                <div class="modal-field-wrapper">
+                  <button class="modal-form-button button-decrease">
+                    <span class="visually-hidden">
+                      Меньше.
+                    </span>
+                  </button>
+                  <input class="modal-form-field input-control" id="count-adults" value="2" type="number" min="1" max="99" required="">
+                  <button class="modal-form-button button-add">
+                    <span class="visually-hidden">
+                      Больше.
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <span class="visually-hidden">
+                Количество детей.
+              </span>
+              <div class="modal-select">
+                <label class="modal-date-text-child" for="count-children">
+                  Дети:
+                </label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </span>
+                <div class="modal-field-wrapper">
+                  <button class="modal-form-button button-decrease">
+                    <span class="visually-hidden">
+                      Меньше.
+                    </span>
+                  </button>
+                  <input class="modal-form-field input-control" id="count-children" value="1" type="number" min="1" max="99" required="">
+                  <button class="modal-form-button button-add">
+                    <span class="visually-hidden">
+                      Больше.
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-          <button class="js-modal-search">
+          <button class="button modal-search js-modal-search">
             Найти
           </button>
         </form>
@@ -222,7 +293,7 @@
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="newsletter-label">
-            <input class="newsletter-field" placeholder="Ваш e-mail" type="email" name="newsletter-email">
+            <input class="newsletter-email newsletter-email-invalid" placeholder="Ваш e-mail" type="email" name="newsletter-email">
           </label>
           <button class="newsletter-button button" type="submit">
             Подписаться

@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>Седона - каталог</title>
+  <link rel="icon" href="/images/favicon-32x32.png" sizes="32x32">
   <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
-<body class="js-body">
+<body>
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="navigation">
@@ -26,7 +27,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current">
+              <a class="navigation-link navigation-link-current" href="catalog.html" aria-current="page">
                 Гостиницы
               </a>
             </li>
@@ -84,7 +85,7 @@
               <legend class="catalog-filter-title">
                 Инфраструктура:
               </legend>
-              <ul class="catalog-filter-list">
+              <ul class="catalog-filter-list catalog-filter-checkbox">
                 <li class="catalog-filter-ltem">
                   <label class="checker">
                     <input class="checker-input" type="checkbox" name="options[]" value="swimming" checked="">
@@ -179,7 +180,7 @@
               Найдено гостиниц: 38
             </p>
             <div class="result-sort select">
-              <select class="select-control select-control-choice" aria-label="Сортировка." name="price-range">
+              <select class="select-control" aria-label="Сортировка." name="price-range">
                 <option value="cheap">
                   Сначала дешёвые
                 </option>
@@ -190,21 +191,21 @@
             </div>
             <ul class="button-card-list">
               <li class="button-card-item">
-                <a class="button-card button-card-tile activ" href="#!">
+                <a class="button-mode button-mode-tile active" href="#!">
                   <span class="visually-hidden">
                     Показать в режиме "плиток".
                   </span>
                 </a>
               </li>
               <li class="button-card-item">
-                <a class="button-card slideshow-mode" href="#!">
+                <a class="button-mode slideshow-mode" href="#!">
                   <span class="visually-hidden">
                     Показать в режиме слайдшоу.
                   </span>
                 </a>
               </li>
               <li class="button-card-item">
-                <a class="button-card card-mode" href="#!">
+                <a class="button-mode card-mode" href="#!">
                   <span class="visually-hidden">
                     Показать список карточек.
                   </span>
@@ -372,21 +373,23 @@
                 </a>
               </li>
             </ul>
-            <label class="select">
+            <label class="hotel-page">
               <span class="hotel-page-text">
                 Гостиниц на странице:
               </span>
-              <select class="select-control select-control-number" name="hotel-number">
-                <option>
-                  4
-                </option>
-                <option>
-                  9
-                </option>
-                <option>
-                  14
-                </option>
-              </select>
+              <span class="select hotel-page-select">
+                <select class="select-control" name="hotel-number">
+                  <option>
+                    4
+                  </option>
+                  <option>
+                    9
+                  </option>
+                  <option>
+                    14
+                  </option>
+                </select>
+              </span>
             </label>
           </div>
         </section>
@@ -402,7 +405,7 @@
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="newsletter-label">
-            <input class="newsletter-field" placeholder="Ваш e-mail" type="email" name="newsletter-email">
+            <input class="newsletter-email newsletter-email-invalid" placeholder="Ваш e-mail" type="email" name="newsletter-email">
           </label>
           <button class="newsletter-button button" type="submit">
             Подписаться
