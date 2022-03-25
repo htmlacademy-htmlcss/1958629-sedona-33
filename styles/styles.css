@@ -1411,6 +1411,10 @@ img {
   width: 256px;
 }
 
+.tooltip-text::after {
+  content: "";
+}
+
 .tooltip-toggle:hover,
 .tooltip-toggle:focus-visible {
   background-color: var(--color-dark-blue);
@@ -1457,10 +1461,6 @@ img {
 
 .newsletter-email-invalid,
 .newsletter-email:invalid:not(:placeholder-shown) {
-  border-color: var(--color-error);
-}
-
-.newsletter-email:invalid:not(:-moz-placeholder-shown) {
   border-color: var(--color-error);
 }
 

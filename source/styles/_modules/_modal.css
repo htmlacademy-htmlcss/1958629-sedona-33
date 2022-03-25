@@ -302,6 +302,10 @@
   width: 256px;
 }
 
+.tooltip-text::after {
+  content: "";
+}
+
 .tooltip-toggle:hover,
 .tooltip-toggle:focus-visible {
   background-color: var(--color-dark-blue);
