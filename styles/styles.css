@@ -262,7 +262,7 @@ body {
   background-image: url("../images/bg-blurry-catalog.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: var(--color-light-blue);
+  background-color: var(--color-light-brown);
   color: var(--color-white);
 }
 
@@ -1418,16 +1418,28 @@ body {
   padding: 101px 72px 94px;
   background-image: url("../images/bg-blurry-mountains.jpg");
   background-size: cover;
+  background-color: var(--color-light-brown);
   color: var(--color-white);
 }
 
-.newsletter-field:hover {
+.field-invalid:hover {
   background-color: var(--color-grey);
 }
 
-.newsletter-field:focus {
+.field-invalid:focus {
   outline: 3px solid var(--color-light-blue);
 }
+
+/* Класс field-invalid будет добавляться с помощью js */
+
+.field:invalid:not(:-moz-placeholder-shown) {
+  border-color: var(--color-error);
+ }
+
+.field-invalid,
+.field:invalid:not(:placeholder-shown) {
+  border-color: var(--color-error);
+ }
 
 .newsletter-header {
   margin: 0 0 29px;
@@ -1453,7 +1465,7 @@ body {
   flex-grow: 1;
 }
 
-.newsletter-field {
+.field-invalid {
   width: 100%;
   border: 3px solid transparent;
   border-radius: 10px 0 0 10px;
@@ -1462,17 +1474,17 @@ body {
   background-color: var(--color-light);
 }
 
-.newsletter-field::-moz-placeholder {
+.field-invalid::-moz-placeholder {
   color: inherit;
   opacity: 0.6;
 }
 
-.newsletter-field::placeholder {
+.field-invalid::placeholder {
   color: inherit;
   opacity: 0.6;
 }
 
-.newsletter-field:invalid {
+.field-invalid:invalid {
   border: 3px solid var(--color-error);
 }
 

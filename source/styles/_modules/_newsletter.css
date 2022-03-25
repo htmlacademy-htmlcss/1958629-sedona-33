@@ -10,16 +10,22 @@
   padding: 101px 72px 94px;
   background-image: url("../images/bg-blurry-mountains.jpg");
   background-size: cover;
+  background-color: var(--color-light-brown);
   color: var(--color-white);
 }
 
-.newsletter-field:hover {
+.field-invalid:hover {
   background-color: var(--color-grey);
 }
 
-.newsletter-field:focus {
+.field-invalid:focus {
   outline: 3px solid var(--color-light-blue);
 }
+/* Класс field-invalid будет добавляться с помощью js */
+.field-invalid,
+.field:invalid:not(:placeholder-shown) {
+  border-color: var(--color-error);
+ }
 
 .newsletter-header {
   margin: 0 0 29px;
@@ -45,7 +51,7 @@
   flex-grow: 1;
 }
 
-.newsletter-field {
+.field-invalid {
   width: 100%;
   border: 3px solid transparent;
   border-radius: 10px 0 0 10px;
@@ -54,12 +60,12 @@
   background-color: var(--color-light);
 }
 
-.newsletter-field::placeholder {
+.field-invalid::placeholder {
   color: inherit;
   opacity: 0.6;
 }
 
-.newsletter-field:invalid {
+.field-invalid:invalid {
   border: 3px solid var(--color-error);
 }
 

@@ -210,7 +210,7 @@
               <label class="modal-date-text" for="arrival-date">
                 Дата заезда:
               </label>
-              <input class="input-control-date input-control" id="arrival-date" name="booking-date" placeholder="Введите дату">
+              <input class="input-control-date input-control" id="arrival-date" name="booking-date" placeholder="Введите дату" required="">
               <span class="select-comment error">
                 Мы не можем отправить вас в прошлое.
               </span>
@@ -219,7 +219,7 @@
               <label class="modal-date-text" for="departure-date">
                 Дата выезда:
               </label>
-              <input class="input-control-date input-control" id="departure-date" name="booking-date" placeholder="Введите дату">
+              <input class="input-control-date input-control" id="departure-date" name="booking-date" placeholder="Введите дату" required="">
               <span class="select-comment">
                 На эти даты есть свободные номера. Пока есть.
               </span>
@@ -292,7 +292,7 @@
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="newsletter-label">
-            <input class="newsletter-field" placeholder="Ваш e-mail" type="email" name="newsletter-email">
+            <input class="field-invalid field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required="">
           </label>
           <button class="newsletter-button button" type="submit">
             Подписаться
