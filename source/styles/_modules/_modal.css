@@ -73,7 +73,6 @@
   width: 20px;
   height: 20px;
   mask-image: url("../../images/icon-cross.svg");
-  opacity: 0.6;
 }
 
 .modal-select {
@@ -89,7 +88,7 @@
   content: "";
   background-color: currentColor;
   position: absolute;
-  top: 20px;
+  top: 16px;
   right: 13px;
   width: 20px;
   height: 20px;
@@ -99,18 +98,46 @@
 
 .modal-date-text {
   font-family: inherit;
+  line-height: 40px;
   width: 158px;
   font-size: 18px;
   font-weight: 700;
   padding: 5px 10px 0 0;
-
 }
 
-.select-control-date {
-  width: 418px;
-  background-color: var(--color-light);
-  font-weight: 700;
+.modal-date-text[for] {
+  cursor: pointer;
+}
 
+.input-control {
+  box-sizing: border-box;
+  font: inherit;
+  line-height: 40px;
+  font-weight: 700;
+  padding: 2px 50px 4px 15px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  appearance: none;
+  background-color: var(--color-light);
+  cursor: pointer;
+  outline: none;
+}
+
+.input-control:hover {
+  background-color: var(--color-grey);
+}
+
+.input-control:focus-visible {
+  border-color: var(--color-light-blue);
+}
+
+.input-control:active {
+  border-color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.input-control-date {
+  width: 418px;
 }
 
 .select-comment {
@@ -125,6 +152,11 @@
 
 .modal-form-section {
   display: flex;
+  margin-bottom: 27px;
+}
+
+.modal-field-wrapper {
+  position: relative;
 }
 
 .modal-form-field {
@@ -153,37 +185,124 @@
   top: 15px;
   width: 20px;
   cursor: pointer;
+  opacity: 0.3;
+}
+
+.modal-form-button:hover {
+ color: var(--color-black);
+ opacity: 1;
+}
+
+.modal-form-button:active {
+  opacity: 0.2;
+}
+
+.modal-form-button:focus-visible {
+  outline: 3px solid var(--color-light-blue);
+  opacity: 1;
 }
 
 .button-decrease {
-  left: 173px;
+  left: 15px;
 }
-
 
 .button-add {
-  left: 254px;
+  right: 15px;
 }
 
-.button-decrease::after {
+.button-decrease::before  {
   content: "";
   background-color: currentColor;
   position: absolute;
-  top: 8px;
-  right: -5px;
+  top: 10px;
+  right: -3px;
   width: 20px;
   height: 20px;
   mask-image: url("../images/icon-decrease.svg");
   mask-repeat: no-repeat;
 }
 
-.button-add::before {
+.button-add::after {
   content: "";
   background-color: currentColor;
   position: absolute;
-  top: 2px;
-  right: -6px;
+  top: 3px;
+  right: -4px;
   width: 20px;
   height: 20px;
   mask-image: url("../images/icon-add.svg");
   mask-repeat: no-repeat;
+}
+
+.modal-search {
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 19px 40px 15px;
+  background-color: var(--color-light-blue);
+}
+
+.tooltip {
+  position: absolute;
+  left: 111px;
+  margin-top: 4px;
+  margin-left: 2px;
+  width: 25px;
+  height: 25px;
+}
+
+.modal-date-text-child {
+  font-family: inherit;
+  width: 158px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px 10px 0 56px;
+}
+
+.tooltip-toggle {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--color-light-blue);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+}
+
+.tooltip-toggle::before {
+  content: "";
+  background-color: currentColor;
+  position: absolute;
+  top: 4px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  mask-image: url("../images/icon-info.svg");
+  mask-repeat: no-repeat;
+
+}
+
+.tooltip-text {
+  display: none;
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: var( --color-dark);
+  color: var(--color-white);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  width: 256px;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }

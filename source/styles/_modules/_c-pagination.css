@@ -27,12 +27,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
   padding: 30px 73px 74px;
 }
 
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
+  flex: 1;
   margin: -8px 0 0;
   padding: 0;
 }
@@ -76,12 +78,20 @@
   background-color: var(--color-light);
 }
 
+.hotel-page {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
 .hotel-page-text {
   margin-right: 45px;
   font-size: 18px;
   line-height: 23px;
 }
 
-.select-control-number {
+.hotel-page-select {
+  display: inline-block;
   width: 160px;
 }

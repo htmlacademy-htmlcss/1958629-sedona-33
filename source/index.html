@@ -200,15 +200,11 @@
 
     <div class="modal-select-block">
       <p class="modal-select calendar">
-        <label class="modal-date-text">
+        <label class="modal-date-text" for="arrival-date">
           Дата заезда:
         </label>
 
-        <select class="select-control select-control-date" name="booking-date">
-          <option>
-            27 апреля 2020
-          </option>
-        </select>
+        <input class="input-control-date input-control" id="arrival-date" name="booking-date" placeholder="Введите дату">
 
         <span class="select-comment error">
           Мы не можем отправить вас в прошлое.
@@ -220,15 +216,11 @@
 
 
       <p class="modal-select calendar">
-        <label class="modal-date-text">
+        <label class="modal-date-text" for="departure-date">
           Дата выезда:
         </label>
 
-        <select class="select-control select-control-date" name="booking-date">
-          <option>
-            1 сентября 2021
-          </option>
-        </select>
+        <input class="input-control-date input-control" id="departure-date" name="booking-date" placeholder="Введите дату">
 
         <span class="select-comment">
           На эти даты есть свободные номера. Пока есть.
@@ -244,56 +236,65 @@
         </span>
 
         <p class="modal-select">
-          <label class="modal-date-text">
+          <label class="modal-date-text " for="count-adults">
             Взрослые:
           </label>
 
-          <button class="modal-form-button button-decrease">
-            <span class="visually-hidden">
-              Меньше.
-            </span>
-          </button>
+          <div class="modal-field-wrapper">
+            <button class="modal-form-button button-decrease">
+              <span class="visually-hidden">
+                Меньше.
+              </span>
+            </button>
 
-          <input class="modal-form-field" id="count-adults" name="count[]" value="2" type="number" min="1" max="99" required="">
+            <input class="modal-form-field input-control" id="count-adults"  value="2" type="number" min="1" max="99" required>
 
-          <button class="modal-form-button button-add">
-            <span class="visually-hidden">
-              Больше.
-            </span>
-          </button>
+            <button class="modal-form-button button-add">
+              <span class="visually-hidden">
+                Больше.
+              </span>
+            </button>
+          </div>
         </p>
-
-
-
-
 
         <span class="visually-hidden">
           Количество детей.
         </span>
 
-        <p class="modal-select">
-          <label class="modal-date-text">
+        <div class="modal-select">
+          <label class="modal-date-text-child" for="count-children">
             Дети:
           </label>
 
-          <button class="modal-form-button button-decrease">
-            <span class="visually-hidden">
-              Меньше.
-            </span>
-          </button>
+          <span class="tooltip">
+            <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+            </button>
 
-          <input class="modal-form-field" id="count-adults" name="count[]" value="2" type="number" min="1" max="99" required="">
-
-          <button class="modal-form-button button-add">
-            <span class="visually-hidden">
-              Больше.
+            <span class="tooltip-text" role="tooltip" id="tooltip-label">
+              Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
             </span>
-          </button>
-        </p>
+          </span>
+
+          <div class="modal-field-wrapper">
+            <button class="modal-form-button button-decrease">
+              <span class="visually-hidden">
+                Меньше.
+              </span>
+            </button>
+
+            <input class="modal-form-field input-control" id="count-children"  value="1" type="number" min="1" max="99" required>
+
+            <button class="modal-form-button button-add">
+              <span class="visually-hidden">
+                Больше.
+              </span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
-    <button class="js-modal-search">
+    <button class="button modal-search js-modal-search">
       Найти
     </button>
   </form>
