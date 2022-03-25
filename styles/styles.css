@@ -1261,6 +1261,9 @@ img {
   max-width: 130px;
   height: 50px;
   text-align: center;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
 }
 
 .modal-form-field::-webkit-outer-spin-button,
