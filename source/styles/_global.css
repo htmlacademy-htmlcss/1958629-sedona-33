@@ -45,3 +45,8 @@ body {
   color: var(--color-black);
   margin: 0;
 }
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}

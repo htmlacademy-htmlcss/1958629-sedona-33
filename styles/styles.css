@@ -47,6 +47,12 @@ body {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .h1 {
   font-weight: bold;
   font-size: 60px;
@@ -1440,14 +1446,18 @@ outline: 3px solid var(--color-light-brown);
   outline: 3px solid var(--color-light-blue);
 }
 
-/* Класс field-invalid будет добавляться с помощью js */
+/* Класс newsletter-email-invalid будет добавляться с помощью js */
 
-.field:invalid:not(:-moz-placeholder-shown) {
+.newsletter-email:invalid:not(:-moz-placeholder-shown) {
   border-color: var(--color-error);
 }
 
-.field-invalid,
-.field:invalid:not(:placeholder-shown) {
+.newsletter-email-invalid,
+.newsletter-email:invalid:not(:placeholder-shown) {
+  border-color: var(--color-error);
+}
+
+.newsletter-email:invalid:not(:-moz-placeholder-shown) {
   border-color: var(--color-error);
 }
 
