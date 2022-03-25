@@ -306,6 +306,10 @@
   background-color: var(--color-dark-blue);
 }
 
+.tooltip-toggle:focus-visible {
+  outline: 2px solid var(--color-dark-brown);
+}
+
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus-visible + .tooltip-text {
   display: block;
