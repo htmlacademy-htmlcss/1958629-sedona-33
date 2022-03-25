@@ -1394,7 +1394,7 @@ img {
 }
 
 .tooltip-text {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 42px;
   left: 50%;
@@ -1411,8 +1411,22 @@ img {
   width: 256px;
 }
 
-.tooltip-text::after {
+.tooltip-triangle {
+ color: var(--color-dark);
+}
+
+.tooltip-triangle::after {
   content: "";
+  background-color: currentColor;
+  position: absolute;
+  top: 34px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  -webkit-mask-image: url("../images/icon-triangle.svg");
+          mask-image: url("../images/icon-triangle.svg");
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
 }
 
 .tooltip-toggle:hover,
@@ -1426,7 +1440,7 @@ img {
 
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus-visible + .tooltip-text {
-  display: block;
+  /* display: block; */
 }
 
 .newsletter {
