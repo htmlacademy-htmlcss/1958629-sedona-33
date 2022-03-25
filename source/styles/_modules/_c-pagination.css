@@ -59,6 +59,7 @@
   text-decoration: none;
   color: var(--color-white);
   background-color: var(--color-light-blue);
+  outline-offset: 0;
 }
 
 .pagination-link:not(.pagination-current):hover {

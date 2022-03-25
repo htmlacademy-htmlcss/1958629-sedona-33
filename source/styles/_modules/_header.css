@@ -1,4 +1,5 @@
 .page-header {
+  margin-bottom: -1px;
   padding: 0 72px;
 }
 
@@ -40,6 +41,7 @@
   border-color: transparent;
   color: inherit;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
 }
 
 .navigation-link:hover {
@@ -55,7 +57,6 @@
 }
 
 .navigation-link-current {
-  border-bottom: 2px solid var(--color-light-brown);
   margin-top: -1px;
   border-color: var(--color-light-brown);
 }

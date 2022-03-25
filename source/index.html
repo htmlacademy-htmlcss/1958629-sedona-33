@@ -8,7 +8,7 @@
 {% set root = "" %}
 
 {# Устанавливает атрибут href со значением для ссылки на главную страницу #}
-{% set rootHref = "href=\"index.html\"" %}
+{% set rootHref = "href=\"index.html\" aria-current=\"page\"" %}
 
 {# Устанавливает атрибут href со значением для ссылки на каталог #}
 {% set catalogHref = "href=\"pages/catalog.html\"" %}
@@ -262,9 +262,6 @@
 
             <span class="tooltip-text" role="tooltip" id="tooltip-label">
               Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-            </span>
-            <span class="tooltip-triangle">
-              
             </span>
           </span>
 

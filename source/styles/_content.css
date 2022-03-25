@@ -68,6 +68,7 @@
   border: none;
   color: var(--color-white);
   cursor: pointer;
+  outline-offset: 0;
 }
 
 .button:active {
