@@ -49,8 +49,7 @@ body {
 
 img {
   max-width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .h1 {
