@@ -37,12 +37,12 @@
   opacity: 0.6;
 }
 
-.breadcrumbs-link:active {
-  opacity: 0.3;
-}
-
 .breadcrumbs-link:focus-visible {
   outline: 3px solid var(--color-light-blue);
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
 }
 
 .breadcrumbs-home {

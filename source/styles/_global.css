@@ -41,8 +41,7 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: var(--color-light);
+  background-color: var(--color-grey-bg);
   color: var(--color-black);
   margin: 0;
 }
-

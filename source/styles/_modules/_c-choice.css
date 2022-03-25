@@ -156,10 +156,10 @@
   opacity: 0.6;
 }
 
-.button-reset:active {
-  opacity: 0.3;
-}
-
 .button-reset:focus-visible {
   outline: 3px solid var(--color-light-blue);
+}
+
+.button-reset:active {
+  opacity: 0.3;
 }

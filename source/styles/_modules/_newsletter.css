@@ -14,11 +14,11 @@
   color: var(--color-white);
 }
 
-.field-invalid:hover {
+.newsletter-email:hover {
   background-color: var(--color-grey);
 }
 
-.field-invalid:focus {
+.newsletter-email:focus {
   outline: 3px solid var(--color-light-blue);
 }
 /* Класс field-invalid будет добавляться с помощью js */
@@ -51,7 +51,7 @@
   flex-grow: 1;
 }
 
-.field-invalid {
+.newsletter-email {
   width: 100%;
   border: 3px solid transparent;
   border-radius: 10px 0 0 10px;
@@ -60,12 +60,12 @@
   background-color: var(--color-light);
 }
 
-.field-invalid::placeholder {
+.newsletter-email::placeholder {
   color: inherit;
   opacity: 0.6;
 }
 
-.field-invalid:invalid {
+.newsletter-email:invalid {
   border: 3px solid var(--color-error);
 }
 
@@ -83,4 +83,3 @@
 .newsletter-button:focus-visible {
   outline: 3px solid var(--color-light-brown);
 }
-

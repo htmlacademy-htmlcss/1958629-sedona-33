@@ -34,14 +34,13 @@
   border: 2px solid var(--color-light-blue);
 }
 
-.select-control:active {
-  opacity: 0.3;
-}
-
 .select-control:focus-visible {
   border: 2px solid var(--color-light-blue);
 }
 
+.select-control:active {
+  opacity: 0.3;
+}
 
 .select {
   position: relative;
@@ -110,4 +109,3 @@
 .card-mode {
   background-image: url("../images/icon-mode-3.svg");
 }
-

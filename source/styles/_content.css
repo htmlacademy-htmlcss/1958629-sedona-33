@@ -49,6 +49,11 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
 .button {
   padding: 9px 15px 8px;
   border-radius: 4px;

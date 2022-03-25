@@ -65,12 +65,12 @@
   background-color: var(--color-dark-blue);
 }
 
-.pagination-link:not(.pagination-current):active {
-  color: var(--color-white-30);
-}
-
 .pagination-link:not(.pagination-current):focus-visible {
   outline: 3px solid var(--color-light-brown);
+}
+
+.pagination-link:not(.pagination-current):active {
+  color: var(--color-white-30);
 }
 
 .pagination-current {

@@ -21,13 +21,13 @@
   opacity: 0.6;
 }
 
-.hotel-card-link:active {
-  opacity: 0.3;
-}
-
 .hotel-card-link:focus-visible .hotel-card-img {
   outline: 3px solid var(--color-light-blue);
   outline-offset: 0;
+}
+
+.hotel-card-link:active {
+  opacity: 0.3;
 }
 
 .hotel-card-img {
@@ -67,36 +67,36 @@
   background-color: var(--color-dark-brown);
 }
 
-.hotel-card-more:active {
-  background-color: var(--color-light-brown);
-}
-
 .hotel-card-more:focus-visible {
   outline: 3px solid var(--color-light-blue);
+}
+
+.hotel-card-more:active {
+  background-color: var(--color-light-brown);
 }
 
 .hotel-card-favorites:hover {
   background-color: var(--color-dark-blue);
 }
 
-.hotel-card-favorites:active {
-  background-color: rgba(--color-dark-blue);
-}
-
 .hotel-card-favorites:focus-visible {
   outline: 3px solid var(--color-light-brown);
+}
+
+.hotel-card-favorites:active {
+  background-color: rgba(--color-dark-blue);
 }
 
 .hotel-card-favorites-added:hover {
   background-color: var(--color-dark-green);
 }
 
-.hotel-card-favorites-added:active {
-  background-color: rgba(--color-dark-green);
+.hotel-card-favorites-added:focus-visible {
+outline: 3px solid var(--color-light-brown);
 }
 
-.hotel-card-favorites-added:focus-visible {
-  outline: 3px solid var(--color-light-brown);
+.hotel-card-favorites-added:active {
+  background-color: rgba(--color-dark-green);
 }
 
 .hotel-card-favorites-added {
