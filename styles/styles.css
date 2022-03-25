@@ -1412,7 +1412,7 @@ img {
 }
 
 .tooltip-triangle {
- color: var(--color-dark);
+  color: var(--color-dark);
 }
 
 .tooltip-triangle::after {
