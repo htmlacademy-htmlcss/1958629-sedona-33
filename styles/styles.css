@@ -1414,6 +1414,16 @@ img {
   width: 256px;
 }
 
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 9px solid transparent;
+  border-bottom: 9px solid var(--color-dark);
+}
+
 .tooltip-toggle:hover,
 .tooltip-toggle:focus-visible {
   background-color: var(--color-dark-blue);
