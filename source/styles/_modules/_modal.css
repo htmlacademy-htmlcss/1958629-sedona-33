@@ -285,7 +285,7 @@
 }
 
 .tooltip-text {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 42px;
   left: 50%;
@@ -329,6 +329,6 @@
 
 .tooltip-toggle:hover + .tooltip-text,
 .tooltip-toggle:focus-visible + .tooltip-text {
-  /* display: block; */
+  display: block;
 }
 
