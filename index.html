@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Седона - главная</title>
-  <link rel="icon" href="images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" href="images/favicon-32x32.png" type="image/png" sizes="32x32">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -208,7 +208,7 @@
               <label class="modal-date-text" for="arrival-date">
                 Дата заезда:
               </label>
-              <input class="input-control-date input-control" id="arrival-date" name="booking-date" placeholder="Введите дату" required="">
+              <input class="input-control-date input-control" id="arrival-date" name="booking-date" placeholder="Введите дату" required="" value="Введите дату">
               <span class="select-comment error">
                 Мы не можем отправить вас в прошлое.
               </span>
@@ -217,7 +217,7 @@
               <label class="modal-date-text" for="departure-date">
                 Дата выезда:
               </label>
-              <input class="input-control-date input-control" id="departure-date" name="booking-date" placeholder="Введите дату" required="">
+              <input class="input-control-date input-control" id="departure-date" name="booking-date" placeholder="Введите дату" required="" value="Введите дату">
               <span class="select-comment">
                 На эти даты есть свободные номера. Пока есть.
               </span>
@@ -253,6 +253,9 @@
                 </label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                    <span class="visually-hidden">
+                      Примечание при бронировании.
+                    </span>
                   </button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label">
                     Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
@@ -280,9 +283,9 @@
         </form>
       </section>
       <section class="newsletter newsletter-alter">
-        <h3 class="h3 newsletter-header">
+        <h2 class="h3 newsletter-header">
           Подпишитесь на рассылку
-        </h3>
+        </h2>
         <p class="text newsletter-description">
           Только полезная информация и никакого спама,
           <br>
