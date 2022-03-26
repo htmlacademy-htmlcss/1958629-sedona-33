@@ -85,6 +85,7 @@ img {
 .text {
   font-size: 22px;
   line-height: 26px;
+  color: var(--color-dark);
 }
 
 .caption {
@@ -162,6 +163,7 @@ img {
   text-align: center;
   font-size: 18px;
   line-height: 21px;
+  color: var(--color-dark);
 }
 
 .benefits-description-plus {
@@ -171,6 +173,10 @@ img {
 .blue-card {
   background-color: var(--color-light-blue);
   color: var(--color-white);
+}
+
+.blue-card .benefits-description {
+  color: inherit;
 }
 
 .translucent-card {
@@ -1005,10 +1011,11 @@ img {
   gap: 16px 26px;
 }
 
-.hotel-card-price {
+.hotel-card-text {
   line-height: 23px;
   padding: 0;
   margin: 0;
+  color: var(--color-dark);
 }
 
 .hotel-card-more {
