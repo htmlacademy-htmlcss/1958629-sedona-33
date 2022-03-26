@@ -1373,6 +1373,7 @@ img {
   font-size: 18px;
   font-weight: 700;
   padding: 5px 10px 0 56px;
+  cursor: pointer;
 }
 
 .tooltip-toggle {
