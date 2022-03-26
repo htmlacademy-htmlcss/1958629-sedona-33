@@ -15,6 +15,7 @@
   --color-dark-blue: #68a2ca;
   --color-black-25: rgba(0, 0, 0, 0.25);
   --color-black-40: rgba(0, 0, 0, 0.4);
+  --color-black-shadow-20: rgba(0, 0, 0, 0.2);
   --color-bg-modal-80: rgba(242, 242, 242, 0.8);
   --color-dark-blue-60: rgba(255, 255, 255, 0.6);
   --color-light-cold-20: rgba(131, 179, 211, 0.2);
@@ -88,7 +89,7 @@ img {
 
 .page-wrapper {
   width: 1200px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px var(--color-black-shadow-20);
   background-color: var(--color-white);
   margin: 0 auto;
 }
@@ -371,6 +372,10 @@ img {
 .checker-input:focus-visible,
 .checker-input:hover::before {
   opacity: 0.6;
+}
+
+.checker-input:disabled {
+  cursor: not-allowed;
 }
 
 .checker-input:disabled::before {
@@ -913,8 +918,8 @@ img {
   outline: 3px solid var(--color-light-blue);
 }
 
-.navigation-icon:active {
-  opacity: 0.3;
+.navigation-icon:active .navigation-favorites-count {
+  color: var(--color-white-30);
 }
 
 .navigation-search::before {
@@ -1039,7 +1044,7 @@ img {
 }
 
 .hotel-card-favorites:active {
-  background-color: rgba(--color-dark-blue);
+  background-color: var(--color-dark-blue);
 }
 
 .hotel-card-favorites-added:hover {
@@ -1051,7 +1056,7 @@ img {
 }
 
 .hotel-card-favorites-added:active {
-  background-color: rgba(--color-dark-green);
+  background-color: var(--color-dark-green);
 }
 
 .hotel-card-favorites-added {
@@ -1124,7 +1129,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 }
 
 .modal-title {
@@ -1259,7 +1264,7 @@ img {
   border-radius: 4px;
   font-size: 18px;
   font-weight: 700;
-  padding: 2px 35px 4px;
+  padding: 2px 44px 4px;
   max-width: 130px;
   height: 50px;
   text-align: center;
@@ -1385,14 +1390,15 @@ img {
   content: "";
   background-color: currentColor;
   position: absolute;
-  top: 4px;
-  left: 2px;
+  top: 5px;
+  left: 5px;
   width: 20px;
   height: 20px;
   -webkit-mask-image: url("../images/icon-info.svg");
-          mask-image: url("../images/icon-info.svg");
+  mask-image: url("../images/icon-info.svg");
+  -webkit-mask-size: 14px;
   -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 .tooltip-text {
@@ -1408,7 +1414,7 @@ img {
   line-height: 20px;
   font-weight: normal;
   text-transform: none;
-  padding: 15px 18px 18px 22px;
+  padding: 21px;
   border-radius: 10px;
   width: 256px;
 }
