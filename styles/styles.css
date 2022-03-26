@@ -130,6 +130,11 @@ img {
   color: var(--color-white-30);
 }
 
+.button:disabled {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -376,6 +381,7 @@ img {
 
 .checker-input:disabled {
   cursor: not-allowed;
+  opacity: 0.1;
 }
 
 .checker-input:disabled::before {
@@ -587,6 +593,11 @@ img {
 
 .select-control:active {
   opacity: 0.3;
+}
+
+.select-control:disabled {
+  opacity: 0.1;
+  cursor: not-allowed;
 }
 
 .select {
@@ -1235,6 +1246,11 @@ img {
   background-color: var(--color-white);
 }
 
+.input-control:disabled {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
+
 .input-control-date {
   width: 418px;
 }
@@ -1398,6 +1414,7 @@ img {
   -webkit-mask-image: url("../images/icon-info.svg");
   mask-image: url("../images/icon-info.svg");
   -webkit-mask-size: 14px;
+  mask-size: 14px;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
@@ -1466,6 +1483,11 @@ img {
 
 .newsletter-email:focus {
   outline: 3px solid var(--color-light-blue);
+}
+
+.newsletter-email:disabled {
+  opacity: 0.1;
+  cursor: not-allowed;
 }
 
 /* Класс newsletter-email-invalid будет добавляться с помощью js */
@@ -1614,6 +1636,11 @@ img {
 
 .range-field:focus {
   outline: none;
+}
+
+.range-field:disabled {
+  opacity: 0.1;
+  cursor: not-allowed;
 }
 
 .range-field::-webkit-outer-spin-button,
