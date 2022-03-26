@@ -85,6 +85,7 @@ img {
 .text {
   font-size: 22px;
   line-height: 26px;
+  color: var(--color-dark);
 }
 
 .caption {
@@ -162,6 +163,7 @@ img {
   text-align: center;
   font-size: 18px;
   line-height: 21px;
+  color: var(--color-dark);
 }
 
 .benefits-description-plus {
@@ -171,6 +173,10 @@ img {
 .blue-card {
   background-color: var(--color-light-blue);
   color: var(--color-white);
+}
+
+.blue-card .benefits-description {
+  color: inherit;
 }
 
 .translucent-card {
@@ -1005,10 +1011,11 @@ img {
   gap: 16px 26px;
 }
 
-.hotel-card-price {
+.hotel-card-text {
   line-height: 23px;
   padding: 0;
   margin: 0;
+  color: var(--color-dark);
 }
 
 .hotel-card-more {
@@ -1170,7 +1177,7 @@ img {
 .modal-select {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   margin: 0 0 15px 0;
   padding: 0;
@@ -1208,7 +1215,7 @@ img {
   font: inherit;
   line-height: 40px;
   font-weight: 700;
-  padding: 2px 50px 4px 15px;
+  padding: 2px 50px 4px 20px;
   border-radius: 4px;
   border: 2px solid transparent;
   -webkit-appearance: none;
@@ -1363,23 +1370,18 @@ img {
 .tooltip {
   position: absolute;
   left: 111px;
-  margin-top: 4px;
+  margin-top: 12px;
   margin-left: 2px;
   width: 25px;
   height: 25px;
 }
 
 .modal-date-text-child {
-  font-family: inherit;
-  width: 158px;
-  font-size: 18px;
-  font-weight: 700;
   padding: 5px 10px 0 56px;
-  cursor: pointer;
 }
 
 .tooltip-toggle {
-  display: block;
+  display: flex;
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -1391,18 +1393,16 @@ img {
 
 .tooltip-toggle::before {
   content: "";
-  background-color: currentColor;
-  position: absolute;
-  top: 5px;
-  left: 5px;
   width: 20px;
   height: 20px;
+  margin: auto;
+  background-color: currentColor;
   -webkit-mask-image: url("../images/icon-info.svg");
   mask-image: url("../images/icon-info.svg");
   -webkit-mask-size: 14px;
   mask-size: 14px;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+  -webkit-mask-position: 50%;
+  mask-position: 50%;
 }
 
 .tooltip-text {
@@ -1460,30 +1460,6 @@ img {
   color: var(--color-white);
 }
 
-.newsletter-email:hover {
-  background-color: var(--color-grey);
-}
-
-.newsletter-email:focus {
-  outline: 3px solid var(--color-light-blue);
-}
-
-.newsletter-email:disabled {
-  opacity: 0.1;
-  cursor: not-allowed;
-}
-
-/* Класс newsletter-email-invalid будет добавляться с помощью js */
-
-.newsletter-email:invalid:not(:-moz-placeholder-shown) {
-  border-color: var(--color-error);
-}
-
-.newsletter-email-invalid,
-.newsletter-email:invalid:not(:placeholder-shown) {
-  border-color: var(--color-error);
-}
-
 .newsletter-header {
   margin: 0 0 30px;
   text-align: center;
@@ -1511,11 +1487,37 @@ img {
 
 .newsletter-email {
   width: 100%;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   border-radius: 10px 0 0 10px;
   padding: 17px 22px;
   font: inherit;
   background-color: var(--color-light);
+}
+
+.newsletter-email:hover {
+  background-color: var(--color-grey);
+}
+
+.newsletter-email:focus {
+  outline: 3px solid var(--color-light-blue);
+}
+
+.newsletter-email:disabled {
+  opacity: 0.1;
+  cursor: not-allowed;
+}
+
+/* Класс newsletter-email-invalid будет добавляться с помощью js */
+
+.newsletter-email:invalid:not(:-moz-placeholder-shown) {
+  background-color: var(--color-white);
+  border-color: var(--color-error);
+}
+
+.newsletter-email-invalid,
+.newsletter-email:invalid:not(:placeholder-shown) {
+  background-color: var(--color-white);
+  border-color: var(--color-error);
 }
 
 .newsletter-email::-moz-placeholder {
@@ -1526,10 +1528,6 @@ img {
 .newsletter-email::placeholder {
   color: inherit;
   opacity: 0.6;
-}
-
-.newsletter-email:invalid {
-  border: 3px solid var(--color-error);
 }
 
 .newsletter-button {
